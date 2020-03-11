@@ -99,3 +99,6 @@
   url = https://github.com/riscv/riscv-fesvr.git
   branch = master
   ignore = dirty
+[submodule "black-parrot"]
+	path = black-parrot
+	url = https://github.com/Danieliao/black-parrot
