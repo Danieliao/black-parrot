@@ -1,0 +1,14 @@
+Parsing option_file: netlist_merge_begin.tech (EX-304)
+Running Amd_64b    
+mergeAsciiNetlist
+concatenateAsciiFilesSub .TMP_part1 .TMP
+concatenateAsciiFilesSub .TMP_partPP .TMP
+concatenateAsciiFilesSub opens.sum_part1 opens.sum
+concatenateAsciiFilesSub opens.sum_partPP opens.sum
+mergeExtraFiles:
+cleanStarDirXout
+  
+xTractor      Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=84.9  
+  
+Done          Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=84.9  
+

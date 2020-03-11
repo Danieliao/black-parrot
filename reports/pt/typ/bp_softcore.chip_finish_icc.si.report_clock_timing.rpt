@@ -1,0 +1,59 @@
+****************************************
+Report : clock timing
+	-type skew
+	-verbose
+	-nworst 1
+	-setup
+	-crosstalk_delta
+Design : bp_softcore
+Version: K-2015.12-SP3-2
+Date   : Tue Mar 10 22:07:25 2020
+****************************************
+
+  Clock: core_clk
+
+  Startpoint: core/be/be_calculator/reservation_reg/data_r_reg_198_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_mem/dtlb/vtag_cam/mem_reg_2__10_
+               (rising edge-triggered flip-flop clocked by core_clk)
+
+
+  Point                                                        DTrans   Trans    Delta     Incr       Path
+  -----------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                            0.000
+  clock source latency                                                                    0.000      0.000
+  clk_i (in)                                                            0.000             0.000 &    0.000 r
+  CTSINVX16_G1B4I1/INP (INVX16)                                0.000    0.053    0.000    0.019 &    0.019 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                          0.059             0.030 &    0.049 f
+  CTSINVX16_G1B3I1/INP (INVX16)                                0.000    0.084    0.000    0.023 &    0.072 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                          0.066             0.037 &    0.109 r
+  CTS_CTS_core_clk_CTO_delay17/INP (NBUFFX2)                   0.000    0.067    0.000    0.003 &    0.113 r
+  CTS_CTS_core_clk_CTO_delay17/Z (NBUFFX2)                              0.065             0.083 &    0.195 r
+  CTSINVX16_G1B2I15/INP (INVX8)                                0.000    0.065    0.000    0.000 &    0.195 r
+  CTSINVX16_G1B2I15/ZN (INVX8)                                          0.143             0.083 &    0.278 f
+  core/be/CTSINVX8_G1B1I83/INP (INVX4)                         0.000    0.144    0.000    0.004 &    0.283 f
+  core/be/CTSINVX8_G1B1I83/ZN (INVX4)                                   0.330             0.171 &    0.453 r
+  core/be/be_calculator/reservation_reg/data_r_reg_198_/CLK (DFFX1)    0.000    0.331    0.000    0.009 &    0.462 r
+  startpoint clock latency                                                                           0.462
+
+  clock core_clk (rise edge)                                            0.000
+  clock source latency                                                                    0.000      0.000
+  clk_i (in)                                                            0.000             0.000 &    0.000 r
+  CTSINVX16_G1B4I1/INP (INVX16)                                0.000    0.044    0.000    0.015 &    0.015 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                          0.051             0.026 &    0.041 f
+  CTSINVX16_G1B3I1/INP (INVX16)                                0.000    0.051    0.000    0.018 &    0.060 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                          0.053             0.030 &    0.090 r
+  core/CTSINVX16_G1B2I2/INP (INVX4)                            0.000    0.053    0.000    0.001 &    0.091 r
+  core/CTSINVX16_G1B2I2/ZN (INVX4)                                      0.118             0.071 &    0.162 f
+  core/CTSINVX16_G1B1I46_1/INP (INVX8)                         0.000    0.118    0.000    0.006 &    0.168 f
+  core/CTSINVX16_G1B1I46_1/ZN (INVX8)                                   0.160             0.090 &    0.257 r
+  core/be/be_mem/dtlb/vtag_cam/mem_reg_2__10_/CLK (DFFX1)      0.000    0.160    0.000    0.001 &    0.259 r
+  endpoint clock latency                                                                             0.259
+  -----------------------------------------------------------------------------------------
+  startpoint clock latency                                                         0.462
+  endpoint clock latency                                                          -0.259
+  clock reconvergence pessimism                                                   -0.020
+  -----------------------------------------------------------------------------------------
+  skew                                                                             0.184
+
+1

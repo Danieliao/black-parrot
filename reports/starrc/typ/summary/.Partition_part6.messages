@@ -1,0 +1,17 @@
+CCP_NP 0
+bi_directional is 1
+create_xin_writer; sort_xin_in_memory NO cut_trap NO text_counter NO
+Completed   0%  Time=00:00:00  RemainingTime=00:00:01  Mem=111.52
+Completed  10%  Time=00:00:00  RemainingTime=00:00:00  Mem=111.52
+Completed  20%  Time=00:00:00  RemainingTime=00:00:00  Mem=111.707
+Completed  40%  Time=00:00:00  RemainingTime=00:00:00  Mem=112.152
+Completed  60%  Time=00:00:00  RemainingTime=00:00:00  Mem=112.34
+Completed  80%  Time=00:00:00  RemainingTime=00:00:00  Mem=112.621
+Completed 100%  Time=00:00:00  RemainingTime=00:00:00  Mem=112.621
+  
+Partition     Elp=00:00:01 Cpu=00:00:00 Usr=0.7    Sys=0.0    Mem=112.5 
+  
+Done          Elp=00:00:01 Cpu=00:00:00 Usr=0.7    Sys=0.0    Mem=112.5 
+
+End Time: Tue Mar 10 21:52:45 2020
+

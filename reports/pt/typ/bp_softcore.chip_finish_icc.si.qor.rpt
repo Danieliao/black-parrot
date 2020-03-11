@@ -1,0 +1,116 @@
+****************************************
+Report : qor
+Design : bp_softcore
+Version: K-2015.12-SP3-2
+Date   : Tue Mar 10 22:07:20 2020
+****************************************
+
+Report timing status: Processing group FEEDTHROUGH (total endpoints 1)...100% done.
+Report timing status: Processing group REGIN (total endpoints 1)...100% done.
+Report timing status: Processing group REGOUT (total endpoints 1)...100% done.
+Report timing status: Processing group core_clk (total endpoints 1)...100% done.
+  Timing Path Group 'FEEDTHROUGH' (max_delay/setup)
+  ---------------------------------------------
+  Levels of Logic:                           22
+  Critical Path Length:                   3.826
+  Critical Path Slack:                    3.074
+  Total Negative Slack:                   0.000
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'REGIN' (max_delay/setup)
+  ---------------------------------------------
+  Levels of Logic:                           26
+  Critical Path Length:                   4.383
+  Critical Path Slack:                    2.907
+  Total Negative Slack:                   0.000
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'REGOUT' (max_delay/setup)
+  ---------------------------------------------
+  Levels of Logic:                           61
+  Critical Path Length:                   6.471
+  Critical Path Slack:                    0.429
+  Total Negative Slack:                   0.000
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'core_clk' (max_delay/setup)
+  ---------------------------------------------
+  Levels of Logic:                           60
+  Critical Path Length:                   9.220
+  Critical Path Slack:                   -1.974
+  Total Negative Slack:               -1013.905
+  No. of Violating Paths:                   720
+  ---------------------------------------------
+
+Report timing status: Processing group FEEDTHROUGH (total endpoints 1)...100% done.
+Report timing status: Processing group REGIN (total endpoints 1)...100% done.
+Report timing status: Processing group REGOUT (total endpoints 1)...100% done.
+Report timing status: Processing group core_clk (total endpoints 1)...100% done.
+  Timing Path Group 'FEEDTHROUGH' (min_delay/hold)
+  ---------------------------------------------
+  Levels of Logic:                            1
+  Critical Path Length:                   0.185
+  Critical Path Slack:                    0.285
+  Total Negative Slack:                   0.000
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'REGIN' (min_delay/hold)
+  ---------------------------------------------
+  Levels of Logic:                            1
+  Critical Path Length:                   0.156
+  Critical Path Slack:                   -0.249
+  Total Negative Slack:                 -51.781
+  No. of Violating Paths:                   783
+  ---------------------------------------------
+
+  Timing Path Group 'REGOUT' (min_delay/hold)
+  ---------------------------------------------
+  Levels of Logic:                            2
+  Critical Path Length:                   0.650
+  Critical Path Slack:                    0.750
+  Total Negative Slack:                   0.000
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'core_clk' (min_delay/hold)
+  ---------------------------------------------
+  Levels of Logic:                            1
+  Critical Path Length:                   0.472
+  Critical Path Slack:                    0.063
+  Total Negative Slack:                   0.000
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Cell Count
+  ---------------------------------------------
+  Hierarchical Cell Count:                  538
+  Hierarchical Port Count:                85373
+  Leaf Cell Count:                        75067
+  ---------------------------------------------
+
+
+  Area
+  ---------------------------------------------
+  Net Interconnect area:             160351.344
+  Total cell area:                  2502595.250
+  Design Area:                      2662946.500
+  ---------------------------------------------
+
+
+  Design Rule Violations
+  ---------------------------------------------
+  Total No. of Pins in Design:           251886
+  max_capacitance Count:                      9
+  min_capacitance Count:                    688
+  max_transition Count:                      49
+  max_capacitance Cost:                 -35.758
+  min_capacitance Cost:                 -68.794
+  max_transition Cost:                   -0.847
+  Total DRC Cost:                      -105.398
+  ---------------------------------------------
+
+1

@@ -1,0 +1,432 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-input_pins
+	-nets
+	-nworst 10
+	-slack_lesser_than 1000000.000
+	-max_paths 10
+	-crosstalk_delta
+	-sort_by slack
+Design : bp_softcore
+Version: K-2015.12-SP3-2
+Date   : Tue Mar 10 21:56:58 2020
+****************************************
+
+Report timing status: Started...
+
+  Startpoint: reset_i (input port clocked by core_clk)
+  Endpoint: clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Path Group: REGIN
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                         Fanout  Delta     Incr       Path
+  --------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                     0.000      0.000
+  clock network delay (ideal)                                                    0.000      0.000
+  input external delay                                                           0.100      0.100 r
+  reset_i (in)                                                                   0.000 &    0.100 r
+  reset_i (net)                                                  38 
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/U3/IN3 (NOR3X0)             0.000    0.006 &    0.106 r
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/U3/QN (NOR3X0)                       0.056 &    0.163 f
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/o[1] (net)            1 
+  clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_/D (DFFX1)       -0.007   -0.007 &    0.156 f
+  data arrival time                                                                         0.156
+
+  clock core_clk (rise edge)                                                     0.000      0.000
+  clock network delay (propagated)                                               0.387      0.387
+  clock reconvergence pessimism                                                  0.000      0.387
+  clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_/CLK (DFFX1)                          0.387 r
+  library hold time                                                              0.017      0.404
+  data required time                                                                        0.404
+  --------------------------------------------------------------------------------------------------
+  data required time                                                                        0.404
+  data arrival time                                                                        -0.156
+  --------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                         -0.249
+
+
+  Startpoint: reset_i (input port clocked by core_clk)
+  Endpoint: clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Path Group: REGIN
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                         Fanout  Delta     Incr       Path
+  --------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                     0.000      0.000
+  clock network delay (ideal)                                                    0.000      0.000
+  input external delay                                                           0.100      0.100 f
+  reset_i (in)                                                                   0.000 &    0.100 f
+  reset_i (net)                                                  38 
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/U3/IN3 (NOR3X0)             0.000    0.006 &    0.106 f
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/U3/QN (NOR3X0)                       0.053 &    0.159 r
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/o[1] (net)            1 
+  clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_/D (DFFX1)       -0.012   -0.012 &    0.147 r
+  data arrival time                                                                         0.147
+
+  clock core_clk (rise edge)                                                     0.000      0.000
+  clock network delay (propagated)                                               0.387      0.387
+  clock reconvergence pessimism                                                  0.000      0.387
+  clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_/CLK (DFFX1)                          0.387 r
+  library hold time                                                             -0.038      0.349
+  data required time                                                                        0.349
+  --------------------------------------------------------------------------------------------------
+  data required time                                                                        0.349
+  data arrival time                                                                        -0.147
+  --------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                         -0.202
+
+
+  Startpoint: clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I8/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                           Fanout  Delta     Incr       Path
+  ----------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                       0.000      0.000
+  clock network delay (propagated)                                                 0.319      0.319
+  clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_0_/CLK (DFFX1)                 0.000      0.319 r
+  clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_0_/Q (DFFX1)                   0.212 &    0.531 f
+  clint/clint_slice/bsg_rtc_strobe/C_reg/data_o[0] (net)            2 
+  clint/clint_slice/bsg_rtc_strobe/nand_C_n/U3/IN1 (NAND2X0)              0.000    0.000 &    0.531 f
+  clint/clint_slice/bsg_rtc_strobe/nand_C_n/U3/QN (NAND2X0)                        0.036 &    0.567 r
+  clint/clint_slice/bsg_rtc_strobe/nand_C_n/o[1] (net)              1 
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/U3/IN2 (NOR3X0)               0.000    0.000 &    0.567 r
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/U3/QN (NOR3X0)                         0.056 &    0.623 f
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/o[1] (net)              1 
+  clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_/D (DFFX1)         -0.007   -0.007 &    0.616 f
+  data arrival time                                                                           0.616
+
+  clock core_clk (rise edge)                                                       0.000      0.000
+  clock network delay (propagated)                                                 0.387      0.387
+  clock reconvergence pessimism                                                   -0.038      0.349
+  clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_/CLK (DFFX1)                            0.349 r
+  library hold time                                                                0.017      0.367
+  data required time                                                                          0.367
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                          0.367
+  data arrival time                                                                          -0.616
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                 0.249
+
+
+  Startpoint: clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I8/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                           Fanout  Delta     Incr       Path
+  ----------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                       0.000      0.000
+  clock network delay (propagated)                                                 0.319      0.319
+  clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_0_/CLK (DFFX1)                 0.000      0.319 r
+  clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_0_/Q (DFFX1)                   0.194 &    0.514 r
+  clint/clint_slice/bsg_rtc_strobe/C_reg/data_o[0] (net)            2 
+  clint/clint_slice/bsg_rtc_strobe/nand_C_n/U3/IN1 (NAND2X0)              0.000    0.000 &    0.514 r
+  clint/clint_slice/bsg_rtc_strobe/nand_C_n/U3/QN (NAND2X0)                        0.037 &    0.551 f
+  clint/clint_slice/bsg_rtc_strobe/nand_C_n/o[1] (net)              1 
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/U3/IN2 (NOR3X0)               0.000    0.000 &    0.551 f
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/U3/QN (NOR3X0)                         0.051 &    0.603 r
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/o[1] (net)              1 
+  clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_/D (DFFX1)         -0.012   -0.012 &    0.590 r
+  data arrival time                                                                           0.590
+
+  clock core_clk (rise edge)                                                       0.000      0.000
+  clock network delay (propagated)                                                 0.387      0.387
+  clock reconvergence pessimism                                                   -0.038      0.349
+  clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_/CLK (DFFX1)                            0.349 r
+  library hold time                                                               -0.038      0.311
+  data required time                                                                          0.311
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                          0.311
+  data arrival time                                                                          -0.590
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                 0.279
+
+
+  Startpoint: clint/clint_slice/bsg_rtc_strobe/S_reg/data_r_reg_1_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B1I33/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                           Fanout  Delta     Incr       Path
+  ----------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                       0.000      0.000
+  clock network delay (propagated)                                                 0.325      0.325
+  clint/clint_slice/bsg_rtc_strobe/S_reg/data_r_reg_1_/CLK (DFFX1)                 0.000      0.325 r
+  clint/clint_slice/bsg_rtc_strobe/S_reg/data_r_reg_1_/Q (DFFX1)                   0.215 &    0.540 f
+  clint/clint_slice/bsg_rtc_strobe/S_reg/data_o[1] (net)            3 
+  clint/clint_slice/bsg_rtc_strobe/nand_C_n/U3/IN2 (NAND2X0)              0.000    0.000 &    0.540 f
+  clint/clint_slice/bsg_rtc_strobe/nand_C_n/U3/QN (NAND2X0)                        0.040 &    0.580 r
+  clint/clint_slice/bsg_rtc_strobe/nand_C_n/o[1] (net)              1 
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/U3/IN2 (NOR3X0)               0.000    0.000 &    0.580 r
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/U3/QN (NOR3X0)                         0.056 &    0.637 f
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/o[1] (net)              1 
+  clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_/D (DFFX1)         -0.007   -0.007 &    0.629 f
+  data arrival time                                                                           0.629
+
+  clock core_clk (rise edge)                                                       0.000      0.000
+  clock network delay (propagated)                                                 0.387      0.387
+  clock reconvergence pessimism                                                   -0.062      0.325
+  clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_/CLK (DFFX1)                            0.325 r
+  library hold time                                                                0.017      0.343
+  data required time                                                                          0.343
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                          0.343
+  data arrival time                                                                          -0.629
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                 0.287
+
+
+  Startpoint: clint/clint_slice/bsg_rtc_strobe/S_reg/data_r_reg_1_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B1I33/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                           Fanout  Delta     Incr       Path
+  ----------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                       0.000      0.000
+  clock network delay (propagated)                                                 0.325      0.325
+  clint/clint_slice/bsg_rtc_strobe/S_reg/data_r_reg_1_/CLK (DFFX1)                 0.000      0.325 r
+  clint/clint_slice/bsg_rtc_strobe/S_reg/data_r_reg_1_/Q (DFFX1)                   0.198 &    0.523 r
+  clint/clint_slice/bsg_rtc_strobe/S_reg/data_o[1] (net)            3 
+  clint/clint_slice/bsg_rtc_strobe/nand_C_n/U3/IN2 (NAND2X0)              0.000    0.000 &    0.523 r
+  clint/clint_slice/bsg_rtc_strobe/nand_C_n/U3/QN (NAND2X0)                        0.038 &    0.561 f
+  clint/clint_slice/bsg_rtc_strobe/nand_C_n/o[1] (net)              1 
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/U3/IN2 (NOR3X0)               0.000    0.000 &    0.561 f
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/U3/QN (NOR3X0)                         0.051 &    0.612 r
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/o[1] (net)              1 
+  clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_/D (DFFX1)         -0.012   -0.012 &    0.600 r
+  data arrival time                                                                           0.600
+
+  clock core_clk (rise edge)                                                       0.000      0.000
+  clock network delay (propagated)                                                 0.387      0.387
+  clock reconvergence pessimism                                                   -0.062      0.325
+  clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_/CLK (DFFX1)                            0.325 r
+  library hold time                                                               -0.038      0.287
+  data required time                                                                          0.287
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                          0.287
+  data arrival time                                                                          -0.600
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                 0.313
+
+
+  Startpoint: clint/clint_slice/bsg_rtc_strobe/S_reg/data_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I8/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                            Fanout  Delta     Incr       Path
+  -----------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                        0.000      0.000
+  clock network delay (propagated)                                                  0.319      0.319
+  clint/clint_slice/bsg_rtc_strobe/S_reg/data_r_reg_0_/CLK (DFFX1)                  0.000      0.319 r
+  clint/clint_slice/bsg_rtc_strobe/S_reg/data_r_reg_0_/Q (DFFX1)                    0.193 &    0.513 r
+  clint/clint_slice/bsg_rtc_strobe/S_reg/data_o[0] (net)             3 
+  clint/clint_slice/bsg_rtc_strobe/andr/U2/IN1 (AND3X1)                    0.000    0.000 &    0.513 r
+  clint/clint_slice/bsg_rtc_strobe/andr/U2/Q (AND3X1)                               0.078 &    0.591 r
+  clint/clint_slice/bsg_rtc_strobe/andr/o (net)                      2 
+  clint/clint_slice/bsg_rtc_strobe/strobe_buf_gate/U1/INP (NBUFFX2)        0.000    0.000 &    0.591 r
+  clint/clint_slice/bsg_rtc_strobe/strobe_buf_gate/U1/Z (NBUFFX2)                   0.065 &    0.656 r
+  clint/clint_slice/bsg_rtc_strobe/strobe_buf_gate/o[0] (net)        5 
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/U3/IN1 (NOR3X0)                0.000    0.000 &    0.656 r
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/U3/QN (NOR3X0)                          0.043 &    0.699 f
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/o[1] (net)               1 
+  clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_/D (DFFX1)          -0.007   -0.007 &    0.692 f
+  data arrival time                                                                            0.692
+
+  clock core_clk (rise edge)                                                        0.000      0.000
+  clock network delay (propagated)                                                  0.387      0.387
+  clock reconvergence pessimism                                                    -0.038      0.349
+  clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_/CLK (DFFX1)                             0.349 r
+  library hold time                                                                 0.017      0.367
+  data required time                                                                           0.367
+  -----------------------------------------------------------------------------------------------------
+  data required time                                                                           0.367
+  data arrival time                                                                           -0.692
+  -----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                  0.326
+
+
+  Startpoint: clint/clint_slice/bsg_rtc_strobe/S_reg/data_r_reg_1_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B1I33/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                            Fanout  Delta     Incr       Path
+  -----------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                        0.000      0.000
+  clock network delay (propagated)                                                  0.325      0.325
+  clint/clint_slice/bsg_rtc_strobe/S_reg/data_r_reg_1_/CLK (DFFX1)                  0.000      0.325 r
+  clint/clint_slice/bsg_rtc_strobe/S_reg/data_r_reg_1_/Q (DFFX1)                    0.198 &    0.523 r
+  clint/clint_slice/bsg_rtc_strobe/S_reg/data_o[1] (net)             3 
+  clint/clint_slice/bsg_rtc_strobe/andr/U2/IN2 (AND3X1)                    0.000    0.000 &    0.523 r
+  clint/clint_slice/bsg_rtc_strobe/andr/U2/Q (AND3X1)                               0.082 &    0.605 r
+  clint/clint_slice/bsg_rtc_strobe/andr/o (net)                      2 
+  clint/clint_slice/bsg_rtc_strobe/strobe_buf_gate/U1/INP (NBUFFX2)        0.000    0.000 &    0.605 r
+  clint/clint_slice/bsg_rtc_strobe/strobe_buf_gate/U1/Z (NBUFFX2)                   0.065 &    0.670 r
+  clint/clint_slice/bsg_rtc_strobe/strobe_buf_gate/o[0] (net)        5 
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/U3/IN1 (NOR3X0)                0.000    0.000 &    0.671 r
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/U3/QN (NOR3X0)                          0.043 &    0.714 f
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/o[1] (net)               1 
+  clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_/D (DFFX1)          -0.007   -0.007 &    0.707 f
+  data arrival time                                                                            0.707
+
+  clock core_clk (rise edge)                                                        0.000      0.000
+  clock network delay (propagated)                                                  0.387      0.387
+  clock reconvergence pessimism                                                    -0.062      0.325
+  clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_/CLK (DFFX1)                             0.325 r
+  library hold time                                                                 0.017      0.343
+  data required time                                                                           0.343
+  -----------------------------------------------------------------------------------------------------
+  data required time                                                                           0.343
+  data arrival time                                                                           -0.707
+  -----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                  0.364
+
+
+  Startpoint: clint/clint_slice/bsg_rtc_strobe/S_reg/data_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I8/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                            Fanout  Delta     Incr       Path
+  -----------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                        0.000      0.000
+  clock network delay (propagated)                                                  0.319      0.319
+  clint/clint_slice/bsg_rtc_strobe/S_reg/data_r_reg_0_/CLK (DFFX1)                  0.000      0.319 r
+  clint/clint_slice/bsg_rtc_strobe/S_reg/data_r_reg_0_/Q (DFFX1)                    0.210 &    0.529 f
+  clint/clint_slice/bsg_rtc_strobe/S_reg/data_o[0] (net)             3 
+  clint/clint_slice/bsg_rtc_strobe/andr/U2/IN1 (AND3X1)                    0.000    0.000 &    0.529 f
+  clint/clint_slice/bsg_rtc_strobe/andr/U2/Q (AND3X1)                               0.076 &    0.605 f
+  clint/clint_slice/bsg_rtc_strobe/andr/o (net)                      2 
+  clint/clint_slice/bsg_rtc_strobe/strobe_buf_gate/U1/INP (NBUFFX2)        0.000    0.000 &    0.605 f
+  clint/clint_slice/bsg_rtc_strobe/strobe_buf_gate/U1/Z (NBUFFX2)                   0.060 &    0.665 f
+  clint/clint_slice/bsg_rtc_strobe/strobe_buf_gate/o[0] (net)        5 
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/U3/IN1 (NOR3X0)                0.000    0.000 &    0.665 f
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/U3/QN (NOR3X0)                          0.040 &    0.705 r
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/o[1] (net)               1 
+  clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_/D (DFFX1)          -0.012   -0.012 &    0.693 r
+  data arrival time                                                                            0.693
+
+  clock core_clk (rise edge)                                                        0.000      0.000
+  clock network delay (propagated)                                                  0.387      0.387
+  clock reconvergence pessimism                                                    -0.038      0.349
+  clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_/CLK (DFFX1)                             0.349 r
+  library hold time                                                                -0.038      0.311
+  data required time                                                                           0.311
+  -----------------------------------------------------------------------------------------------------
+  data required time                                                                           0.311
+  data arrival time                                                                           -0.693
+  -----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                  0.381
+
+
+  Startpoint: clint/clint_slice/bsg_rtc_strobe/S_reg/data_r_reg_1_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B1I33/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                            Fanout  Delta     Incr       Path
+  -----------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                        0.000      0.000
+  clock network delay (propagated)                                                  0.325      0.325
+  clint/clint_slice/bsg_rtc_strobe/S_reg/data_r_reg_1_/CLK (DFFX1)                  0.000      0.325 r
+  clint/clint_slice/bsg_rtc_strobe/S_reg/data_r_reg_1_/Q (DFFX1)                    0.215 &    0.540 f
+  clint/clint_slice/bsg_rtc_strobe/S_reg/data_o[1] (net)             3 
+  clint/clint_slice/bsg_rtc_strobe/andr/U2/IN2 (AND3X1)                    0.000    0.000 &    0.540 f
+  clint/clint_slice/bsg_rtc_strobe/andr/U2/Q (AND3X1)                               0.082 &    0.622 f
+  clint/clint_slice/bsg_rtc_strobe/andr/o (net)                      2 
+  clint/clint_slice/bsg_rtc_strobe/strobe_buf_gate/U1/INP (NBUFFX2)        0.000    0.000 &    0.622 f
+  clint/clint_slice/bsg_rtc_strobe/strobe_buf_gate/U1/Z (NBUFFX2)                   0.060 &    0.682 f
+  clint/clint_slice/bsg_rtc_strobe/strobe_buf_gate/o[0] (net)        5 
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/U3/IN1 (NOR3X0)                0.000    0.000 &    0.682 f
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/U3/QN (NOR3X0)                          0.040 &    0.722 r
+  clint/clint_slice/bsg_rtc_strobe/nor3_C_n/o[1] (net)               1 
+  clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_/D (DFFX1)          -0.012   -0.012 &    0.709 r
+  data arrival time                                                                            0.709
+
+  clock core_clk (rise edge)                                                        0.000      0.000
+  clock network delay (propagated)                                                  0.387      0.387
+  clock reconvergence pessimism                                                    -0.062      0.325
+  clint/clint_slice/bsg_rtc_strobe/C_reg/data_r_reg_1_/CLK (DFFX1)                             0.325 r
+  library hold time                                                                -0.038      0.287
+  data required time                                                                           0.287
+  -----------------------------------------------------------------------------------------------------
+  data required time                                                                           0.287
+  data arrival time                                                                           -0.709
+  -----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                  0.422
+
+Report timing status: (total endpoints 15444)...10% done.
+Report timing status: (total endpoints 15444)...20% done.
+Report timing status: (total endpoints 15444)...30% done.
+Report timing status: (total endpoints 15444)...40% done.
+Report timing status: (total endpoints 15444)...50% done.
+Report timing status: (total endpoints 15444)...60% done.
+Report timing status: (total endpoints 15444)...70% done.
+Report timing status: (total endpoints 15444)...80% done.
+Report timing status: (total endpoints 15444)...90% done.
+Warning: report_timing has satisfied the max_paths criteria. There are 15443 further endpoints which have paths of interest with slack less than 1000000.000 that were not considered when generating this report. (UITE-502)
+
+Report timing status: Completed...
+1

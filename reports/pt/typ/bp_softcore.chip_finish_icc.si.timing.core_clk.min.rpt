@@ -1,0 +1,1332 @@
+****************************************
+Report : timing
+	-path_type full_clock
+	-delay_type min
+	-slack_lesser_than 1000000.000
+	-max_paths 30
+	-group core_clk
+	-transition_time
+	-sort_by slack
+Design : bp_softcore
+Version: K-2015.12-SP3-2
+Date   : Tue Mar 10 21:56:59 2020
+****************************************
+
+Report timing status: Started...
+Report timing status: Processing group core_clk
+
+  Startpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_61_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_144_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B3I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                               Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.053      0.048 &    0.090 r
+  core/CTSINVX16_G1B2I2/ZN (INVX4)                                    0.118      0.072 &    0.162 f
+  core/CTSINVX16_G1B1I75/ZN (INVX8)                                   0.187      0.103 &    0.265 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_61_/CLK (DFFX1)     0.187      0.004 &    0.269 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_61_/Q (DFFX1)       0.031      0.203 &    0.472 f
+  core/be/be_calculator/calc_stage_reg/data_r_reg_144_/D (DFFX1)      0.031      0.000 &    0.472 f
+  data arrival time                                                                         0.472
+
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.059      0.049 &    0.049 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.066      0.060 &    0.109 r
+  core/CTSINVX8_G1B2I14/ZN (INVX2)                                    0.234      0.140 &    0.249 f
+  core/be/CTSINVX16_G1B1I30_1/ZN (INVX8)                              0.257      0.151 &    0.400 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_144_/CLK (DFFX1)    0.257      0.005 &    0.406 r
+  clock reconvergence pessimism                                                 -0.020      0.386
+  library hold time                                                              0.023      0.409
+  data required time                                                                        0.409
+  --------------------------------------------------------------------------------------------------
+  data required time                                                                        0.409
+  data arrival time                                                                        -0.472
+  --------------------------------------------------------------------------------------------------
+  slack (MET)                                                                               0.063
+
+
+  Startpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_33_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_116_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B3I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                               Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.053      0.048 &    0.090 r
+  core/CTSINVX16_G1B2I2/ZN (INVX4)                                    0.118      0.072 &    0.162 f
+  core/CTSINVX16_G1B1I75/ZN (INVX8)                                   0.187      0.103 &    0.265 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_33_/CLK (DFFX1)     0.187      0.004 &    0.269 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_33_/Q (DFFX1)       0.033      0.204 &    0.473 f
+  core/be/be_calculator/calc_stage_reg/data_r_reg_116_/D (DFFX1)      0.033      0.000 &    0.473 f
+  data arrival time                                                                         0.473
+
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.059      0.049 &    0.049 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.066      0.060 &    0.109 r
+  core/CTSINVX8_G1B2I14/ZN (INVX2)                                    0.234      0.140 &    0.249 f
+  core/be/CTSINVX16_G1B1I30_1/ZN (INVX8)                              0.257      0.151 &    0.400 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_116_/CLK (DFFX1)    0.257      0.005 &    0.405 r
+  clock reconvergence pessimism                                                 -0.020      0.385
+  library hold time                                                              0.023      0.408
+  data required time                                                                        0.408
+  --------------------------------------------------------------------------------------------------
+  data required time                                                                        0.408
+  data arrival time                                                                        -0.473
+  --------------------------------------------------------------------------------------------------
+  slack (MET)                                                                               0.065
+
+
+  Startpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_123_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_206_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B3I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                               Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.053      0.048 &    0.090 r
+  core/CTSINVX16_G1B2I2/ZN (INVX4)                                    0.118      0.072 &    0.162 f
+  core/be/CTSINVX16_G1B1I51/ZN (INVX8)                                0.194      0.108 &    0.270 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_123_/CLK (DFFX1)    0.194      0.003 &    0.273 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_123_/Q (DFFX1)      0.032      0.204 &    0.478 f
+  core/be/be_calculator/calc_stage_reg/data_r_reg_206_/D (DFFX1)      0.032      0.000 &    0.478 f
+  data arrival time                                                                         0.478
+
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.059      0.049 &    0.049 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.066      0.060 &    0.109 r
+  core/CTSINVX8_G1B2I14/ZN (INVX2)                                    0.234      0.140 &    0.249 f
+  core/be/CTSINVX16_G1B1I30_1/ZN (INVX8)                              0.257      0.151 &    0.400 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_206_/CLK (DFFX1)    0.257      0.007 &    0.407 r
+  clock reconvergence pessimism                                                 -0.020      0.388
+  library hold time                                                              0.023      0.411
+  data required time                                                                        0.411
+  --------------------------------------------------------------------------------------------------
+  data required time                                                                        0.411
+  data arrival time                                                                        -0.478
+  --------------------------------------------------------------------------------------------------
+  slack (MET)                                                                               0.067
+
+
+  Startpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_118_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_201_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B3I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                               Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.053      0.048 &    0.090 r
+  core/CTSINVX8_G1B2I14/ZN (INVX2)                                    0.188      0.111 &    0.201 f
+  core/be/CTSINVX16_G1B1I30_1/ZN (INVX8)                              0.213      0.123 &    0.324 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_118_/CLK (DFFX1)    0.213      0.006 &    0.330 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_118_/Q (DFFX1)      0.032      0.206 &    0.535 f
+  core/be/be_calculator/calc_stage_reg/data_r_reg_201_/D (DFFX1)      0.032      0.000 &    0.535 f
+  data arrival time                                                                         0.535
+
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.059      0.049 &    0.049 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.066      0.060 &    0.109 r
+  CTS_CTS_core_clk_CTO_delay17/Z (NBUFFX2)                            0.065      0.086 &    0.195 r
+  CTSINVX16_G1B2I15/ZN (INVX8)                                        0.143      0.083 &    0.278 f
+  core/be/CTSINVX8_G1B1I83/ZN (INVX4)                                 0.330      0.175 &    0.453 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_201_/CLK (DFFX1)    0.331      0.010 &    0.463 r
+  clock reconvergence pessimism                                                 -0.020      0.443
+  library hold time                                                              0.025      0.468
+  data required time                                                                        0.468
+  --------------------------------------------------------------------------------------------------
+  data required time                                                                        0.468
+  data arrival time                                                                        -0.535
+  --------------------------------------------------------------------------------------------------
+  slack (MET)                                                                               0.067
+
+
+  Startpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_32_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_115_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B3I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                               Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.053      0.048 &    0.090 r
+  core/CTSINVX8_G1B2I14/ZN (INVX2)                                    0.188      0.111 &    0.201 f
+  core/be/CTSINVX16_G1B1I30_1/ZN (INVX8)                              0.213      0.123 &    0.324 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_32_/CLK (DFFX1)     0.213      0.006 &    0.330 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_32_/Q (DFFX1)       0.032      0.206 &    0.536 f
+  core/be/be_calculator/calc_stage_reg/data_r_reg_115_/D (DFFX1)      0.032      0.000 &    0.536 f
+  data arrival time                                                                         0.536
+
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.059      0.049 &    0.049 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.066      0.060 &    0.109 r
+  CTS_CTS_core_clk_CTO_delay17/Z (NBUFFX2)                            0.065      0.086 &    0.195 r
+  CTSINVX16_G1B2I15/ZN (INVX8)                                        0.143      0.083 &    0.278 f
+  core/be/CTSINVX8_G1B1I83/ZN (INVX4)                                 0.330      0.175 &    0.453 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_115_/CLK (DFFX1)    0.331      0.010 &    0.463 r
+  clock reconvergence pessimism                                                 -0.020      0.443
+  library hold time                                                              0.025      0.468
+  data required time                                                                        0.468
+  --------------------------------------------------------------------------------------------------
+  data required time                                                                        0.468
+  data arrival time                                                                        -0.536
+  --------------------------------------------------------------------------------------------------
+  slack (MET)                                                                               0.068
+
+
+  Startpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_42_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_125_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B3I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                               Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.053      0.048 &    0.090 r
+  core/CTSINVX16_G1B2I2/ZN (INVX4)                                    0.118      0.072 &    0.162 f
+  core/be/CTSINVX16_G1B1I51/ZN (INVX8)                                0.194      0.108 &    0.270 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_42_/CLK (DFFX1)     0.194      0.003 &    0.273 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_42_/Q (DFFX1)       0.033      0.205 &    0.479 f
+  core/be/be_calculator/calc_stage_reg/data_r_reg_125_/D (DFFX1)      0.033      0.000 &    0.479 f
+  data arrival time                                                                         0.479
+
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.059      0.049 &    0.049 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.066      0.060 &    0.109 r
+  core/CTSINVX8_G1B2I14/ZN (INVX2)                                    0.234      0.140 &    0.249 f
+  core/be/CTSINVX16_G1B1I30_1/ZN (INVX8)                              0.257      0.151 &    0.400 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_125_/CLK (DFFX1)    0.257      0.007 &    0.408 r
+  clock reconvergence pessimism                                                 -0.020      0.388
+  library hold time                                                              0.023      0.411
+  data required time                                                                        0.411
+  --------------------------------------------------------------------------------------------------
+  data required time                                                                        0.411
+  data arrival time                                                                        -0.479
+  --------------------------------------------------------------------------------------------------
+  slack (MET)                                                                               0.068
+
+
+  Startpoint: core/be/be_mem/vaddr_pipe/chained_genblk1_1__ch_reg/data_r_reg_30_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_mem/vaddr_pipe/chained_genblk1_2__ch_reg/data_r_reg_30_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B3I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                             Trans       Incr       Path
+  ----------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                        0.000      0.000      0.000
+  clock source latency                                                                         0.000      0.000
+  clk_i (in)                                                                        0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                                      0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                                      0.053      0.048 &    0.090 r
+  core/CTSINVX16_G1B2I2/ZN (INVX4)                                                  0.118      0.072 &    0.162 f
+  core/be/CTSINVX16_G1B1I51/ZN (INVX8)                                              0.194      0.108 &    0.270 r
+  core/be/be_mem/vaddr_pipe/chained_genblk1_1__ch_reg/data_r_reg_30_/CLK (DFFX1)    0.194      0.003 &    0.273 r
+  core/be/be_mem/vaddr_pipe/chained_genblk1_1__ch_reg/data_r_reg_30_/Q (DFFX1)      0.031      0.204 &    0.477 f
+  core/be/be_mem/vaddr_pipe/chained_genblk1_2__ch_reg/data_r_reg_30_/D (DFFX1)      0.031      0.000 &    0.477 f
+  data arrival time                                                                                       0.477
+
+  clock core_clk (rise edge)                                                        0.000      0.000      0.000
+  clock source latency                                                                         0.000      0.000
+  clk_i (in)                                                                        0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                                      0.059      0.049 &    0.049 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                                      0.066      0.060 &    0.109 r
+  core/CTSINVX8_G1B2I14/ZN (INVX2)                                                  0.234      0.140 &    0.249 f
+  core/be/CTSINVX16_G1B1I30_1/ZN (INVX8)                                            0.257      0.151 &    0.400 r
+  core/be/be_mem/vaddr_pipe/chained_genblk1_2__ch_reg/data_r_reg_30_/CLK (DFFX1)    0.257      0.004 &    0.405 r
+  clock reconvergence pessimism                                                               -0.020      0.385
+  library hold time                                                                            0.023      0.408
+  data required time                                                                                      0.408
+  ----------------------------------------------------------------------------------------------------------------
+  data required time                                                                                      0.408
+  data arrival time                                                                                      -0.477
+  ----------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                             0.068
+
+
+  Startpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_37_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_120_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B3I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                               Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.053      0.048 &    0.090 r
+  core/CTSINVX16_G1B2I2/ZN (INVX4)                                    0.118      0.072 &    0.162 f
+  core/be/CTSINVX16_G1B1I51/ZN (INVX8)                                0.194      0.108 &    0.270 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_37_/CLK (DFFX1)     0.194      0.003 &    0.273 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_37_/Q (DFFX1)       0.034      0.205 &    0.479 f
+  core/be/be_calculator/calc_stage_reg/data_r_reg_120_/D (DFFX1)      0.034      0.000 &    0.479 f
+  data arrival time                                                                         0.479
+
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.059      0.049 &    0.049 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.066      0.060 &    0.109 r
+  core/CTSINVX8_G1B2I14/ZN (INVX2)                                    0.234      0.140 &    0.249 f
+  core/be/CTSINVX16_G1B1I30_1/ZN (INVX8)                              0.257      0.151 &    0.400 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_120_/CLK (DFFX1)    0.257      0.007 &    0.407 r
+  clock reconvergence pessimism                                                 -0.020      0.388
+  library hold time                                                              0.023      0.411
+  data required time                                                                        0.411
+  --------------------------------------------------------------------------------------------------
+  data required time                                                                        0.411
+  data arrival time                                                                        -0.479
+  --------------------------------------------------------------------------------------------------
+  slack (MET)                                                                               0.068
+
+
+  Startpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_121_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_204_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B3I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                               Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.053      0.048 &    0.090 r
+  core/CTSINVX16_G1B2I2/ZN (INVX4)                                    0.118      0.072 &    0.162 f
+  core/be/CTSINVX16_G1B1I51/ZN (INVX8)                                0.194      0.108 &    0.270 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_121_/CLK (DFFX1)    0.194      0.003 &    0.274 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_121_/Q (DFFX1)      0.033      0.205 &    0.479 f
+  core/be/be_calculator/calc_stage_reg/data_r_reg_204_/D (DFFX1)      0.033      0.000 &    0.479 f
+  data arrival time                                                                         0.479
+
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.059      0.049 &    0.049 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.066      0.060 &    0.109 r
+  core/CTSINVX8_G1B2I14/ZN (INVX2)                                    0.234      0.140 &    0.249 f
+  core/be/CTSINVX16_G1B1I30_1/ZN (INVX8)                              0.257      0.151 &    0.400 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_204_/CLK (DFFX1)    0.257      0.004 &    0.405 r
+  clock reconvergence pessimism                                                 -0.020      0.385
+  library hold time                                                              0.023      0.408
+  data required time                                                                        0.408
+  --------------------------------------------------------------------------------------------------
+  data required time                                                                        0.408
+  data arrival time                                                                        -0.479
+  --------------------------------------------------------------------------------------------------
+  slack (MET)                                                                               0.071
+
+
+  Startpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_52_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_135_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B3I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                               Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.053      0.048 &    0.090 r
+  core/CTSINVX16_G1B2I2/ZN (INVX4)                                    0.118      0.072 &    0.162 f
+  core/CTSINVX16_G1B1I75/ZN (INVX8)                                   0.187      0.103 &    0.265 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_52_/CLK (DFFX1)     0.187      0.002 &    0.268 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_52_/Q (DFFX1)       0.032      0.204 &    0.472 f
+  core/be/be_calculator/calc_stage_reg/data_r_reg_135_/D (DFFX1)      0.032      0.000 &    0.472 f
+  data arrival time                                                                         0.472
+
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.059      0.049 &    0.049 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.066      0.060 &    0.109 r
+  core/CTSINVX8_G1B2I14/ZN (INVX2)                                    0.234      0.140 &    0.249 f
+  core/be/CTSINVX16_G1B1I6/ZN (INVX8)                                 0.243      0.139 &    0.388 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_135_/CLK (DFFX1)    0.244      0.005 &    0.393 r
+  clock reconvergence pessimism                                                 -0.020      0.373
+  library hold time                                                              0.022      0.396
+  data required time                                                                        0.396
+  --------------------------------------------------------------------------------------------------
+  data required time                                                                        0.396
+  data arrival time                                                                        -0.472
+  --------------------------------------------------------------------------------------------------
+  slack (MET)                                                                               0.076
+
+
+  Startpoint: core/be/be_mem/vaddr_pipe/chained_genblk1_1__ch_reg/data_r_reg_7_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_mem/vaddr_pipe/chained_genblk1_2__ch_reg/data_r_reg_7_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B3I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                            Trans       Incr       Path
+  ---------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                       0.000      0.000      0.000
+  clock source latency                                                                        0.000      0.000
+  clk_i (in)                                                                       0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                                     0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                                     0.053      0.048 &    0.090 r
+  core/CTSINVX16_G1B2I2/ZN (INVX4)                                                 0.118      0.072 &    0.162 f
+  core/CTSINVX16_G1B1I75/ZN (INVX8)                                                0.187      0.103 &    0.265 r
+  core/be/be_mem/vaddr_pipe/chained_genblk1_1__ch_reg/data_r_reg_7_/CLK (DFFX1)    0.187      0.004 &    0.270 r
+  core/be/be_mem/vaddr_pipe/chained_genblk1_1__ch_reg/data_r_reg_7_/Q (DFFX1)      0.029      0.201 &    0.471 f
+  core/be/be_mem/vaddr_pipe/chained_genblk1_2__ch_reg/data_r_reg_7_/D (DFFX1)      0.029      0.000 &    0.471 f
+  data arrival time                                                                                      0.471
+
+  clock core_clk (rise edge)                                                       0.000      0.000      0.000
+  clock source latency                                                                        0.000      0.000
+  clk_i (in)                                                                       0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                                     0.059      0.049 &    0.049 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                                     0.066      0.060 &    0.109 r
+  core/CTSINVX8_G1B2I14/ZN (INVX2)                                                 0.234      0.140 &    0.249 f
+  core/be/CTSINVX16_G1B1I6/ZN (INVX8)                                              0.243      0.139 &    0.388 r
+  core/be/be_mem/vaddr_pipe/chained_genblk1_2__ch_reg/data_r_reg_7_/CLK (DFFX1)    0.243      0.004 &    0.391 r
+  clock reconvergence pessimism                                                              -0.020      0.372
+  library hold time                                                                           0.023      0.394
+  data required time                                                                                     0.394
+  ---------------------------------------------------------------------------------------------------------------
+  data required time                                                                                     0.394
+  data arrival time                                                                                     -0.471
+  ---------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                            0.077
+
+
+  Startpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_48_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_131_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B3I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                               Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.053      0.048 &    0.090 r
+  core/CTSINVX16_G1B2I2/ZN (INVX4)                                    0.118      0.072 &    0.162 f
+  core/CTSINVX16_G1B1I75/ZN (INVX8)                                   0.187      0.103 &    0.265 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_48_/CLK (DFFX1)     0.187      0.002 &    0.268 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_48_/Q (DFFX1)       0.033      0.204 &    0.472 f
+  core/be/be_calculator/calc_stage_reg/data_r_reg_131_/D (DFFX1)      0.033      0.000 &    0.472 f
+  data arrival time                                                                         0.472
+
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.059      0.049 &    0.049 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.066      0.060 &    0.109 r
+  core/CTSINVX8_G1B2I14/ZN (INVX2)                                    0.234      0.140 &    0.249 f
+  core/be/CTSINVX16_G1B1I6/ZN (INVX8)                                 0.243      0.139 &    0.388 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_131_/CLK (DFFX1)    0.244      0.005 &    0.393 r
+  clock reconvergence pessimism                                                 -0.020      0.373
+  library hold time                                                              0.022      0.395
+  data required time                                                                        0.395
+  --------------------------------------------------------------------------------------------------
+  data required time                                                                        0.395
+  data arrival time                                                                        -0.472
+  --------------------------------------------------------------------------------------------------
+  slack (MET)                                                                               0.077
+
+
+  Startpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_49_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_132_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B3I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                               Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.053      0.048 &    0.090 r
+  core/CTSINVX16_G1B2I2/ZN (INVX4)                                    0.118      0.072 &    0.162 f
+  core/CTSINVX16_G1B1I75/ZN (INVX8)                                   0.187      0.103 &    0.265 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_49_/CLK (DFFX1)     0.187      0.003 &    0.268 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_49_/Q (DFFX1)       0.036      0.207 &    0.475 f
+  core/be/be_calculator/calc_stage_reg/data_r_reg_132_/D (DFFX1)      0.036     -0.000 &    0.475 f
+  data arrival time                                                                         0.475
+
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.059      0.049 &    0.049 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.066      0.060 &    0.109 r
+  core/CTSINVX8_G1B2I14/ZN (INVX2)                                    0.234      0.140 &    0.249 f
+  core/be/CTSINVX16_G1B1I6/ZN (INVX8)                                 0.243      0.139 &    0.388 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_132_/CLK (DFFX1)    0.244      0.006 &    0.394 r
+  clock reconvergence pessimism                                                 -0.020      0.374
+  library hold time                                                              0.021      0.395
+  data required time                                                                        0.395
+  --------------------------------------------------------------------------------------------------
+  data required time                                                                        0.395
+  data arrival time                                                                        -0.475
+  --------------------------------------------------------------------------------------------------
+  slack (MET)                                                                               0.079
+
+
+  Startpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_55_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_138_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B3I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                               Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.053      0.048 &    0.090 r
+  core/CTSINVX16_G1B2I2/ZN (INVX4)                                    0.118      0.072 &    0.162 f
+  core/CTSINVX16_G1B1I75/ZN (INVX8)                                   0.187      0.103 &    0.265 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_55_/CLK (DFFX1)     0.187      0.003 &    0.268 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_55_/Q (DFFX1)       0.037      0.208 &    0.476 f
+  core/be/be_calculator/calc_stage_reg/data_r_reg_138_/D (DFFX1)      0.037     -0.001 &    0.475 f
+  data arrival time                                                                         0.475
+
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.059      0.049 &    0.049 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.066      0.060 &    0.109 r
+  core/CTSINVX8_G1B2I14/ZN (INVX2)                                    0.234      0.140 &    0.249 f
+  core/be/CTSINVX16_G1B1I6/ZN (INVX8)                                 0.243      0.139 &    0.388 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_138_/CLK (DFFX1)    0.244      0.006 &    0.394 r
+  clock reconvergence pessimism                                                 -0.020      0.374
+  library hold time                                                              0.021      0.395
+  data required time                                                                        0.395
+  --------------------------------------------------------------------------------------------------
+  data required time                                                                        0.395
+  data arrival time                                                                        -0.475
+  --------------------------------------------------------------------------------------------------
+  slack (MET)                                                                               0.080
+
+
+  Startpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_56_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_139_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B3I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                               Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.053      0.048 &    0.090 r
+  core/CTSINVX16_G1B2I2/ZN (INVX4)                                    0.118      0.072 &    0.162 f
+  core/CTSINVX16_G1B1I75/ZN (INVX8)                                   0.187      0.103 &    0.265 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_56_/CLK (DFFX1)     0.187      0.002 &    0.268 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_56_/Q (DFFX1)       0.040      0.210 &    0.478 f
+  core/be/be_calculator/calc_stage_reg/data_r_reg_139_/D (DFFX1)      0.040     -0.000 &    0.478 f
+  data arrival time                                                                         0.478
+
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.059      0.049 &    0.049 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.066      0.060 &    0.109 r
+  core/CTSINVX8_G1B2I14/ZN (INVX2)                                    0.234      0.140 &    0.249 f
+  core/be/CTSINVX16_G1B1I6/ZN (INVX8)                                 0.243      0.139 &    0.388 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_139_/CLK (DFFX1)    0.243      0.007 &    0.394 r
+  clock reconvergence pessimism                                                 -0.020      0.375
+  library hold time                                                              0.020      0.395
+  data required time                                                                        0.395
+  --------------------------------------------------------------------------------------------------
+  data required time                                                                        0.395
+  data arrival time                                                                        -0.478
+  --------------------------------------------------------------------------------------------------
+  slack (MET)                                                                               0.083
+
+
+  Startpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_209_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_292_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B3I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                               Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.053      0.048 &    0.090 r
+  core/CTSINVX16_G1B2I2/ZN (INVX4)                                    0.118      0.072 &    0.162 f
+  core/be/CTSINVX16_G1B1I51/ZN (INVX8)                                0.194      0.108 &    0.270 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_209_/CLK (DFFX1)    0.194      0.003 &    0.273 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_209_/Q (DFFX1)      0.052      0.219 &    0.492 f
+  core/be/be_calculator/calc_stage_reg/data_r_reg_292_/D (DFFX1)      0.052      0.000 &    0.492 f
+  data arrival time                                                                         0.492
+
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.059      0.049 &    0.049 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.066      0.060 &    0.109 r
+  core/CTSINVX8_G1B2I14/ZN (INVX2)                                    0.234      0.140 &    0.249 f
+  core/be/CTSINVX16_G1B1I30_1/ZN (INVX8)                              0.257      0.151 &    0.400 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_292_/CLK (DFFX1)    0.257      0.006 &    0.407 r
+  clock reconvergence pessimism                                                 -0.020      0.387
+  library hold time                                                              0.019      0.406
+  data required time                                                                        0.406
+  --------------------------------------------------------------------------------------------------
+  data required time                                                                        0.406
+  data arrival time                                                                        -0.492
+  --------------------------------------------------------------------------------------------------
+  slack (MET)                                                                               0.087
+
+
+  Startpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_147_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_230_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B3I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                               Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.053      0.048 &    0.090 r
+  core/CTSINVX16_G1B2I2/ZN (INVX4)                                    0.118      0.072 &    0.162 f
+  core/CTSINVX16_G1B1I75/ZN (INVX8)                                   0.187      0.103 &    0.265 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_147_/CLK (DFFX1)    0.187      0.004 &    0.269 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_147_/Q (DFFX1)      0.062      0.225 &    0.494 f
+  core/be/be_calculator/calc_stage_reg/data_r_reg_230_/D (DFFX1)      0.062     -0.001 &    0.493 f
+  data arrival time                                                                         0.493
+
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.059      0.049 &    0.049 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.066      0.060 &    0.109 r
+  core/CTSINVX8_G1B2I14/ZN (INVX2)                                    0.234      0.140 &    0.249 f
+  core/be/CTSINVX16_G1B1I30_1/ZN (INVX8)                              0.257      0.151 &    0.400 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_230_/CLK (DFFX1)    0.257      0.006 &    0.406 r
+  clock reconvergence pessimism                                                 -0.020      0.387
+  library hold time                                                              0.017      0.403
+  data required time                                                                        0.403
+  --------------------------------------------------------------------------------------------------
+  data required time                                                                        0.403
+  data arrival time                                                                        -0.493
+  --------------------------------------------------------------------------------------------------
+  slack (MET)                                                                               0.090
+
+
+  Startpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_208_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_291_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B3I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                               Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.053      0.048 &    0.090 r
+  core/CTSINVX8_G1B2I14/ZN (INVX2)                                    0.188      0.111 &    0.201 f
+  core/be/CTSINVX16_G1B1I30_1/ZN (INVX8)                              0.213      0.123 &    0.324 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_208_/CLK (DFFX1)    0.213      0.006 &    0.329 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_208_/Q (DFFX1)      0.059      0.225 &    0.555 f
+  core/be/be_calculator/calc_stage_reg/data_r_reg_291_/D (DFFX1)      0.059     -0.000 &    0.554 f
+  data arrival time                                                                         0.554
+
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.059      0.049 &    0.049 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.066      0.060 &    0.109 r
+  CTS_CTS_core_clk_CTO_delay17/Z (NBUFFX2)                            0.065      0.086 &    0.195 r
+  CTSINVX16_G1B2I15/ZN (INVX8)                                        0.143      0.083 &    0.278 f
+  core/be/CTSINVX8_G1B1I83/ZN (INVX4)                                 0.330      0.175 &    0.453 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_291_/CLK (DFFX1)    0.331      0.010 &    0.463 r
+  clock reconvergence pessimism                                                 -0.020      0.443
+  library hold time                                                              0.019      0.463
+  data required time                                                                        0.463
+  --------------------------------------------------------------------------------------------------
+  data required time                                                                        0.463
+  data arrival time                                                                        -0.554
+  --------------------------------------------------------------------------------------------------
+  slack (MET)                                                                               0.092
+
+
+  Startpoint: core/be/be_mem/dcache/v_tv_r_reg
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_mem/dcache/stat_mem/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B4I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                   Trans       Incr       Path
+  ------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                              0.000      0.000      0.000
+  clock source latency                                                               0.000      0.000
+  clk_i (in)                                                              0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                            0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                            0.053      0.048 &    0.090 r
+  CTSINVX8_G1B2I1/ZN (INVX2)                                              0.123      0.078 &    0.168 f
+  CTSINVX16_G1B1I70/ZN (INVX8)                                            0.182      0.103 &    0.271 r
+  core/be/be_mem/dcache/v_tv_r_reg/CLK (DFFX1)                            0.183      0.004 &    0.274 r
+  core/be/be_mem/dcache/v_tv_r_reg/Q (DFFX1)                              0.058      0.200 &    0.475 r
+  core/be/be_mem/dcache/icc_place387/Z (NBUFFX8)                          0.052      0.085 &    0.560 r
+  core/be/be_mem/dcache/stat_mem/macro_mem/I1[0] (saed90_16x64_1P_bit)    0.052      0.004 &    0.564 r
+  data arrival time                                                                             0.564
+
+  clock core_clk (rise edge)                                              0.000      0.000      0.000
+  clock source latency                                                               0.000      0.000
+  clk_i (in)                                                              0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                            0.059      0.049 &    0.049 f
+  CTSINVX4_G1B3I4/ZN (INVX2)                                              0.274      0.110 &    0.158 r
+  CTSINVX8_G1B2I4/ZN (INVX8)                                              0.256      0.197 &    0.355 f
+  CTSINVX8_G1B1I25/ZN (INVX32)                                            0.102      0.068 &    0.424 r
+  core/be/be_mem/dcache/stat_mem/macro_mem/CE1 (saed90_16x64_1P_bit)      0.081      0.004 &    0.428 r
+  clock reconvergence pessimism                                                     -0.007      0.421
+  library hold time                                                                  0.050      0.471
+  data required time                                                                            0.471
+  ------------------------------------------------------------------------------------------------------
+  data required time                                                                            0.471
+  data arrival time                                                                            -0.564
+  ------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                   0.093
+
+
+  Startpoint: core/be/be_mem/dcache/v_tv_r_reg
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_mem/dcache/stat_mem/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B4I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                   Trans       Incr       Path
+  ------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                              0.000      0.000      0.000
+  clock source latency                                                               0.000      0.000
+  clk_i (in)                                                              0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                            0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                            0.053      0.048 &    0.090 r
+  CTSINVX8_G1B2I1/ZN (INVX2)                                              0.123      0.078 &    0.168 f
+  CTSINVX16_G1B1I70/ZN (INVX8)                                            0.182      0.103 &    0.271 r
+  core/be/be_mem/dcache/v_tv_r_reg/CLK (DFFX1)                            0.183      0.004 &    0.274 r
+  core/be/be_mem/dcache/v_tv_r_reg/Q (DFFX1)                              0.058      0.200 &    0.475 r
+  core/be/be_mem/dcache/icc_place387/Z (NBUFFX8)                          0.052      0.085 &    0.560 r
+  core/be/be_mem/dcache/stat_mem/macro_mem/I1[1] (saed90_16x64_1P_bit)    0.052      0.004 &    0.564 r
+  data arrival time                                                                             0.564
+
+  clock core_clk (rise edge)                                              0.000      0.000      0.000
+  clock source latency                                                               0.000      0.000
+  clk_i (in)                                                              0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                            0.059      0.049 &    0.049 f
+  CTSINVX4_G1B3I4/ZN (INVX2)                                              0.274      0.110 &    0.158 r
+  CTSINVX8_G1B2I4/ZN (INVX8)                                              0.256      0.197 &    0.355 f
+  CTSINVX8_G1B1I25/ZN (INVX32)                                            0.102      0.068 &    0.424 r
+  core/be/be_mem/dcache/stat_mem/macro_mem/CE1 (saed90_16x64_1P_bit)      0.081      0.004 &    0.428 r
+  clock reconvergence pessimism                                                     -0.007      0.421
+  library hold time                                                                  0.050      0.471
+  data required time                                                                            0.471
+  ------------------------------------------------------------------------------------------------------
+  data required time                                                                            0.471
+  data arrival time                                                                            -0.564
+  ------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                   0.093
+
+
+  Startpoint: core/be/be_mem/dcache/v_tv_r_reg
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_mem/dcache/stat_mem/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B4I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                   Trans       Incr       Path
+  ------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                              0.000      0.000      0.000
+  clock source latency                                                               0.000      0.000
+  clk_i (in)                                                              0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                            0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                            0.053      0.048 &    0.090 r
+  CTSINVX8_G1B2I1/ZN (INVX2)                                              0.123      0.078 &    0.168 f
+  CTSINVX16_G1B1I70/ZN (INVX8)                                            0.182      0.103 &    0.271 r
+  core/be/be_mem/dcache/v_tv_r_reg/CLK (DFFX1)                            0.183      0.004 &    0.274 r
+  core/be/be_mem/dcache/v_tv_r_reg/Q (DFFX1)                              0.058      0.200 &    0.475 r
+  core/be/be_mem/dcache/icc_place387/Z (NBUFFX8)                          0.052      0.085 &    0.560 r
+  core/be/be_mem/dcache/stat_mem/macro_mem/I1[2] (saed90_16x64_1P_bit)    0.052      0.004 &    0.564 r
+  data arrival time                                                                             0.564
+
+  clock core_clk (rise edge)                                              0.000      0.000      0.000
+  clock source latency                                                               0.000      0.000
+  clk_i (in)                                                              0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                            0.059      0.049 &    0.049 f
+  CTSINVX4_G1B3I4/ZN (INVX2)                                              0.274      0.110 &    0.158 r
+  CTSINVX8_G1B2I4/ZN (INVX8)                                              0.256      0.197 &    0.355 f
+  CTSINVX8_G1B1I25/ZN (INVX32)                                            0.102      0.068 &    0.424 r
+  core/be/be_mem/dcache/stat_mem/macro_mem/CE1 (saed90_16x64_1P_bit)      0.081      0.004 &    0.428 r
+  clock reconvergence pessimism                                                     -0.007      0.421
+  library hold time                                                                  0.050      0.471
+  data required time                                                                            0.471
+  ------------------------------------------------------------------------------------------------------
+  data required time                                                                            0.471
+  data arrival time                                                                            -0.564
+  ------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                   0.093
+
+
+  Startpoint: core/be/be_mem/dcache/v_tv_r_reg
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_mem/dcache/stat_mem/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B4I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                   Trans       Incr       Path
+  ------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                              0.000      0.000      0.000
+  clock source latency                                                               0.000      0.000
+  clk_i (in)                                                              0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                            0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                            0.053      0.048 &    0.090 r
+  CTSINVX8_G1B2I1/ZN (INVX2)                                              0.123      0.078 &    0.168 f
+  CTSINVX16_G1B1I70/ZN (INVX8)                                            0.182      0.103 &    0.271 r
+  core/be/be_mem/dcache/v_tv_r_reg/CLK (DFFX1)                            0.183      0.004 &    0.274 r
+  core/be/be_mem/dcache/v_tv_r_reg/Q (DFFX1)                              0.058      0.200 &    0.475 r
+  core/be/be_mem/dcache/icc_place387/Z (NBUFFX8)                          0.052      0.085 &    0.560 r
+  core/be/be_mem/dcache/stat_mem/macro_mem/I1[3] (saed90_16x64_1P_bit)    0.052      0.004 &    0.564 r
+  data arrival time                                                                             0.564
+
+  clock core_clk (rise edge)                                              0.000      0.000      0.000
+  clock source latency                                                               0.000      0.000
+  clk_i (in)                                                              0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                            0.059      0.049 &    0.049 f
+  CTSINVX4_G1B3I4/ZN (INVX2)                                              0.274      0.110 &    0.158 r
+  CTSINVX8_G1B2I4/ZN (INVX8)                                              0.256      0.197 &    0.355 f
+  CTSINVX8_G1B1I25/ZN (INVX32)                                            0.102      0.068 &    0.424 r
+  core/be/be_mem/dcache/stat_mem/macro_mem/CE1 (saed90_16x64_1P_bit)      0.081      0.004 &    0.428 r
+  clock reconvergence pessimism                                                     -0.007      0.421
+  library hold time                                                                  0.050      0.471
+  data required time                                                                            0.471
+  ------------------------------------------------------------------------------------------------------
+  data required time                                                                            0.471
+  data arrival time                                                                            -0.564
+  ------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                   0.093
+
+
+  Startpoint: core/be/be_mem/dcache/v_tv_r_reg
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_mem/dcache/stat_mem/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B4I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                   Trans       Incr       Path
+  ------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                              0.000      0.000      0.000
+  clock source latency                                                               0.000      0.000
+  clk_i (in)                                                              0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                            0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                            0.053      0.048 &    0.090 r
+  CTSINVX8_G1B2I1/ZN (INVX2)                                              0.123      0.078 &    0.168 f
+  CTSINVX16_G1B1I70/ZN (INVX8)                                            0.182      0.103 &    0.271 r
+  core/be/be_mem/dcache/v_tv_r_reg/CLK (DFFX1)                            0.183      0.004 &    0.274 r
+  core/be/be_mem/dcache/v_tv_r_reg/Q (DFFX1)                              0.058      0.200 &    0.475 r
+  core/be/be_mem/dcache/icc_place387/Z (NBUFFX8)                          0.052      0.085 &    0.560 r
+  core/be/be_mem/dcache/stat_mem/macro_mem/I1[6] (saed90_16x64_1P_bit)    0.052      0.004 &    0.564 r
+  data arrival time                                                                             0.564
+
+  clock core_clk (rise edge)                                              0.000      0.000      0.000
+  clock source latency                                                               0.000      0.000
+  clk_i (in)                                                              0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                            0.059      0.049 &    0.049 f
+  CTSINVX4_G1B3I4/ZN (INVX2)                                              0.274      0.110 &    0.158 r
+  CTSINVX8_G1B2I4/ZN (INVX8)                                              0.256      0.197 &    0.355 f
+  CTSINVX8_G1B1I25/ZN (INVX32)                                            0.102      0.068 &    0.424 r
+  core/be/be_mem/dcache/stat_mem/macro_mem/CE1 (saed90_16x64_1P_bit)      0.081      0.004 &    0.428 r
+  clock reconvergence pessimism                                                     -0.007      0.421
+  library hold time                                                                  0.050      0.471
+  data required time                                                                            0.471
+  ------------------------------------------------------------------------------------------------------
+  data required time                                                                            0.471
+  data arrival time                                                                            -0.564
+  ------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                   0.093
+
+
+  Startpoint: core/be/be_mem/dcache/v_tv_r_reg
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_mem/dcache/stat_mem/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B4I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                   Trans       Incr       Path
+  ------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                              0.000      0.000      0.000
+  clock source latency                                                               0.000      0.000
+  clk_i (in)                                                              0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                            0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                            0.053      0.048 &    0.090 r
+  CTSINVX8_G1B2I1/ZN (INVX2)                                              0.123      0.078 &    0.168 f
+  CTSINVX16_G1B1I70/ZN (INVX8)                                            0.182      0.103 &    0.271 r
+  core/be/be_mem/dcache/v_tv_r_reg/CLK (DFFX1)                            0.183      0.004 &    0.274 r
+  core/be/be_mem/dcache/v_tv_r_reg/Q (DFFX1)                              0.058      0.200 &    0.475 r
+  core/be/be_mem/dcache/icc_place387/Z (NBUFFX8)                          0.052      0.085 &    0.560 r
+  core/be/be_mem/dcache/stat_mem/macro_mem/I1[7] (saed90_16x64_1P_bit)    0.052      0.004 &    0.564 r
+  data arrival time                                                                             0.564
+
+  clock core_clk (rise edge)                                              0.000      0.000      0.000
+  clock source latency                                                               0.000      0.000
+  clk_i (in)                                                              0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                            0.059      0.049 &    0.049 f
+  CTSINVX4_G1B3I4/ZN (INVX2)                                              0.274      0.110 &    0.158 r
+  CTSINVX8_G1B2I4/ZN (INVX8)                                              0.256      0.197 &    0.355 f
+  CTSINVX8_G1B1I25/ZN (INVX32)                                            0.102      0.068 &    0.424 r
+  core/be/be_mem/dcache/stat_mem/macro_mem/CE1 (saed90_16x64_1P_bit)      0.081      0.004 &    0.428 r
+  clock reconvergence pessimism                                                     -0.007      0.421
+  library hold time                                                                  0.050      0.471
+  data required time                                                                            0.471
+  ------------------------------------------------------------------------------------------------------
+  data required time                                                                            0.471
+  data arrival time                                                                            -0.564
+  ------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                   0.093
+
+
+  Startpoint: core/be/be_mem/dcache/v_tv_r_reg
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_mem/dcache/stat_mem/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B4I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                   Trans       Incr       Path
+  ------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                              0.000      0.000      0.000
+  clock source latency                                                               0.000      0.000
+  clk_i (in)                                                              0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                            0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                            0.053      0.048 &    0.090 r
+  CTSINVX8_G1B2I1/ZN (INVX2)                                              0.123      0.078 &    0.168 f
+  CTSINVX16_G1B1I70/ZN (INVX8)                                            0.182      0.103 &    0.271 r
+  core/be/be_mem/dcache/v_tv_r_reg/CLK (DFFX1)                            0.183      0.004 &    0.274 r
+  core/be/be_mem/dcache/v_tv_r_reg/Q (DFFX1)                              0.058      0.200 &    0.475 r
+  core/be/be_mem/dcache/icc_place387/Z (NBUFFX8)                          0.052      0.085 &    0.560 r
+  core/be/be_mem/dcache/stat_mem/macro_mem/I1[4] (saed90_16x64_1P_bit)    0.052      0.004 &    0.564 r
+  data arrival time                                                                             0.564
+
+  clock core_clk (rise edge)                                              0.000      0.000      0.000
+  clock source latency                                                               0.000      0.000
+  clk_i (in)                                                              0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                            0.059      0.049 &    0.049 f
+  CTSINVX4_G1B3I4/ZN (INVX2)                                              0.274      0.110 &    0.158 r
+  CTSINVX8_G1B2I4/ZN (INVX8)                                              0.256      0.197 &    0.355 f
+  CTSINVX8_G1B1I25/ZN (INVX32)                                            0.102      0.068 &    0.424 r
+  core/be/be_mem/dcache/stat_mem/macro_mem/CE1 (saed90_16x64_1P_bit)      0.081      0.004 &    0.428 r
+  clock reconvergence pessimism                                                     -0.007      0.421
+  library hold time                                                                  0.050      0.471
+  data required time                                                                            0.471
+  ------------------------------------------------------------------------------------------------------
+  data required time                                                                            0.471
+  data arrival time                                                                            -0.564
+  ------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                   0.093
+
+
+  Startpoint: core/be/be_mem/dcache/v_tv_r_reg
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_mem/dcache/stat_mem/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B4I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                   Trans       Incr       Path
+  ------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                              0.000      0.000      0.000
+  clock source latency                                                               0.000      0.000
+  clk_i (in)                                                              0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                            0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                            0.053      0.048 &    0.090 r
+  CTSINVX8_G1B2I1/ZN (INVX2)                                              0.123      0.078 &    0.168 f
+  CTSINVX16_G1B1I70/ZN (INVX8)                                            0.182      0.103 &    0.271 r
+  core/be/be_mem/dcache/v_tv_r_reg/CLK (DFFX1)                            0.183      0.004 &    0.274 r
+  core/be/be_mem/dcache/v_tv_r_reg/Q (DFFX1)                              0.058      0.200 &    0.475 r
+  core/be/be_mem/dcache/icc_place387/Z (NBUFFX8)                          0.052      0.085 &    0.560 r
+  core/be/be_mem/dcache/stat_mem/macro_mem/I1[5] (saed90_16x64_1P_bit)    0.052      0.004 &    0.564 r
+  data arrival time                                                                             0.564
+
+  clock core_clk (rise edge)                                              0.000      0.000      0.000
+  clock source latency                                                               0.000      0.000
+  clk_i (in)                                                              0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                            0.059      0.049 &    0.049 f
+  CTSINVX4_G1B3I4/ZN (INVX2)                                              0.274      0.110 &    0.158 r
+  CTSINVX8_G1B2I4/ZN (INVX8)                                              0.256      0.197 &    0.355 f
+  CTSINVX8_G1B1I25/ZN (INVX32)                                            0.102      0.068 &    0.424 r
+  core/be/be_mem/dcache/stat_mem/macro_mem/CE1 (saed90_16x64_1P_bit)      0.081      0.004 &    0.428 r
+  clock reconvergence pessimism                                                     -0.007      0.421
+  library hold time                                                                  0.050      0.471
+  data required time                                                                            0.471
+  ------------------------------------------------------------------------------------------------------
+  data required time                                                                            0.471
+  data arrival time                                                                            -0.564
+  ------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                   0.093
+
+
+  Startpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_153_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_236_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B3I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                               Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.053      0.048 &    0.090 r
+  core/CTSINVX16_G1B2I2/ZN (INVX4)                                    0.118      0.072 &    0.162 f
+  core/CTSINVX16_G1B1I75/ZN (INVX8)                                   0.187      0.103 &    0.265 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_153_/CLK (DFFX1)    0.187      0.003 &    0.269 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_153_/Q (DFFX1)      0.065      0.227 &    0.495 f
+  core/be/be_calculator/calc_stage_reg/data_r_reg_236_/D (DFFX1)      0.065     -0.001 &    0.495 f
+  data arrival time                                                                         0.495
+
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.059      0.049 &    0.049 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.066      0.060 &    0.109 r
+  core/CTSINVX8_G1B2I14/ZN (INVX2)                                    0.234      0.140 &    0.249 f
+  core/be/CTSINVX16_G1B1I30_1/ZN (INVX8)                              0.257      0.151 &    0.400 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_236_/CLK (DFFX1)    0.257      0.004 &    0.405 r
+  clock reconvergence pessimism                                                 -0.020      0.385
+  library hold time                                                              0.016      0.401
+  data required time                                                                        0.401
+  --------------------------------------------------------------------------------------------------
+  data required time                                                                        0.401
+  data arrival time                                                                        -0.495
+  --------------------------------------------------------------------------------------------------
+  slack (MET)                                                                               0.093
+
+
+  Startpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_202_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_285_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B3I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                               Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.053      0.048 &    0.090 r
+  core/CTSINVX8_G1B2I14/ZN (INVX2)                                    0.188      0.111 &    0.201 f
+  core/be/CTSINVX16_G1B1I30_1/ZN (INVX8)                              0.213      0.123 &    0.324 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_202_/CLK (DFFX1)    0.213      0.006 &    0.330 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_202_/Q (DFFX1)      0.061      0.227 &    0.556 f
+  core/be/be_calculator/calc_stage_reg/data_r_reg_285_/D (DFFX1)      0.061     -0.001 &    0.556 f
+  data arrival time                                                                         0.556
+
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.059      0.049 &    0.049 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.066      0.060 &    0.109 r
+  CTS_CTS_core_clk_CTO_delay17/Z (NBUFFX2)                            0.065      0.086 &    0.195 r
+  CTSINVX16_G1B2I15/ZN (INVX8)                                        0.143      0.083 &    0.278 f
+  core/be/CTSINVX8_G1B1I83/ZN (INVX4)                                 0.330      0.175 &    0.453 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_285_/CLK (DFFX1)    0.331      0.010 &    0.463 r
+  clock reconvergence pessimism                                                 -0.020      0.443
+  library hold time                                                              0.019      0.462
+  data required time                                                                        0.462
+  --------------------------------------------------------------------------------------------------
+  data required time                                                                        0.462
+  data arrival time                                                                        -0.556
+  --------------------------------------------------------------------------------------------------
+  slack (MET)                                                                               0.094
+
+
+  Startpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_194_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_277_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B3I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                               Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.053      0.048 &    0.090 r
+  core/CTSINVX16_G1B2I12/ZN (INVX4)                                   0.177      0.106 &    0.196 f
+  core/be/CTSINVX16_G1B1I52/ZN (INVX8)                                0.171      0.102 &    0.298 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_194_/CLK (DFFX1)    0.171      0.003 &    0.302 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_194_/Q (DFFX1)      0.107      0.250 &    0.552 f
+  core/be/be_calculator/calc_stage_reg/data_r_reg_277_/D (DFFX1)      0.107     -0.001 &    0.551 f
+  data arrival time                                                                         0.551
+
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.059      0.049 &    0.049 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.066      0.060 &    0.109 r
+  CTS_CTS_core_clk_CTO_delay17/Z (NBUFFX2)                            0.065      0.086 &    0.195 r
+  CTSINVX16_G1B2I15/ZN (INVX8)                                        0.143      0.083 &    0.278 f
+  core/be/CTSINVX8_G1B1I83/ZN (INVX4)                                 0.330      0.175 &    0.453 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_277_/CLK (DFFX1)    0.331      0.009 &    0.463 r
+  clock reconvergence pessimism                                                 -0.020      0.443
+  library hold time                                                              0.010      0.453
+  data required time                                                                        0.453
+  --------------------------------------------------------------------------------------------------
+  data required time                                                                        0.453
+  data arrival time                                                                        -0.551
+  --------------------------------------------------------------------------------------------------
+  slack (MET)                                                                               0.098
+
+
+  Startpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_161_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: core/be/be_calculator/calc_stage_reg/data_r_reg_244_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B3I1/ZN
+  Path Group: core_clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 0.990
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                               Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.051      0.041 &    0.041 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.053      0.048 &    0.090 r
+  core/CTSINVX16_G1B2I2/ZN (INVX4)                                    0.118      0.072 &    0.162 f
+  core/be/CTSINVX16_G1B1I51/ZN (INVX8)                                0.194      0.108 &    0.270 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_161_/CLK (DFFX1)    0.194      0.003 &    0.274 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_161_/Q (DFFX1)      0.067      0.229 &    0.502 f
+  core/be/be_calculator/calc_stage_reg/data_r_reg_244_/D (DFFX1)      0.067      0.000 &    0.503 f
+  data arrival time                                                                         0.503
+
+  clock core_clk (rise edge)                                          0.000      0.000      0.000
+  clock source latency                                                           0.000      0.000
+  clk_i (in)                                                          0.000      0.000 &    0.000 r
+  CTSINVX16_G1B4I1/ZN (INVX16)                                        0.059      0.049 &    0.049 f
+  CTSINVX16_G1B3I1/ZN (INVX16)                                        0.066      0.060 &    0.109 r
+  core/CTSINVX8_G1B2I14/ZN (INVX2)                                    0.234      0.140 &    0.249 f
+  core/be/CTSINVX16_G1B1I30_1/ZN (INVX8)                              0.257      0.151 &    0.400 r
+  core/be/be_calculator/calc_stage_reg/data_r_reg_244_/CLK (DFFX1)    0.257      0.003 &    0.403 r
+  clock reconvergence pessimism                                                 -0.020      0.384
+  library hold time                                                              0.016      0.399
+  data required time                                                                        0.399
+  --------------------------------------------------------------------------------------------------
+  data required time                                                                        0.399
+  data arrival time                                                                        -0.503
+  --------------------------------------------------------------------------------------------------
+  slack (MET)                                                                               0.103
+
+Report timing status: Processing group core_clk (total endpoints 15212)...10% done.
+Report timing status: Processing group core_clk (total endpoints 15212)...20% done.
+Report timing status: Processing group core_clk (total endpoints 15212)...30% done.
+Report timing status: Processing group core_clk (total endpoints 15212)...40% done.
+Report timing status: Processing group core_clk (total endpoints 15212)...50% done.
+Report timing status: Processing group core_clk (total endpoints 15212)...60% done.
+Report timing status: Processing group core_clk (total endpoints 15212)...70% done.
+Report timing status: Processing group core_clk (total endpoints 15212)...80% done.
+Report timing status: Processing group core_clk (total endpoints 15212)...90% done.
+Warning: report_timing has satisfied the max_paths criteria. There are 15182 further endpoints which have paths of interest with slack less than 1000000.000 that were not considered when generating this report. (UITE-502)
+
+Report timing status: Completed...
+1

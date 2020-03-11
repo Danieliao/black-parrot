@@ -1,0 +1,22 @@
+Start Time: Tue Mar 10 21:52:25 2020
+*stamp start 1583902345
+Partition 0
+Partition 0
+Partition 2
+Partition 1
+Partition 2
+Partition 1
+Partition 1
+Partition 0
+*stamp xtract_start 1583902367
+*stamp xtract_finish 1583902367
+*stamp xtract_start 1583902369
+*stamp xtract_finish 1583902369
+*stamp xtract_start 1583902371
+*stamp xtract_finish 1583902371
+*stamp xtract_start 1583902374
+xTract 172
+*stamp xtract_finish 1583902546
+Netlist 15
+End Time: Tue Mar 10 21:56:34 2020
+*stamp end 1583902594

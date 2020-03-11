@@ -1,0 +1,176 @@
+Parsing option_file: xtract.tech (EX-304)
+Initializing extraction ... (EX-724)
+Reading binary grd file
+/home/projects/vlsi/common/ee477/kits/wi18/saed-90nm/stdview/stdcells.typ.nxtgrd ... (EX-135)
+Extracting partition 17
+Extracted 4209043 capacitors, 567600 resistors, 0 reluctors, 559931 nodes
+Reduced to 180207 nodes,  (67.8162%)
+Reduced to 164375 resistors,  (71.0403%)
+Reduced to 731550 capacitors: 586476 Cc and 145074 Cg (82.6196%)
+Extracting partition 18
+Extracted 3801416 capacitors, 446932 resistors, 0 reluctors, 445156 nodes
+Reduced to 148393 nodes,  (66.6649%)
+Reduced to 135094 resistors,  (69.773%)
+Reduced to 610988 capacitors: 491741 Cc and 119247 Cg (83.9274%)
+Extracting partition 13
+Extracted 4605635 capacitors, 490633 resistors, 0 reluctors, 485997 nodes
+Reduced to 158001 nodes,  (67.4893%)
+Reduced to 145180 resistors,  (70.4097%)
+Reduced to 689202 capacitors: 562025 Cc and 127177 Cg (85.0357%)
+Extracting partition 19
+Extracted 6131358 capacitors, 471149 resistors, 0 reluctors, 469395 nodes
+Reduced to 149225 nodes,  (68.2091%)
+Reduced to 137946 resistors,  (70.7214%)
+Reduced to 730272 capacitors: 608493 Cc and 121779 Cg (88.0896%)
+Extracting partition 23
+Extracted 4055836 capacitors, 449654 resistors, 0 reluctors, 445544 nodes
+Reduced to 146046 nodes,  (67.2207%)
+Reduced to 134097 resistors,  (70.1777%)
+Reduced to 620435 capacitors: 504848 Cc and 115587 Cg (84.7027%)
+Extracting partition 14
+Extracted 4410898 capacitors, 456998 resistors, 0 reluctors, 452696 nodes
+Reduced to 146552 nodes,  (67.6268%)
+Reduced to 134929 resistors,  (70.4749%)
+Reduced to 628592 capacitors: 511602 Cc and 116990 Cg (85.7491%)
+Extracting partition 22
+Extracted 2309189 capacitors, 330740 resistors, 0 reluctors, 327474 nodes
+Reduced to 107857 nodes,  (67.064%)
+Reduced to 97101 resistors,  (70.6413%)
+Reduced to 394703 capacitors: 311224 Cc and 83479 Cg (82.9073%)
+Extracting partition 16
+Extracted 2587946 capacitors, 386712 resistors, 0 reluctors, 376187 nodes
+Reduced to 118130 nodes,  (68.5981%)
+Reduced to 109410 resistors,  (71.7076%)
+Reduced to 466773 capacitors: 371827 Cc and 94946 Cg (81.9636%)
+Extracting partition 12
+Extracted 2240979 capacitors, 277574 resistors, 0 reluctors, 275755 nodes
+Reduced to 89346 nodes,  (67.5995%)
+Reduced to 80985 resistors,  (70.824%)
+Reduced to 344380 capacitors: 273686 Cc and 70694 Cg (84.6326%)
+Extracting partition 21
+Extracted 1567617 capacitors, 203237 resistors, 0 reluctors, 199058 nodes
+Reduced to 62386 nodes,  (68.6594%)
+Reduced to 57477 resistors,  (71.7192%)
+Reduced to 251377 capacitors: 201291 Cc and 50086 Cg (83.9644%)
+Extracting partition 24
+Extracted 2428532 capacitors, 218887 resistors, 0 reluctors, 219411 nodes
+Reduced to 73729 nodes,  (66.3969%)
+Reduced to 67274 resistors,  (69.2654%)
+Reduced to 319212 capacitors: 260497 Cc and 58715 Cg (86.8558%)
+Extracting partition 8
+Extracted 1233118 capacitors, 159314 resistors, 0 reluctors, 156616 nodes
+Reduced to 47039 nodes,  (69.9654%)
+Reduced to 42517 resistors,  (73.3125%)
+Reduced to 182093 capacitors: 144452 Cc and 37641 Cg (85.2331%)
+Extracting partition 11
+Extracted 634589 capacitors, 102267 resistors, 0 reluctors, 100360 nodes
+Reduced to 31167 nodes,  (68.9448%)
+Reduced to 28686 resistors,  (71.9499%)
+Reduced to 104574 capacitors: 79902 Cc and 24672 Cg (83.521%)
+Extracting partition 28
+Extracted 1044992 capacitors, 109832 resistors, 0 reluctors, 107892 nodes
+Reduced to 34561 nodes,  (67.967%)
+Reduced to 30219 resistors,  (72.4862%)
+Reduced to 121231 capacitors: 95659 Cc and 25572 Cg (88.3989%)
+Extracting partition 7
+Extracted 1161727 capacitors, 133596 resistors, 0 reluctors, 132052 nodes
+Reduced to 38038 nodes,  (71.1947%)
+Reduced to 34070 resistors,  (74.4977%)
+Reduced to 158381 capacitors: 126940 Cc and 31441 Cg (86.3668%)
+Extracting partition 27
+Extracted 956197 capacitors, 78443 resistors, 0 reluctors, 75691 nodes
+Reduced to 19655 nodes,  (74.0326%)
+Reduced to 17218 resistors,  (78.0503%)
+Reduced to 76244 capacitors: 60902 Cc and 15342 Cg (92.0263%)
+Extracting partition 9
+Extracted 286978 capacitors, 57292 resistors, 0 reluctors, 57731 nodes
+Reduced to 20460 nodes,  (64.5598%)
+Reduced to 17889 resistors,  (68.7757%)
+Reduced to 59927 capacitors: 44821 Cc and 15106 Cg (79.1179%)
+Extracting partition 29
+Extracted 95039 capacitors, 25726 resistors, 0 reluctors, 25866 nodes
+Reduced to 9454 nodes,  (63.4501%)
+Reduced to 7917 resistors,  (69.2257%)
+Reduced to 19673 capacitors: 13516 Cc and 6157 Cg (79.3001%)
+Extracting partition 3
+Extracted 119386 capacitors, 18858 resistors, 0 reluctors, 18283 nodes
+Reduced to 5015 nodes,  (72.5701%)
+Reduced to 4501 resistors,  (76.1321%)
+Reduced to 14766 capacitors: 10861 Cc and 3905 Cg (87.6317%)
+Extracting partition 33
+Extracted 157419 capacitors, 17701 resistors, 0 reluctors, 16931 nodes
+Reduced to 4710 nodes,  (72.1812%)
+Reduced to 4165 resistors,  (76.4703%)
+Reduced to 16350 capacitors: 12649 Cc and 3701 Cg (89.6137%)
+Extracting partition 34
+Extracted 16292 capacitors, 3578 resistors, 0 reluctors, 3909 nodes
+Reduced to 1290 nodes,  (66.9992%)
+Reduced to 923 resistors,  (74.2035%)
+Reduced to 3319 capacitors: 2451 Cc and 868 Cg (79.628%)
+Extracting partition 4
+Extracted 17918 capacitors, 3099 resistors, 0 reluctors, 3437 nodes
+Reduced to 1145 nodes,  (66.6861%)
+Reduced to 774 resistors,  (75.0242%)
+Reduced to 2698 capacitors: 1975 Cc and 723 Cg (84.9425%)
+Extracting partition 6
+Extracted 143157 capacitors, 16442 resistors, 0 reluctors, 16836 nodes
+Reduced to 5740 nodes,  (65.9064%)
+Reduced to 5307 resistors,  (67.7229%)
+Reduced to 15723 capacitors: 11068 Cc and 4655 Cg (89.017%)
+Extracting partition 26
+Extracted 142835 capacitors, 13017 resistors, 0 reluctors, 13395 nodes
+Reduced to 4462 nodes,  (66.6891%)
+Reduced to 4068 resistors,  (68.7486%)
+Reduced to 12789 capacitors: 9243 Cc and 3546 Cg (91.0463%)
+Extracting partition 2
+Extracted 105710 capacitors, 11511 resistors, 0 reluctors, 11782 nodes
+Reduced to 4120 nodes,  (65.0314%)
+Reduced to 3828 resistors,  (66.7449%)
+Reduced to 11354 capacitors: 7940 Cc and 3414 Cg (89.2593%)
+Extracting partition 32
+Extracted 121639 capacitors, 10104 resistors, 0 reluctors, 10764 nodes
+Reduced to 3915 nodes,  (63.6288%)
+Reduced to 3226 resistors,  (68.0721%)
+Reduced to 12594 capacitors: 9750 Cc and 2844 Cg (89.6464%)
+Extracting partition 1
+Extracted 52246 capacitors, 8006 resistors, 0 reluctors, 8282 nodes
+Reduced to 2848 nodes,  (65.6122%)
+Reduced to 2563 resistors,  (67.9865%)
+Reduced to 7036 capacitors: 4767 Cc and 2269 Cg (86.5329%)
+Extracting partition 31
+Extracted 44474 capacitors, 7083 resistors, 0 reluctors, 7314 nodes
+Reduced to 2635 nodes,  (63.9732%)
+Reduced to 2385 resistors,  (66.3278%)
+Reduced to 6661 capacitors: 4567 Cc and 2094 Cg (85.0227%)
+  
+xTract_partition17 Elp=00:00:19 Cpu=00:00:15 Usr=15.5   Sys=0.3    Mem=1145.8
+xTract_partition18 Elp=00:00:14 Cpu=00:00:13 Usr=13.6   Sys=0.3    Mem=1030.5
+xTract_partition13 Elp=00:00:20 Cpu=00:00:15 Usr=14.9   Sys=0.2    Mem=1049.5
+xTract_partition19 Elp=00:00:17 Cpu=00:00:16 Usr=16.7   Sys=0.3    Mem=1026.1
+xTract_partition23 Elp=00:00:17 Cpu=00:00:13 Usr=13.3   Sys=0.2    Mem=980.0 
+xTract_partition14 Elp=00:00:15 Cpu=00:00:14 Usr=13.8   Sys=0.2    Mem=978.4 
+xTract_partition22 Elp=00:00:09 Cpu=00:00:09 Usr=9.1    Sys=0.2    Mem=826.3 
+xTract_partition16 Elp=00:00:14 Cpu=00:00:09 Usr=9.8    Sys=0.2    Mem=832.3 
+xTract_partition12 Elp=00:00:09 Cpu=00:00:08 Usr=8.1    Sys=0.2    Mem=768.9 
+xTract_partition21 Elp=00:00:06 Cpu=00:00:05 Usr=5.6    Sys=0.1    Mem=626.4 
+xTract_partition24 Elp=00:00:07 Cpu=00:00:06 Usr=6.5    Sys=0.1    Mem=623.3 
+xTract_partition8  Elp=00:00:04 Cpu=00:00:04 Usr=4.5    Sys=0.1    Mem=568.8 
+xTract_partition11 Elp=00:00:03 Cpu=00:00:02 Usr=2.8    Sys=0.1    Mem=493.2 
+xTract_partition28 Elp=00:00:04 Cpu=00:00:03 Usr=3.4    Sys=0.1    Mem=501.1 
+xTract_partition7  Elp=00:00:04 Cpu=00:00:03 Usr=3.7    Sys=0.1    Mem=526.8 
+xTract_partition27 Elp=00:00:03 Cpu=00:00:02 Usr=2.5    Sys=0.1    Mem=447.2 
+xTract_partition9  Elp=00:00:03 Cpu=00:00:01 Usr=1.4    Sys=0.1    Mem=406.4 
+xTract_partition29 Elp=00:00:00 Cpu=00:00:00 Usr=0.6    Sys=0.1    Mem=363.5 
+xTract_partition3  Elp=00:00:01 Cpu=00:00:00 Usr=0.5    Sys=0.0    Mem=196.0 
+xTract_partition33 Elp=00:00:00 Cpu=00:00:00 Usr=0.5    Sys=0.0    Mem=194.9 
+xTract_partition34 Elp=00:00:01 Cpu=00:00:00 Usr=0.1    Sys=0.0    Mem=180.7 
+xTract_partition4  Elp=00:00:00 Cpu=00:00:00 Usr=0.1    Sys=0.0    Mem=180.3 
+xTract_partition6  Elp=00:00:00 Cpu=00:00:00 Usr=0.4    Sys=0.0    Mem=190.6 
+xTract_partition26 Elp=00:00:01 Cpu=00:00:00 Usr=0.4    Sys=0.0    Mem=187.9 
+xTract_partition2  Elp=00:00:00 Cpu=00:00:00 Usr=0.3    Sys=0.0    Mem=183.0 
+xTract_partition32 Elp=00:00:00 Cpu=00:00:00 Usr=0.3    Sys=0.0    Mem=183.0 
+xTract_partition1  Elp=00:00:01 Cpu=00:00:00 Usr=0.2    Sys=0.0    Mem=182.3 
+xTract_partition31 Elp=00:00:00 Cpu=00:00:00 Usr=0.2    Sys=0.0    Mem=181.1 
+xTractor           Elp=00:02:52 Cpu=00:00:00 Usr=0.2    Sys=0.1    Mem=161.5 
+  
+Done          Elp=00:02:52 Cpu=00:02:32 Usr=148.9  Sys=3.1    Mem=1145.8

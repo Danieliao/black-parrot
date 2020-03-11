@@ -1,0 +1,1449 @@
+Parsing option_file: xtract.tech (EX-304)
+Running Amd_64b    
+Initializing extraction ... (EX-724)
+Reading binary grd file
+/home/projects/vlsi/common/ee477/kits/wi18/saed-90nm/stdview/stdcells.typ.nxtgrd ... (EX-135)
+Extracting partition 17
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=301 ny=282 dx=14376 dy=14414 nentry=1524648  max/cell=91 av/cell=17.962
+ Ary stats nx=2 ny=1 dx=2163526 dy=4064601 nentry=0  max/cell=0 av/cell=0
+ Import design time is 0 seconds.
+----- Initializing models ----- 
+Initialize models time is 0 seconds.
+----- Extracting 8603 nets ----- 
+Completed   0%  Time=00:00:00  RemainingTime=00:00:14  Mem=913.035
+Completed   1%  Time=00:00:00  RemainingTime=00:00:09  Mem=913.848
+Completed   2%  Time=00:00:00  RemainingTime=00:00:07  Mem=914.348
+Completed   3%  Time=00:00:00  RemainingTime=00:00:07  Mem=915.598
+Completed   4%  Time=00:00:00  RemainingTime=00:00:07  Mem=917.348
+Completed   5%  Time=00:00:00  RemainingTime=00:00:08  Mem=919.16
+Completed  10%  Time=00:00:00  RemainingTime=00:00:08  Mem=929.777
+ Processing 1000 of 8603 nets (11.6239%) ...
+Completed  15%  Time=00:00:01  RemainingTime=00:00:08  Mem=942.402
+Completed  20%  Time=00:00:01  RemainingTime=00:00:07  Mem=949.965
+ Processing 2000 of 8603 nets (23.2477%) ...
+Completed  25%  Time=00:00:02  RemainingTime=00:00:06  Mem=956.84
+Completed  30%  Time=00:00:02  RemainingTime=00:00:06  Mem=965.965
+ Processing 3000 of 8603 nets (34.8716%) ...
+Completed  35%  Time=00:00:03  RemainingTime=00:00:05  Mem=976.777
+Completed  40%  Time=00:00:04  RemainingTime=00:00:05  Mem=1002.15
+Completed  45%  Time=00:00:04  RemainingTime=00:00:06  Mem=1016.59
+ Processing 4000 of 8603 nets (46.4954%) ...
+Completed  50%  Time=00:00:04  RemainingTime=00:00:05  Mem=1020.84
+Completed  55%  Time=00:00:05  RemainingTime=00:00:04  Mem=1026.78
+ Processing 5000 of 8603 nets (58.1193%) ...
+Completed  60%  Time=00:00:05  RemainingTime=00:00:04  Mem=1043.03
+Completed  65%  Time=00:00:06  RemainingTime=00:00:03  Mem=1052.03
+ Processing 6000 of 8603 nets (69.7431%) ...
+Completed  70%  Time=00:00:06  RemainingTime=00:00:03  Mem=1059.4
+Completed  75%  Time=00:00:07  RemainingTime=00:00:02  Mem=1074.46
+Completed  80%  Time=00:00:08  RemainingTime=00:00:02  Mem=1092.15
+ Processing 7000 of 8603 nets (81.367%) ...
+Completed  85%  Time=00:00:09  RemainingTime=00:00:02  Mem=1112.84
+Completed  90%  Time=00:00:10  RemainingTime=00:00:01  Mem=1120.28
+ Processing 8000 of 8603 nets (92.9908%) ...
+Completed  95%  Time=00:00:10  RemainingTime=00:00:01  Mem=1130.28
+Completed 100%  Time=00:00:11  RemainingTime=00:00:00  Mem=1137.84
+Extraction time is 11 seconds.
+----- Reducing 8603 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0 seconds.Mem=1137.84
+Reduction time is 2 seconds.
+Total capacitance environments constructed = 3899954
+Unique capacitance environments constructed = 3169372 (81.2669%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Extracted 4209043 capacitors, 567600 resistors, 0 reluctors, 559931 nodes
+Reduced to 180207 nodes,  (67.8162%)
+Reduced to 164375 resistors,  (71.0403%)
+Reduced to 731550 capacitors: 586476 Cc and 145074 Cg (82.6196%)
+Extracting partition 18
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=285 ny=266 dx=15229 dy=15263 nentry=1440154  max/cell=85 av/cell=18.9969
+ Ary stats nx=2 ny=1 dx=2170001 dy=4059701 nentry=0  max/cell=0 av/cell=0
+ Import design time is 1 seconds.
+----- Initializing models ----- 
+Initialize models time is 0 seconds.
+----- Extracting 7014 nets ----- 
+Completed   0%  Time=00:00:00  RemainingTime=00:00:22  Mem=838.938
+Completed   1%  Time=00:00:00  RemainingTime=00:00:13  Mem=840
+Completed   2%  Time=00:00:00  RemainingTime=00:00:10  Mem=840.938
+Completed   3%  Time=00:00:00  RemainingTime=00:00:08  Mem=841.875
+Completed   4%  Time=00:00:00  RemainingTime=00:00:08  Mem=843.125
+Completed   5%  Time=00:00:00  RemainingTime=00:00:07  Mem=844.125
+Completed  10%  Time=00:00:00  RemainingTime=00:00:06  Mem=851.375
+ Processing 1000 of 7014 nets (14.2572%) ...
+Completed  15%  Time=00:00:01  RemainingTime=00:00:06  Mem=860
+Completed  20%  Time=00:00:02  RemainingTime=00:00:07  Mem=880.25
+Completed  25%  Time=00:00:02  RemainingTime=00:00:07  Mem=887.312
+ Processing 2000 of 7014 nets (28.5144%) ...
+Completed  30%  Time=00:00:02  RemainingTime=00:00:07  Mem=894.812
+Completed  35%  Time=00:00:03  RemainingTime=00:00:05  Mem=901.188
+Completed  40%  Time=00:00:03  RemainingTime=00:00:05  Mem=913.633
+ Processing 3000 of 7014 nets (42.7716%) ...
+Completed  45%  Time=00:00:04  RemainingTime=00:00:05  Mem=923.383
+Completed  50%  Time=00:00:04  RemainingTime=00:00:04  Mem=928.07
+Completed  55%  Time=00:00:04  RemainingTime=00:00:04  Mem=932.508
+ Processing 4000 of 7014 nets (57.0288%) ...
+Completed  60%  Time=00:00:05  RemainingTime=00:00:03  Mem=937.195
+Completed  65%  Time=00:00:05  RemainingTime=00:00:03  Mem=942.383
+Completed  70%  Time=00:00:05  RemainingTime=00:00:03  Mem=950.195
+ Processing 5000 of 7014 nets (71.286%) ...
+Completed  75%  Time=00:00:06  RemainingTime=00:00:02  Mem=959.32
+Completed  80%  Time=00:00:06  RemainingTime=00:00:02  Mem=969.133
+ Processing 6000 of 7014 nets (85.5432%) ...
+Completed  85%  Time=00:00:08  RemainingTime=00:00:01  Mem=997.695
+Completed  90%  Time=00:00:08  RemainingTime=00:00:01  Mem=1009.13
+Completed  95%  Time=00:00:09  RemainingTime=00:00:00  Mem=1016.7
+ Processing 7000 of 7014 nets (99.8004%) ...
+Completed 100%  Time=00:00:09  RemainingTime=00:00:00  Mem=1022.51
+Extraction time is 10 seconds.
+----- Reducing 7014 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0 seconds.Mem=1022.51
+Reduction time is 1 seconds.
+Total capacitance environments constructed = 3468622
+Unique capacitance environments constructed = 2786779 (80.3425%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Extracted 3801416 capacitors, 446932 resistors, 0 reluctors, 445156 nodes
+Reduced to 148393 nodes,  (66.6649%)
+Reduced to 135094 resistors,  (69.773%)
+Reduced to 610988 capacitors: 491741 Cc and 119247 Cg (83.9274%)
+Extracting partition 13
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=276 ny=264 dx=15355 dy=15386 nentry=1429558  max/cell=84 av/cell=19.6195
+ Ary stats nx=2 ny=1 dx=2118951 dy=4061901 nentry=0  max/cell=0 av/cell=0
+ Import design time is 1 seconds.
+----- Initializing models ----- 
+Initialize models time is 0 seconds.
+----- Extracting 7219 nets ----- 
+Completed   0%  Time=00:00:00  RemainingTime=00:00:24  Mem=840.16
+Completed   1%  Time=00:00:00  RemainingTime=00:00:16  Mem=841.652
+Completed   2%  Time=00:00:00  RemainingTime=00:00:13  Mem=843.34
+Completed   3%  Time=00:00:00  RemainingTime=00:00:12  Mem=844.777
+Completed   4%  Time=00:00:00  RemainingTime=00:00:10  Mem=845.59
+Completed   5%  Time=00:00:00  RemainingTime=00:00:09  Mem=846.152
+Completed  10%  Time=00:00:01  RemainingTime=00:00:08  Mem=855.84
+ Processing 1000 of 7219 nets (13.8523%) ...
+Completed  15%  Time=00:00:01  RemainingTime=00:00:08  Mem=864.652
+Completed  20%  Time=00:00:01  RemainingTime=00:00:08  Mem=873.465
+Completed  25%  Time=00:00:02  RemainingTime=00:00:08  Mem=887.59
+ Processing 2000 of 7219 nets (27.7047%) ...
+Completed  30%  Time=00:00:03  RemainingTime=00:00:06  Mem=898.027
+Completed  35%  Time=00:00:03  RemainingTime=00:00:06  Mem=903.09
+Completed  40%  Time=00:00:03  RemainingTime=00:00:06  Mem=913.465
+ Processing 3000 of 7219 nets (41.557%) ...
+Completed  45%  Time=00:00:04  RemainingTime=00:00:05  Mem=919.027
+Completed  50%  Time=00:00:04  RemainingTime=00:00:05  Mem=935.152
+ Processing 4000 of 7219 nets (55.4093%) ...
+Completed  55%  Time=00:00:05  RemainingTime=00:00:04  Mem=944.215
+Completed  60%  Time=00:00:05  RemainingTime=00:00:04  Mem=952.527
+Completed  65%  Time=00:00:06  RemainingTime=00:00:03  Mem=959.027
+ Processing 5000 of 7219 nets (69.2617%) ...
+Completed  70%  Time=00:00:06  RemainingTime=00:00:03  Mem=964.777
+Completed  75%  Time=00:00:07  RemainingTime=00:00:02  Mem=975.902
+Completed  80%  Time=00:00:08  RemainingTime=00:00:02  Mem=995.465
+ Processing 6000 of 7219 nets (83.114%) ...
+Completed  85%  Time=00:00:09  RemainingTime=00:00:01  Mem=1014.84
+Completed  90%  Time=00:00:09  RemainingTime=00:00:01  Mem=1023.59
+Completed  95%  Time=00:00:10  RemainingTime=00:00:00  Mem=1034.15
+ Processing 7000 of 7219 nets (96.9663%) ...
+Completed 100%  Time=00:00:10  RemainingTime=00:00:00  Mem=1041.4
+Extraction time is 11 seconds.
+----- Reducing 7219 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0 seconds.Mem=1041.4
+Reduction time is 1 seconds.
+Total capacitance environments constructed = 4032190
+Unique capacitance environments constructed = 3274700 (81.2139%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Extracted 4605635 capacitors, 490633 resistors, 0 reluctors, 485997 nodes
+Reduced to 158001 nodes,  (67.4893%)
+Reduced to 145180 resistors,  (70.4097%)
+Reduced to 689202 capacitors: 562025 Cc and 127177 Cg (85.0357%)
+Extracting partition 19
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=302 ny=224 dx=14382 dy=14408 nentry=1537423  max/cell=76 av/cell=22.7268
+ Ary stats nx=2 ny=1 dx=2171601 dy=3227201 nentry=0  max/cell=0 av/cell=0
+ Import design time is 1 seconds.
+----- Initializing models ----- 
+Initialize models time is 0 seconds.
+----- Extracting 6981 nets ----- 
+Completed   0%  Time=00:00:00  RemainingTime=00:00:10  Mem=807.57
+Completed   1%  Time=00:00:00  RemainingTime=00:00:08  Mem=808.82
+Completed   2%  Time=00:00:00  RemainingTime=00:00:08  Mem=810.383
+Completed   3%  Time=00:00:00  RemainingTime=00:00:08  Mem=811.883
+Completed   4%  Time=00:00:00  RemainingTime=00:00:08  Mem=813.195
+Completed   5%  Time=00:00:00  RemainingTime=00:00:07  Mem=814.133
+Completed  10%  Time=00:00:00  RemainingTime=00:00:08  Mem=821.82
+ Processing 1000 of 6981 nets (14.3246%) ...
+Completed  15%  Time=00:00:01  RemainingTime=00:00:08  Mem=832.07
+Completed  20%  Time=00:00:01  RemainingTime=00:00:07  Mem=839.32
+Completed  25%  Time=00:00:02  RemainingTime=00:00:06  Mem=850.133
+ Processing 2000 of 6981 nets (28.6492%) ...
+Completed  30%  Time=00:00:02  RemainingTime=00:00:06  Mem=859.07
+Completed  35%  Time=00:00:03  RemainingTime=00:00:05  Mem=865.945
+Completed  40%  Time=00:00:03  RemainingTime=00:00:05  Mem=872.883
+ Processing 3000 of 6981 nets (42.9738%) ...
+Completed  45%  Time=00:00:04  RemainingTime=00:00:05  Mem=889.508
+Completed  50%  Time=00:00:04  RemainingTime=00:00:05  Mem=899.008
+Completed  55%  Time=00:00:05  RemainingTime=00:00:04  Mem=908.57
+ Processing 4000 of 6981 nets (57.2984%) ...
+Completed  60%  Time=00:00:05  RemainingTime=00:00:04  Mem=916.633
+Completed  65%  Time=00:00:06  RemainingTime=00:00:03  Mem=921.883
+Completed  70%  Time=00:00:06  RemainingTime=00:00:03  Mem=929.008
+ Processing 5000 of 6981 nets (71.623%) ...
+Completed  75%  Time=00:00:07  RemainingTime=00:00:02  Mem=939.945
+Completed  80%  Time=00:00:08  RemainingTime=00:00:02  Mem=965.445
+Completed  85%  Time=00:00:08  RemainingTime=00:00:02  Mem=973.258
+ Processing 6000 of 6981 nets (85.9476%) ...
+Completed  90%  Time=00:00:10  RemainingTime=00:00:01  Mem=991.133
+Completed  95%  Time=00:00:11  RemainingTime=00:00:00  Mem=1002.7
+Completed 100%  Time=00:00:12  RemainingTime=00:00:00  Mem=1018.13
+Extraction time is 12 seconds.
+----- Reducing 6981 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0 seconds.Mem=1018.13
+Reduction time is 2 seconds.
+Total capacitance environments constructed = 4803278
+Unique capacitance environments constructed = 3944576 (82.1226%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Extracted 6131358 capacitors, 471149 resistors, 0 reluctors, 469395 nodes
+Reduced to 149225 nodes,  (68.2091%)
+Reduced to 137946 resistors,  (70.7214%)
+Reduced to 730272 capacitors: 608493 Cc and 121779 Cg (88.0896%)
+Extracting partition 23
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=265 ny=248 dx=16330 dy=16382 nentry=1219460  max/cell=86 av/cell=18.5554
+ Ary stats nx=2 ny=1 dx=2163601 dy=4062501 nentry=0  max/cell=0 av/cell=0
+ Import design time is 1 seconds.
+----- Initializing models ----- 
+Initialize models time is 0 seconds.
+----- Extracting 7197 nets ----- 
+Completed   0%  Time=00:00:00  RemainingTime=00:00:41  Mem=788.711
+Completed   1%  Time=00:00:00  RemainingTime=00:00:33  Mem=795.961
+Completed   2%  Time=00:00:00  RemainingTime=00:00:24  Mem=797.398
+Completed   3%  Time=00:00:00  RemainingTime=00:00:19  Mem=798.711
+Completed   4%  Time=00:00:00  RemainingTime=00:00:16  Mem=799.711
+Completed   5%  Time=00:00:00  RemainingTime=00:00:15  Mem=802.148
+Completed  10%  Time=00:00:01  RemainingTime=00:00:11  Mem=810.711
+ Processing 1000 of 7197 nets (13.8947%) ...
+Completed  15%  Time=00:00:01  RemainingTime=00:00:11  Mem=822.148
+Completed  20%  Time=00:00:02  RemainingTime=00:00:09  Mem=830.211
+Completed  25%  Time=00:00:02  RemainingTime=00:00:08  Mem=838.086
+ Processing 2000 of 7197 nets (27.7894%) ...
+Completed  30%  Time=00:00:03  RemainingTime=00:00:08  Mem=853.648
+Completed  35%  Time=00:00:03  RemainingTime=00:00:07  Mem=864.719
+Completed  40%  Time=00:00:04  RemainingTime=00:00:06  Mem=868.406
+ Processing 3000 of 7197 nets (41.684%) ...
+Completed  45%  Time=00:00:04  RemainingTime=00:00:05  Mem=874.531
+Completed  50%  Time=00:00:05  RemainingTime=00:00:05  Mem=888.469
+ Processing 4000 of 7197 nets (55.5787%) ...
+Completed  55%  Time=00:00:05  RemainingTime=00:00:04  Mem=896.156
+Completed  60%  Time=00:00:06  RemainingTime=00:00:04  Mem=906.719
+Completed  65%  Time=00:00:06  RemainingTime=00:00:04  Mem=915.719
+ Processing 5000 of 7197 nets (69.4734%) ...
+Completed  70%  Time=00:00:07  RemainingTime=00:00:03  Mem=926.156
+Completed  75%  Time=00:00:07  RemainingTime=00:00:03  Mem=933.594
+Completed  80%  Time=00:00:08  RemainingTime=00:00:02  Mem=943.719
+ Processing 6000 of 7197 nets (83.3681%) ...
+Completed  85%  Time=00:00:08  RemainingTime=00:00:02  Mem=953.594
+Completed  90%  Time=00:00:09  RemainingTime=00:00:01  Mem=961.781
+Completed  95%  Time=00:00:09  RemainingTime=00:00:00  Mem=967.469
+ Processing 7000 of 7197 nets (97.2627%) ...
+Completed 100%  Time=00:00:09  RemainingTime=00:00:00  Mem=971.969
+Extraction time is 10 seconds.
+----- Reducing 7197 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0 seconds.Mem=971.969
+Reduction time is 1 seconds.
+Total capacitance environments constructed = 3593345
+Unique capacitance environments constructed = 2932148 (81.5994%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Extracted 4055836 capacitors, 449654 resistors, 0 reluctors, 445544 nodes
+Reduced to 146046 nodes,  (67.2207%)
+Reduced to 134097 resistors,  (70.1777%)
+Reduced to 620435 capacitors: 504848 Cc and 115587 Cg (84.7027%)
+Extracting partition 14
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=294 ny=218 dx=14757 dy=14802 nentry=1253488  max/cell=91 av/cell=19.5576
+ Ary stats nx=2 ny=1 dx=2169201 dy=3226751 nentry=0  max/cell=0 av/cell=0
+ Import design time is 1 seconds.
+----- Initializing models ----- 
+Initialize models time is 0 seconds.
+----- Extracting 7074 nets ----- 
+Completed   0%  Time=00:00:00  RemainingTime=00:00:10  Mem=776.875
+Completed   1%  Time=00:00:00  RemainingTime=00:00:07  Mem=777.75
+Completed   2%  Time=00:00:00  RemainingTime=00:00:09  Mem=779.812
+Completed   3%  Time=00:00:00  RemainingTime=00:00:08  Mem=780.812
+Completed   4%  Time=00:00:00  RemainingTime=00:00:07  Mem=781.875
+Completed   5%  Time=00:00:00  RemainingTime=00:00:07  Mem=783.125
+Completed  10%  Time=00:00:01  RemainingTime=00:00:09  Mem=800.438
+ Processing 1000 of 7074 nets (14.1363%) ...
+Completed  15%  Time=00:00:01  RemainingTime=00:00:08  Mem=809.312
+Completed  20%  Time=00:00:01  RemainingTime=00:00:08  Mem=818.188
+Completed  25%  Time=00:00:02  RemainingTime=00:00:07  Mem=827.438
+ Processing 2000 of 7074 nets (28.2725%) ...
+Completed  30%  Time=00:00:02  RemainingTime=00:00:07  Mem=840.945
+Completed  35%  Time=00:00:03  RemainingTime=00:00:05  Mem=844.133
+Completed  40%  Time=00:00:03  RemainingTime=00:00:04  Mem=848.383
+ Processing 3000 of 7074 nets (42.4088%) ...
+Completed  45%  Time=00:00:03  RemainingTime=00:00:05  Mem=863.945
+Completed  50%  Time=00:00:04  RemainingTime=00:00:04  Mem=874.195
+Completed  55%  Time=00:00:04  RemainingTime=00:00:04  Mem=879.195
+ Processing 4000 of 7074 nets (56.5451%) ...
+Completed  60%  Time=00:00:05  RemainingTime=00:00:03  Mem=891.695
+Completed  65%  Time=00:00:05  RemainingTime=00:00:03  Mem=904.82
+ Processing 5000 of 7074 nets (70.6814%) ...
+Completed  70%  Time=00:00:06  RemainingTime=00:00:02  Mem=910.195
+Completed  75%  Time=00:00:06  RemainingTime=00:00:02  Mem=915.633
+Completed  80%  Time=00:00:06  RemainingTime=00:00:02  Mem=924.195
+ Processing 6000 of 7074 nets (84.8176%) ...
+Completed  85%  Time=00:00:07  RemainingTime=00:00:01  Mem=931.758
+Completed  90%  Time=00:00:08  RemainingTime=00:00:01  Mem=953.945
+Completed  95%  Time=00:00:09  RemainingTime=00:00:01  Mem=966.945
+ Processing 7000 of 7074 nets (98.9539%) ...
+Completed 100%  Time=00:00:10  RemainingTime=00:00:00  Mem=970.383
+Extraction time is 10 seconds.
+----- Reducing 7074 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0 seconds.Mem=970.383
+Reduction time is 2 seconds.
+Total capacitance environments constructed = 3724401
+Unique capacitance environments constructed = 3053983 (81.9993%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Extracted 4410898 capacitors, 456998 resistors, 0 reluctors, 452696 nodes
+Reduced to 146552 nodes,  (67.6268%)
+Reduced to 134929 resistors,  (70.4749%)
+Reduced to 628592 capacitors: 511602 Cc and 116990 Cg (85.7491%)
+Extracting partition 22
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=237 ny=224 dx=23065 dy=23161 nentry=864576  max/cell=137 av/cell=16.2857
+ Ary stats nx=2 ny=1 dx=2733126 dy=5188001 nentry=0  max/cell=0 av/cell=0
+ Import design time is 0 seconds.
+----- Initializing models ----- 
+Initialize models time is 0 seconds.
+----- Extracting 5979 nets ----- 
+Completed   0%  Time=00:00:00  RemainingTime=00:00:06  Mem=692.773
+Completed   1%  Time=00:00:00  RemainingTime=00:00:16  Mem=700.586
+Completed   2%  Time=00:00:00  RemainingTime=00:00:11  Mem=701.148
+Completed   3%  Time=00:00:00  RemainingTime=00:00:09  Mem=701.773
+Completed   4%  Time=00:00:00  RemainingTime=00:00:08  Mem=702.461
+Completed   5%  Time=00:00:00  RemainingTime=00:00:07  Mem=703.273
+Completed  10%  Time=00:00:00  RemainingTime=00:00:05  Mem=707.211
+Completed  15%  Time=00:00:00  RemainingTime=00:00:05  Mem=711.148
+ Processing 1000 of 5979 nets (16.7252%) ...
+Completed  20%  Time=00:00:01  RemainingTime=00:00:05  Mem=723.398
+Completed  25%  Time=00:00:01  RemainingTime=00:00:04  Mem=726.773
+Completed  30%  Time=00:00:01  RemainingTime=00:00:05  Mem=734.891
+ Processing 2000 of 5979 nets (33.4504%) ...
+Completed  35%  Time=00:00:02  RemainingTime=00:00:04  Mem=740.953
+Completed  40%  Time=00:00:02  RemainingTime=00:00:03  Mem=745.203
+Completed  45%  Time=00:00:02  RemainingTime=00:00:04  Mem=754.203
+ Processing 3000 of 5979 nets (50.1756%) ...
+Completed  50%  Time=00:00:03  RemainingTime=00:00:03  Mem=759.078
+Completed  55%  Time=00:00:03  RemainingTime=00:00:03  Mem=763.078
+Completed  60%  Time=00:00:03  RemainingTime=00:00:02  Mem=768.016
+Completed  65%  Time=00:00:03  RemainingTime=00:00:03  Mem=776.453
+ Processing 4000 of 5979 nets (66.9008%) ...
+Completed  70%  Time=00:00:04  RemainingTime=00:00:02  Mem=781.953
+Completed  75%  Time=00:00:04  RemainingTime=00:00:02  Mem=788.328
+Completed  80%  Time=00:00:05  RemainingTime=00:00:01  Mem=798.766
+ Processing 5000 of 5979 nets (83.626%) ...
+Completed  85%  Time=00:00:05  RemainingTime=00:00:01  Mem=804.203
+Completed  90%  Time=00:00:06  RemainingTime=00:00:00  Mem=814.141
+Completed  95%  Time=00:00:06  RemainingTime=00:00:00  Mem=817.578
+Completed 100%  Time=00:00:06  RemainingTime=00:00:00  Mem=822.391
+Extraction time is 7 seconds.
+----- Reducing 5979 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0 seconds.Mem=822.391
+Reduction time is 0 seconds.
+Total capacitance environments constructed = 2225121
+Unique capacitance environments constructed = 1810144 (81.3504%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Extracted 2309189 capacitors, 330740 resistors, 0 reluctors, 327474 nodes
+Reduced to 107857 nodes,  (67.064%)
+Reduced to 97101 resistors,  (70.6413%)
+Reduced to 394703 capacitors: 311224 Cc and 83479 Cg (82.9073%)
+Extracting partition 16
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=252 ny=197 dx=16834 dy=16899 nentry=808900  max/cell=73 av/cell=16.294
+ Ary stats nx=2 ny=1 dx=2121001 dy=3329101 nentry=0  max/cell=0 av/cell=0
+ Import design time is 1 seconds.
+----- Initializing models ----- 
+Initialize models time is 0 seconds.
+----- Extracting 6489 nets ----- 
+Completed   0%  Time=00:00:00  RemainingTime=00:00:07  Mem=677.086
+Completed   1%  Time=00:00:00  RemainingTime=00:00:07  Mem=678.648
+Completed   2%  Time=00:00:00  RemainingTime=00:00:08  Mem=680.648
+Completed   3%  Time=00:00:00  RemainingTime=00:00:07  Mem=681.648
+Completed   4%  Time=00:00:00  RemainingTime=00:00:07  Mem=682.523
+Completed   5%  Time=00:00:00  RemainingTime=00:00:06  Mem=683.773
+Completed  10%  Time=00:00:00  RemainingTime=00:00:05  Mem=689.836
+ Processing 1000 of 6489 nets (15.4107%) ...
+Completed  15%  Time=00:00:00  RemainingTime=00:00:05  Mem=694.461
+Completed  20%  Time=00:00:00  RemainingTime=00:00:04  Mem=698.398
+Completed  25%  Time=00:00:01  RemainingTime=00:00:03  Mem=702.273
+ Processing 2000 of 6489 nets (30.8214%) ...
+Completed  30%  Time=00:00:01  RemainingTime=00:00:03  Mem=706.211
+Completed  35%  Time=00:00:01  RemainingTime=00:00:03  Mem=713.461
+Completed  40%  Time=00:00:01  RemainingTime=00:00:03  Mem=720.648
+Completed  45%  Time=00:00:02  RemainingTime=00:00:02  Mem=727.586
+ Processing 3000 of 6489 nets (46.2321%) ...
+Completed  50%  Time=00:00:02  RemainingTime=00:00:02  Mem=734.336
+Completed  55%  Time=00:00:02  RemainingTime=00:00:03  Mem=742.773
+Completed  60%  Time=00:00:03  RemainingTime=00:00:02  Mem=753.836
+ Processing 4000 of 6489 nets (61.6428%) ...
+Completed  65%  Time=00:00:03  RemainingTime=00:00:02  Mem=762.273
+Completed  70%  Time=00:00:04  RemainingTime=00:00:02  Mem=782.023
+Completed  75%  Time=00:00:05  RemainingTime=00:00:01  Mem=790.086
+ Processing 5000 of 6489 nets (77.0535%) ...
+Completed  80%  Time=00:00:05  RemainingTime=00:00:01  Mem=798.148
+Completed  85%  Time=00:00:05  RemainingTime=00:00:01  Mem=805.336
+Completed  90%  Time=00:00:06  RemainingTime=00:00:00  Mem=810.586
+ Processing 6000 of 6489 nets (92.4642%) ...
+Completed  95%  Time=00:00:06  RemainingTime=00:00:00  Mem=820.523
+Completed 100%  Time=00:00:07  RemainingTime=00:00:00  Mem=828.336
+Extraction time is 7 seconds.
+----- Reducing 6489 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0 seconds.Mem=828.336
+Reduction time is 1 seconds.
+Total capacitance environments constructed = 2429245
+Unique capacitance environments constructed = 2006933 (82.6155%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Extracted 2587946 capacitors, 386712 resistors, 0 reluctors, 376187 nodes
+Reduced to 118130 nodes,  (68.5981%)
+Reduced to 109410 resistors,  (71.7076%)
+Reduced to 466773 capacitors: 371827 Cc and 94946 Cg (81.9636%)
+Extracting partition 12
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=231 ny=207 dx=24985 dy=25053 nentry=772442  max/cell=118 av/cell=16.1541
+ Ary stats nx=2 ny=1 dx=2885676 dy=5185801 nentry=0  max/cell=0 av/cell=0
+ Import design time is 1 seconds.
+----- Initializing models ----- 
+Initialize models time is 0 seconds.
+----- Extracting 4701 nets ----- 
+Completed   0%  Time=00:00:00  RemainingTime=00:00:09  Mem=653.824
+Completed   1%  Time=00:00:00  RemainingTime=00:00:11  Mem=657.387
+Completed   2%  Time=00:00:00  RemainingTime=00:00:10  Mem=658.887
+Completed   3%  Time=00:00:00  RemainingTime=00:00:08  Mem=659.574
+Completed   4%  Time=00:00:00  RemainingTime=00:00:10  Mem=665.449
+Completed   5%  Time=00:00:00  RemainingTime=00:00:09  Mem=666.637
+Completed  10%  Time=00:00:00  RemainingTime=00:00:07  Mem=671.941
+Completed  15%  Time=00:00:01  RemainingTime=00:00:05  Mem=675.566
+Completed  20%  Time=00:00:01  RemainingTime=00:00:04  Mem=678.504
+ Processing 1000 of 4701 nets (21.2721%) ...
+Completed  25%  Time=00:00:01  RemainingTime=00:00:04  Mem=682.691
+Completed  30%  Time=00:00:01  RemainingTime=00:00:04  Mem=687.379
+Completed  35%  Time=00:00:01  RemainingTime=00:00:04  Mem=690.879
+Completed  40%  Time=00:00:01  RemainingTime=00:00:03  Mem=693.879
+ Processing 2000 of 4701 nets (42.5441%) ...
+Completed  45%  Time=00:00:02  RemainingTime=00:00:02  Mem=698.379
+Completed  50%  Time=00:00:02  RemainingTime=00:00:02  Mem=702.004
+Completed  55%  Time=00:00:02  RemainingTime=00:00:03  Mem=710.566
+Completed  60%  Time=00:00:03  RemainingTime=00:00:02  Mem=716.004
+ Processing 3000 of 4701 nets (63.8162%) ...
+Completed  65%  Time=00:00:03  RemainingTime=00:00:02  Mem=721.004
+Completed  70%  Time=00:00:03  RemainingTime=00:00:02  Mem=725.566
+Completed  75%  Time=00:00:04  RemainingTime=00:00:01  Mem=735.816
+Completed  80%  Time=00:00:04  RemainingTime=00:00:01  Mem=741.879
+ Processing 4000 of 4701 nets (85.0883%) ...
+Completed  85%  Time=00:00:04  RemainingTime=00:00:01  Mem=747.066
+Completed  90%  Time=00:00:05  RemainingTime=00:00:00  Mem=755.816
+Completed  95%  Time=00:00:05  RemainingTime=00:00:00  Mem=759.504
+Completed 100%  Time=00:00:05  RemainingTime=00:00:00  Mem=764.941
+Extraction time is 6 seconds.
+----- Reducing 4701 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0 seconds.Mem=764.941
+Reduction time is 0 seconds.
+Total capacitance environments constructed = 2060524
+Unique capacitance environments constructed = 1682388 (81.6486%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Extracted 2240979 capacitors, 277574 resistors, 0 reluctors, 275755 nodes
+Reduced to 89346 nodes,  (67.5995%)
+Reduced to 80985 resistors,  (70.824%)
+Reduced to 344380 capacitors: 273686 Cc and 70694 Cg (84.6326%)
+Extracting partition 21
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=173 ny=177 dx=31153 dy=31303 nentry=503392  max/cell=148 av/cell=16.4394
+ Ary stats nx=2 ny=1 dx=2694726 dy=5540601 nentry=0  max/cell=0 av/cell=0
+ Import design time is 0 seconds.
+----- Initializing models ----- 
+Initialize models time is 0 seconds.
+----- Extracting 3195 nets ----- 
+Completed   0%  Time=00:00:00  RemainingTime=00:00:05  Mem=535.426
+Completed   1%  Time=00:00:00  RemainingTime=00:00:04  Mem=535.988
+Completed   2%  Time=00:00:00  RemainingTime=00:00:04  Mem=537.113
+Completed   3%  Time=00:00:00  RemainingTime=00:00:03  Mem=537.551
+Completed   4%  Time=00:00:00  RemainingTime=00:00:03  Mem=538.051
+Completed   5%  Time=00:00:00  RemainingTime=00:00:04  Mem=539.301
+Completed  10%  Time=00:00:00  RemainingTime=00:00:03  Mem=543.168
+Completed  15%  Time=00:00:00  RemainingTime=00:00:03  Mem=545.355
+Completed  20%  Time=00:00:00  RemainingTime=00:00:03  Mem=548.48
+Completed  25%  Time=00:00:00  RemainingTime=00:00:03  Mem=553.543
+Completed  30%  Time=00:00:01  RemainingTime=00:00:02  Mem=556.543
+ Processing 1000 of 3195 nets (31.2989%) ...
+Completed  35%  Time=00:00:01  RemainingTime=00:00:02  Mem=566.918
+Completed  40%  Time=00:00:01  RemainingTime=00:00:02  Mem=572.98
+Completed  45%  Time=00:00:01  RemainingTime=00:00:02  Mem=577.043
+Completed  50%  Time=00:00:01  RemainingTime=00:00:02  Mem=580.418
+Completed  55%  Time=00:00:02  RemainingTime=00:00:01  Mem=584.23
+Completed  60%  Time=00:00:02  RemainingTime=00:00:01  Mem=586.293
+ Processing 2000 of 3195 nets (62.5978%) ...
+Completed  65%  Time=00:00:02  RemainingTime=00:00:01  Mem=592.48
+Completed  70%  Time=00:00:02  RemainingTime=00:00:01  Mem=593.98
+Completed  75%  Time=00:00:02  RemainingTime=00:00:01  Mem=596.605
+Completed  80%  Time=00:00:02  RemainingTime=00:00:01  Mem=601.98
+Completed  85%  Time=00:00:03  RemainingTime=00:00:00  Mem=607.543
+Completed  90%  Time=00:00:03  RemainingTime=00:00:00  Mem=614.918
+ Processing 3000 of 3195 nets (93.8967%) ...
+Completed  95%  Time=00:00:03  RemainingTime=00:00:01  Mem=618.98
+Completed 100%  Time=00:00:04  RemainingTime=00:00:00  Mem=624.418
+Extraction time is 4 seconds.
+----- Reducing 3195 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0 seconds.Mem=624.418
+Reduction time is 0 seconds.
+Total capacitance environments constructed = 1433195
+Unique capacitance environments constructed = 1184140 (82.6224%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Extracted 1567617 capacitors, 203237 resistors, 0 reluctors, 199058 nodes
+Reduced to 62386 nodes,  (68.6594%)
+Reduced to 57477 resistors,  (71.7192%)
+Reduced to 251377 capacitors: 201291 Cc and 50086 Cg (83.9644%)
+Extracting partition 24
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=191 ny=146 dx=21998 dy=22102 nentry=488778  max/cell=121 av/cell=17.5277
+ Ary stats nx=2 ny=1 dx=2100776 dy=3226801 nentry=0  max/cell=0 av/cell=0
+ Import design time is 1 seconds.
+----- Initializing models ----- 
+Initialize models time is 0 seconds.
+----- Extracting 3886 nets ----- 
+Completed   0%  Time=00:00:00  RemainingTime=00:00:04  Mem=518.574
+Completed   1%  Time=00:00:00  RemainingTime=00:00:04  Mem=519.387
+Completed   2%  Time=00:00:00  RemainingTime=00:00:04  Mem=520.262
+Completed   3%  Time=00:00:00  RemainingTime=00:00:04  Mem=521.199
+Completed   4%  Time=00:00:00  RemainingTime=00:00:04  Mem=522.129
+Completed   5%  Time=00:00:00  RemainingTime=00:00:04  Mem=522.941
+Completed  10%  Time=00:00:00  RemainingTime=00:00:03  Mem=525.879
+Completed  15%  Time=00:00:00  RemainingTime=00:00:03  Mem=529.566
+Completed  20%  Time=00:00:00  RemainingTime=00:00:03  Mem=532.816
+ Processing 1000 of 3886 nets (25.7334%) ...
+Completed  25%  Time=00:00:00  RemainingTime=00:00:03  Mem=536.004
+Completed  30%  Time=00:00:01  RemainingTime=00:00:02  Mem=540.504
+Completed  35%  Time=00:00:01  RemainingTime=00:00:02  Mem=545.191
+Completed  40%  Time=00:00:01  RemainingTime=00:00:02  Mem=549.316
+Completed  45%  Time=00:00:01  RemainingTime=00:00:03  Mem=563.254
+Completed  50%  Time=00:00:02  RemainingTime=00:00:02  Mem=566.629
+ Processing 2000 of 3886 nets (51.4668%) ...
+Completed  55%  Time=00:00:02  RemainingTime=00:00:02  Mem=571.949
+Completed  60%  Time=00:00:02  RemainingTime=00:00:02  Mem=579.012
+Completed  65%  Time=00:00:02  RemainingTime=00:00:02  Mem=584.887
+Completed  70%  Time=00:00:03  RemainingTime=00:00:01  Mem=589.949
+Completed  75%  Time=00:00:03  RemainingTime=00:00:01  Mem=593.262
+ Processing 3000 of 3886 nets (77.2002%) ...
+Completed  80%  Time=00:00:03  RemainingTime=00:00:01  Mem=597.762
+Completed  85%  Time=00:00:04  RemainingTime=00:00:00  Mem=602.324
+Completed  90%  Time=00:00:04  RemainingTime=00:00:00  Mem=606.512
+Completed  95%  Time=00:00:04  RemainingTime=00:00:00  Mem=609.574
+Completed 100%  Time=00:00:04  RemainingTime=00:00:00  Mem=619.324
+Extraction time is 5 seconds.
+----- Reducing 3886 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0 seconds.Mem=619.324
+Reduction time is 0 seconds.
+Total capacitance environments constructed = 1927348
+Unique capacitance environments constructed = 1608203 (83.4412%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Extracted 2428532 capacitors, 218887 resistors, 0 reluctors, 219411 nodes
+Reduced to 73729 nodes,  (66.3969%)
+Reduced to 67274 resistors,  (69.2654%)
+Reduced to 319212 capacitors: 260497 Cc and 58715 Cg (86.8558%)
+Extracting partition 8
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=139 ny=179 dx=34601 dy=34798 nentry=430820  max/cell=164 av/cell=17.3152
+ Ary stats nx=2 ny=1 dx=2404751 dy=6228801 nentry=0  max/cell=0 av/cell=0
+ Import design time is 0 seconds.
+----- Initializing models ----- 
+Initialize models time is 0 seconds.
+----- Extracting 2870 nets ----- 
+Completed   0%  Time=00:00:00  RemainingTime=00:00:15  Mem=497.383
+Completed   1%  Time=00:00:00  RemainingTime=00:00:13  Mem=498.883
+Completed   2%  Time=00:00:00  RemainingTime=00:00:11  Mem=500.133
+Completed   3%  Time=00:00:00  RemainingTime=00:00:09  Mem=500.695
+Completed   4%  Time=00:00:00  RemainingTime=00:00:08  Mem=501.195
+Completed   5%  Time=00:00:00  RemainingTime=00:00:07  Mem=501.945
+Completed  10%  Time=00:00:00  RemainingTime=00:00:06  Mem=508.383
+Completed  15%  Time=00:00:01  RemainingTime=00:00:05  Mem=515.57
+Completed  20%  Time=00:00:01  RemainingTime=00:00:05  Mem=520.57
+Completed  25%  Time=00:00:01  RemainingTime=00:00:04  Mem=525.82
+Completed  30%  Time=00:00:01  RemainingTime=00:00:04  Mem=528.57
+ Processing 1000 of 2870 nets (34.8432%) ...
+Completed  35%  Time=00:00:01  RemainingTime=00:00:04  Mem=540.383
+Completed  40%  Time=00:00:02  RemainingTime=00:00:02  Mem=543.008
+Completed  45%  Time=00:00:02  RemainingTime=00:00:02  Mem=545.758
+Completed  50%  Time=00:00:02  RemainingTime=00:00:02  Mem=548.258
+Completed  55%  Time=00:00:02  RemainingTime=00:00:02  Mem=549.445
+Completed  60%  Time=00:00:02  RemainingTime=00:00:02  Mem=551.133
+Completed  65%  Time=00:00:02  RemainingTime=00:00:02  Mem=556.82
+ Processing 2000 of 2870 nets (69.6864%) ...
+Completed  70%  Time=00:00:02  RemainingTime=00:00:02  Mem=558.195
+Completed  75%  Time=00:00:03  RemainingTime=00:00:00  Mem=559.508
+Completed  80%  Time=00:00:03  RemainingTime=00:00:00  Mem=560.82
+Completed  85%  Time=00:00:03  RemainingTime=00:00:00  Mem=562.57
+Completed  90%  Time=00:00:03  RemainingTime=00:00:00  Mem=565.445
+Completed  95%  Time=00:00:03  RemainingTime=00:00:00  Mem=566.32
+Completed 100%  Time=00:00:03  RemainingTime=00:00:00  Mem=566.695
+Extraction time is 4 seconds.
+----- Reducing 2870 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0 seconds.Mem=566.695
+Reduction time is 0 seconds.
+Total capacitance environments constructed = 1162389
+Unique capacitance environments constructed = 945247 (81.3193%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Extracted 1233118 capacitors, 159314 resistors, 0 reluctors, 156616 nodes
+Reduced to 47039 nodes,  (69.9654%)
+Reduced to 42517 resistors,  (73.3125%)
+Reduced to 182093 capacitors: 144452 Cc and 37641 Cg (85.2331%)
+Extracting partition 11
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=140 ny=135 dx=40782 dy=41089 nentry=277025  max/cell=200 av/cell=14.6574
+ Ary stats nx=2 ny=1 dx=2854726 dy=5547001 nentry=0  max/cell=0 av/cell=0
+ Import design time is 0 seconds.
+----- Initializing models ----- 
+Initialize models time is 0 seconds.
+----- Extracting 1973 nets ----- 
+Completed   0%  Time=00:00:00  RemainingTime=00:00:01  Mem=451.918
+Completed   1%  Time=00:00:00  RemainingTime=00:00:01  Mem=452.105
+Completed   2%  Time=00:00:00  RemainingTime=00:00:02  Mem=453.855
+Completed   3%  Time=00:00:00  RemainingTime=00:00:03  Mem=455.73
+Completed   4%  Time=00:00:00  RemainingTime=00:00:03  Mem=456.543
+Completed   5%  Time=00:00:00  RemainingTime=00:00:03  Mem=457.418
+Completed  10%  Time=00:00:00  RemainingTime=00:00:02  Mem=460.098
+Completed  15%  Time=00:00:00  RemainingTime=00:00:02  Mem=461.598
+Completed  20%  Time=00:00:00  RemainingTime=00:00:02  Mem=462.535
+Completed  25%  Time=00:00:00  RemainingTime=00:00:01  Mem=464.223
+Completed  30%  Time=00:00:00  RemainingTime=00:00:01  Mem=465.035
+Completed  35%  Time=00:00:00  RemainingTime=00:00:01  Mem=465.785
+Completed  40%  Time=00:00:00  RemainingTime=00:00:01  Mem=468.723
+Completed  45%  Time=00:00:00  RemainingTime=00:00:01  Mem=469.785
+Completed  50%  Time=00:00:00  RemainingTime=00:00:01  Mem=473.473
+ Processing 1000 of 1973 nets (50.6842%) ...
+Completed  55%  Time=00:00:01  RemainingTime=00:00:01  Mem=475.098
+Completed  60%  Time=00:00:01  RemainingTime=00:00:01  Mem=476.348
+Completed  65%  Time=00:00:01  RemainingTime=00:00:00  Mem=477.598
+Completed  70%  Time=00:00:01  RemainingTime=00:00:01  Mem=480.16
+Completed  75%  Time=00:00:01  RemainingTime=00:00:00  Mem=481.723
+Completed  80%  Time=00:00:01  RemainingTime=00:00:00  Mem=483.723
+Completed  85%  Time=00:00:01  RemainingTime=00:00:01  Mem=486.16
+Completed  90%  Time=00:00:01  RemainingTime=00:00:00  Mem=487.66
+Completed  95%  Time=00:00:01  RemainingTime=00:00:01  Mem=490.535
+Completed 100%  Time=00:00:02  RemainingTime=00:00:00  Mem=491.223
+Extraction time is 2 seconds.
+----- Reducing 1973 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0 seconds.Mem=491.223
+Reduction time is 0 seconds.
+Total capacitance environments constructed = 634137
+Unique capacitance environments constructed = 514427 (81.1224%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Extracted 634589 capacitors, 102267 resistors, 0 reluctors, 100360 nodes
+Reduced to 31167 nodes,  (68.9448%)
+Reduced to 28686 resistors,  (71.9499%)
+Reduced to 104574 capacitors: 79902 Cc and 24672 Cg (83.521%)
+Extracting partition 28
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=119 ny=160 dx=38702 dy=38931 nentry=350893  max/cell=178 av/cell=18.4293
+ Ary stats nx=2 ny=1 dx=2302726 dy=6228801 nentry=0  max/cell=0 av/cell=0
+ Import design time is 0 seconds.
+----- Initializing models ----- 
+Initialize models time is 0 seconds.
+----- Extracting 2057 nets ----- 
+Completed   0%  Time=00:00:00  RemainingTime=00:00:11  Mem=454.742
+Completed   1%  Time=00:00:00  RemainingTime=00:00:07  Mem=455.305
+Completed   2%  Time=00:00:00  RemainingTime=00:00:06  Mem=456.117
+Completed   3%  Time=00:00:00  RemainingTime=00:00:05  Mem=456.617
+Completed   4%  Time=00:00:00  RemainingTime=00:00:05  Mem=457.672
+Completed   5%  Time=00:00:00  RemainingTime=00:00:05  Mem=458.297
+Completed  10%  Time=00:00:00  RemainingTime=00:00:04  Mem=461.609
+Completed  15%  Time=00:00:00  RemainingTime=00:00:04  Mem=464.484
+Completed  20%  Time=00:00:00  RemainingTime=00:00:04  Mem=467.984
+Completed  25%  Time=00:00:01  RemainingTime=00:00:02  Mem=471.547
+Completed  30%  Time=00:00:01  RemainingTime=00:00:02  Mem=473.984
+Completed  35%  Time=00:00:01  RemainingTime=00:00:02  Mem=476.734
+Completed  40%  Time=00:00:01  RemainingTime=00:00:02  Mem=478.922
+Completed  45%  Time=00:00:01  RemainingTime=00:00:02  Mem=481.547
+ Processing 1000 of 2057 nets (48.6145%) ...
+Completed  50%  Time=00:00:01  RemainingTime=00:00:02  Mem=483.867
+Completed  55%  Time=00:00:01  RemainingTime=00:00:02  Mem=484.93
+Completed  60%  Time=00:00:01  RemainingTime=00:00:02  Mem=488.617
+Completed  65%  Time=00:00:02  RemainingTime=00:00:01  Mem=490.117
+Completed  70%  Time=00:00:02  RemainingTime=00:00:00  Mem=490.805
+Completed  75%  Time=00:00:02  RemainingTime=00:00:00  Mem=491.555
+Completed  80%  Time=00:00:02  RemainingTime=00:00:00  Mem=493.055
+Completed  85%  Time=00:00:02  RemainingTime=00:00:00  Mem=494.43
+Completed  90%  Time=00:00:02  RemainingTime=00:00:00  Mem=495.617
+Completed  95%  Time=00:00:02  RemainingTime=00:00:00  Mem=498.18
+ Processing 2000 of 2057 nets (97.229%) ...
+Completed 100%  Time=00:00:02  RemainingTime=00:00:00  Mem=499.117
+Extraction time is 2 seconds.
+----- Reducing 2057 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0 seconds.Mem=499.117
+Reduction time is 1 seconds.
+Total capacitance environments constructed = 963492
+Unique capacitance environments constructed = 777713 (80.7182%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Extracted 1044992 capacitors, 109832 resistors, 0 reluctors, 107892 nodes
+Reduced to 34561 nodes,  (67.967%)
+Reduced to 30219 resistors,  (72.4862%)
+Reduced to 121231 capacitors: 95659 Cc and 25572 Cg (88.3989%)
+Extracting partition 7
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=139 ny=138 dx=41531 dy=41786 nentry=354310  max/cell=200 av/cell=18.471
+ Ary stats nx=2 ny=1 dx=2886401 dy=5766401 nentry=0  max/cell=0 av/cell=0
+ Import design time is 1 seconds.
+----- Initializing models ----- 
+Initialize models time is 0 seconds.
+----- Extracting 2004 nets ----- 
+Completed   0%  Time=00:00:00  RemainingTime=00:00:07  Mem=460.941
+Completed   1%  Time=00:00:00  RemainingTime=00:00:04  Mem=461.316
+Completed   2%  Time=00:00:00  RemainingTime=00:00:04  Mem=462.066
+Completed   3%  Time=00:00:00  RemainingTime=00:00:04  Mem=463.004
+Completed   4%  Time=00:00:00  RemainingTime=00:00:04  Mem=464.254
+Completed   5%  Time=00:00:00  RemainingTime=00:00:05  Mem=466.129
+Completed  10%  Time=00:00:00  RemainingTime=00:00:05  Mem=474.074
+Completed  15%  Time=00:00:00  RemainingTime=00:00:05  Mem=480.824
+Completed  20%  Time=00:00:01  RemainingTime=00:00:04  Mem=486.004
+Completed  25%  Time=00:00:01  RemainingTime=00:00:04  Mem=489.754
+Completed  30%  Time=00:00:01  RemainingTime=00:00:03  Mem=492.941
+Completed  35%  Time=00:00:01  RemainingTime=00:00:03  Mem=496.441
+Completed  40%  Time=00:00:01  RemainingTime=00:00:03  Mem=499.129
+Completed  45%  Time=00:00:01  RemainingTime=00:00:03  Mem=502.691
+ Processing 1000 of 2004 nets (49.9002%) ...
+Completed  50%  Time=00:00:02  RemainingTime=00:00:01  Mem=505.066
+Completed  55%  Time=00:00:02  RemainingTime=00:00:01  Mem=506.816
+Completed  60%  Time=00:00:02  RemainingTime=00:00:01  Mem=508.316
+Completed  65%  Time=00:00:02  RemainingTime=00:00:01  Mem=509.254
+Completed  70%  Time=00:00:02  RemainingTime=00:00:01  Mem=510.816
+Completed  75%  Time=00:00:02  RemainingTime=00:00:01  Mem=520.504
+Completed  80%  Time=00:00:02  RemainingTime=00:00:01  Mem=521.441
+Completed  85%  Time=00:00:02  RemainingTime=00:00:01  Mem=522.379
+Completed  90%  Time=00:00:02  RemainingTime=00:00:00  Mem=523.504
+Completed  95%  Time=00:00:02  RemainingTime=00:00:00  Mem=524.379
+ Processing 2000 of 2004 nets (99.8004%) ...
+Completed 100%  Time=00:00:02  RemainingTime=00:00:00  Mem=524.754
+Extraction time is 2 seconds.
+----- Reducing 2004 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0 seconds.Mem=524.754
+Reduction time is 1 seconds.
+Total capacitance environments constructed = 998521
+Unique capacitance environments constructed = 835852 (83.709%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Extracted 1161727 capacitors, 133596 resistors, 0 reluctors, 132052 nodes
+Reduced to 38038 nodes,  (71.1947%)
+Reduced to 34070 resistors,  (74.4977%)
+Reduced to 158381 capacitors: 126940 Cc and 31441 Cg (86.3668%)
+Extracting partition 27
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=112 ny=111 dx=51543 dy=51950 nentry=243907  max/cell=244 av/cell=19.6193
+ Ary stats nx=2 ny=1 dx=2886401 dy=5766401 nentry=0  max/cell=0 av/cell=0
+ Import design time is 0 seconds.
+----- Initializing models ----- 
+Initialize models time is 0 seconds.
+----- Extracting 1398 nets ----- 
+Completed   0%  Time=00:00:00  RemainingTime=00:00:03  Mem=411.617
+Completed   1%  Time=00:00:00  RemainingTime=00:00:02  Mem=411.867
+Completed   2%  Time=00:00:00  RemainingTime=00:00:02  Mem=412.18
+Completed   3%  Time=00:00:00  RemainingTime=00:00:02  Mem=412.617
+Completed   4%  Time=00:00:00  RemainingTime=00:00:02  Mem=413.055
+Completed   5%  Time=00:00:00  RemainingTime=00:00:02  Mem=413.367
+Completed  10%  Time=00:00:00  RemainingTime=00:00:02  Mem=415.18
+Completed  15%  Time=00:00:00  RemainingTime=00:00:02  Mem=416.992
+Completed  20%  Time=00:00:00  RemainingTime=00:00:02  Mem=418.555
+Completed  25%  Time=00:00:00  RemainingTime=00:00:02  Mem=420.18
+Completed  30%  Time=00:00:00  RemainingTime=00:00:02  Mem=421.734
+Completed  35%  Time=00:00:00  RemainingTime=00:00:02  Mem=424.859
+Completed  40%  Time=00:00:00  RemainingTime=00:00:02  Mem=426.672
+Completed  45%  Time=00:00:01  RemainingTime=00:00:01  Mem=428.609
+Completed  50%  Time=00:00:01  RemainingTime=00:00:01  Mem=431.109
+Completed  54%  Time=00:00:01  RemainingTime=00:00:01  Mem=433.172
+Completed  59%  Time=00:00:01  RemainingTime=00:00:01  Mem=435.297
+Completed  64%  Time=00:00:01  RemainingTime=00:00:01  Mem=438.109
+Completed  69%  Time=00:00:01  RemainingTime=00:00:01  Mem=439.359
+ Processing 1000 of 1398 nets (71.5308%) ...
+Completed  74%  Time=00:00:01  RemainingTime=00:00:01  Mem=440.797
+Completed  79%  Time=00:00:01  RemainingTime=00:00:01  Mem=441.984
+Completed  84%  Time=00:00:01  RemainingTime=00:00:01  Mem=442.547
+Completed  89%  Time=00:00:01  RemainingTime=00:00:01  Mem=443.984
+Completed  94%  Time=00:00:01  RemainingTime=00:00:00  Mem=445.109
+Completed  99%  Time=00:00:01  RemainingTime=00:00:00  Mem=446.172
+Completed 100%  Time=00:00:01  RemainingTime=00:00:00  Mem=446.234
+Extraction time is 2 seconds.
+----- Reducing 1398 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0 seconds.Mem=446.234
+Reduction time is 0 seconds.
+Total capacitance environments constructed = 780320
+Unique capacitance environments constructed = 655792 (84.0414%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Extracted 956197 capacitors, 78443 resistors, 0 reluctors, 75691 nodes
+Reduced to 19655 nodes,  (74.0326%)
+Reduced to 17218 resistors,  (78.0503%)
+Reduced to 76244 capacitors: 60902 Cc and 15342 Cg (92.0263%)
+Extracting partition 9
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=113 ny=86 dx=37050 dy=37498 nentry=115009  max/cell=180 av/cell=11.8346
+ Ary stats nx=2 ny=1 dx=2093276 dy=3224801 nentry=0  max/cell=0 av/cell=0
+ Import design time is 1 seconds.
+----- Initializing models ----- 
+Initialize models time is 0 seconds.
+----- Extracting 1249 nets ----- 
+Completed   0%  Time=00:00:00  RemainingTime=00:00:01  Mem=383.789
+Completed   1%  Time=00:00:00  RemainingTime=00:00:00  Mem=383.914
+Completed   2%  Time=00:00:00  RemainingTime=00:00:00  Mem=384.039
+Completed   3%  Time=00:00:00  RemainingTime=00:00:00  Mem=384.102
+Completed   4%  Time=00:00:00  RemainingTime=00:00:00  Mem=384.164
+Completed   5%  Time=00:00:00  RemainingTime=00:00:00  Mem=384.227
+Completed  10%  Time=00:00:00  RemainingTime=00:00:00  Mem=384.914
+Completed  15%  Time=00:00:00  RemainingTime=00:00:00  Mem=385.852
+Completed  20%  Time=00:00:00  RemainingTime=00:00:00  Mem=386.477
+Completed  25%  Time=00:00:00  RemainingTime=00:00:00  Mem=389.547
+Completed  30%  Time=00:00:00  RemainingTime=00:00:00  Mem=390.859
+Completed  35%  Time=00:00:00  RemainingTime=00:00:01  Mem=392.172
+Completed  40%  Time=00:00:00  RemainingTime=00:00:01  Mem=393.109
+Completed  45%  Time=00:00:00  RemainingTime=00:00:00  Mem=393.672
+Completed  50%  Time=00:00:00  RemainingTime=00:00:00  Mem=394.172
+Completed  55%  Time=00:00:00  RemainingTime=00:00:00  Mem=395.484
+Completed  60%  Time=00:00:00  RemainingTime=00:00:01  Mem=398.109
+Completed  65%  Time=00:00:00  RemainingTime=00:00:01  Mem=399.047
+Completed  70%  Time=00:00:00  RemainingTime=00:00:01  Mem=401.164
+Completed  75%  Time=00:00:00  RemainingTime=00:00:01  Mem=401.977
+ Processing 1000 of 1249 nets (80.0641%) ...
+Completed  80%  Time=00:00:00  RemainingTime=00:00:01  Mem=403.352
+Completed  85%  Time=00:00:00  RemainingTime=00:00:01  Mem=404.227
+Completed  90%  Time=00:00:00  RemainingTime=00:00:01  Mem=404.977
+Completed  95%  Time=00:00:00  RemainingTime=00:00:01  Mem=405.414
+Completed 100%  Time=00:00:00  RemainingTime=00:00:00  Mem=405.414
+Extraction time is 1 seconds.
+----- Reducing 1249 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0 seconds.Mem=405.414
+Reduction time is 0 seconds.
+Total capacitance environments constructed = 293139
+Unique capacitance environments constructed = 241639 (82.4315%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Extracted 286978 capacitors, 57292 resistors, 0 reluctors, 57731 nodes
+Reduced to 20460 nodes,  (64.5598%)
+Reduced to 17889 resistors,  (68.7757%)
+Reduced to 59927 capacitors: 44821 Cc and 15106 Cg (79.1179%)
+Extracting partition 29
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=84 ny=66 dx=48324 dy=48861 nentry=61106  max/cell=176 av/cell=11.022
+ Ary stats nx=2 ny=1 dx=2029601 dy=3224801 nentry=0  max/cell=0 av/cell=0
+ Import design time is 0 seconds.
+----- Initializing models ----- 
+Initialize models time is 0 seconds.
+----- Extracting 765 nets ----- 
+Completed   0%  Time=00:00:00  RemainingTime=00:00:01  Mem=354.348
+Completed   1%  Time=00:00:00  RemainingTime=00:00:00  Mem=354.41
+Completed   2%  Time=00:00:00  RemainingTime=00:00:00  Mem=354.41
+Completed   3%  Time=00:00:00  RemainingTime=00:00:00  Mem=354.473
+Completed   4%  Time=00:00:00  RemainingTime=00:00:00  Mem=354.535
+Completed   5%  Time=00:00:00  RemainingTime=00:00:00  Mem=354.598
+Completed  10%  Time=00:00:00  RemainingTime=00:00:00  Mem=354.848
+Completed  15%  Time=00:00:00  RemainingTime=00:00:00  Mem=355.16
+Completed  20%  Time=00:00:00  RemainingTime=00:00:00  Mem=356.535
+Completed  25%  Time=00:00:00  RemainingTime=00:00:00  Mem=357.035
+Completed  30%  Time=00:00:00  RemainingTime=00:00:00  Mem=357.535
+Completed  35%  Time=00:00:00  RemainingTime=00:00:00  Mem=358.035
+Completed  40%  Time=00:00:00  RemainingTime=00:00:00  Mem=358.535
+Completed  45%  Time=00:00:00  RemainingTime=00:00:00  Mem=359.035
+Completed  50%  Time=00:00:00  RemainingTime=00:00:00  Mem=360.41
+Completed  55%  Time=00:00:00  RemainingTime=00:00:00  Mem=360.785
+Completed  60%  Time=00:00:00  RemainingTime=00:00:00  Mem=361.035
+Completed  65%  Time=00:00:00  RemainingTime=00:00:00  Mem=361.035
+Completed  70%  Time=00:00:00  RemainingTime=00:00:00  Mem=361.098
+Completed  75%  Time=00:00:00  RemainingTime=00:00:00  Mem=361.223
+Completed  80%  Time=00:00:00  RemainingTime=00:00:00  Mem=361.535
+Completed  84%  Time=00:00:00  RemainingTime=00:00:00  Mem=361.785
+Completed  89%  Time=00:00:00  RemainingTime=00:00:00  Mem=362.035
+Completed  94%  Time=00:00:00  RemainingTime=00:00:00  Mem=362.285
+Completed  99%  Time=00:00:00  RemainingTime=00:00:00  Mem=363.035
+Completed 100%  Time=00:00:00  RemainingTime=00:00:00  Mem=363.418
+Extraction time is 0 seconds.
+----- Reducing 765 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0 seconds.Mem=363.418
+Reduction time is 0 seconds.
+Total capacitance environments constructed = 109878
+Unique capacitance environments constructed = 88422 (80.4729%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Extracted 95039 capacitors, 25726 resistors, 0 reluctors, 25866 nodes
+Reduced to 9454 nodes,  (63.4501%)
+Reduced to 7917 resistors,  (69.2257%)
+Reduced to 19673 capacitors: 13516 Cc and 6157 Cg (79.3001%)
+Extracting partition 3
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=47 ny=61 dx=99473 dy=102099 nentry=51160  max/cell=436 av/cell=17.8444
+ Ary stats nx=2 ny=1 dx=2337601 dy=6228001 nentry=0  max/cell=0 av/cell=0
+ Import design time is 0 seconds.
+----- Initializing models ----- 
+Initialize models time is 0 seconds.
+----- Extracting 400 nets ----- 
+Completed   1%  Time=00:00:00  RemainingTime=00:00:01  Mem=188.785
+Completed   2%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.785
+Completed   3%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.785
+Completed   4%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.785
+Completed   5%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.785
+Completed  10%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.785
+Completed  15%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.785
+Completed  20%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.785
+Completed  25%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.785
+Completed  30%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.785
+Completed  35%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.977
+Completed  40%  Time=00:00:00  RemainingTime=00:00:00  Mem=189.414
+Completed  45%  Time=00:00:00  RemainingTime=00:00:00  Mem=189.852
+Completed  50%  Time=00:00:00  RemainingTime=00:00:00  Mem=190.227
+Completed  55%  Time=00:00:00  RemainingTime=00:00:00  Mem=192.352
+Completed  60%  Time=00:00:00  RemainingTime=00:00:00  Mem=193.414
+Completed  65%  Time=00:00:00  RemainingTime=00:00:00  Mem=194.039
+Completed  70%  Time=00:00:00  RemainingTime=00:00:00  Mem=194.477
+Completed  75%  Time=00:00:00  RemainingTime=00:00:00  Mem=194.914
+Completed  80%  Time=00:00:00  RemainingTime=00:00:00  Mem=195.164
+Completed  85%  Time=00:00:00  RemainingTime=00:00:00  Mem=195.352
+Completed  90%  Time=00:00:00  RemainingTime=00:00:00  Mem=195.539
+Completed  95%  Time=00:00:00  RemainingTime=00:00:00  Mem=195.664
+Completed 100%  Time=00:00:00  RemainingTime=00:00:00  Mem=195.727
+Extraction time is 1 seconds.
+----- Reducing 400 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0 seconds.Mem=195.727
+Reduction time is 0 seconds.
+Total capacitance environments constructed = 117407
+Unique capacitance environments constructed = 95693 (81.5054%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Extracted 119386 capacitors, 18858 resistors, 0 reluctors, 18283 nodes
+Reduced to 5015 nodes,  (72.5701%)
+Reduced to 4501 resistors,  (76.1321%)
+Reduced to 14766 capacitors: 10861 Cc and 3905 Cg (87.6317%)
+Extracting partition 33
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=45 ny=59 dx=103894 dy=105563 nentry=47910  max/cell=493 av/cell=18.0452
+ Ary stats nx=2 ny=1 dx=2337601 dy=6228201 nentry=0  max/cell=0 av/cell=0
+ Import design time is 0 seconds.
+----- Initializing models ----- 
+Initialize models time is 0 seconds.
+----- Extracting 347 nets ----- 
+Completed   0%  Time=00:00:00  RemainingTime=00:00:01  Mem=188.41
+Completed   1%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.41
+Completed   2%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.41
+Completed   3%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.41
+Completed   4%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.41
+Completed   5%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.41
+Completed  10%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.41
+Completed  14%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.41
+Completed  19%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.41
+Completed  24%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.41
+Completed  29%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.41
+Completed  34%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.41
+Completed  39%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.41
+Completed  44%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.41
+Completed  49%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.41
+Completed  54%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.41
+Completed  59%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.723
+Completed  63%  Time=00:00:00  RemainingTime=00:00:00  Mem=189.035
+Completed  68%  Time=00:00:00  RemainingTime=00:00:00  Mem=189.41
+Completed  73%  Time=00:00:00  RemainingTime=00:00:00  Mem=192.223
+Completed  78%  Time=00:00:00  RemainingTime=00:00:00  Mem=193.035
+Completed  83%  Time=00:00:00  RemainingTime=00:00:00  Mem=193.535
+Completed  88%  Time=00:00:00  RemainingTime=00:00:00  Mem=193.785
+Completed  93%  Time=00:00:00  RemainingTime=00:00:00  Mem=194.223
+Completed  98%  Time=00:00:00  RemainingTime=00:00:00  Mem=194.41
+Completed 100%  Time=00:00:00  RemainingTime=00:00:00  Mem=194.66
+Extraction time is 0 seconds.
+----- Reducing 347 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0 seconds.Mem=194.66
+Reduction time is 0 seconds.
+Total capacitance environments constructed = 138284
+Unique capacitance environments constructed = 115066 (83.2099%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Extracted 157419 capacitors, 17701 resistors, 0 reluctors, 16931 nodes
+Reduced to 4710 nodes,  (72.1812%)
+Reduced to 4165 resistors,  (76.4703%)
+Reduced to 16350 capacitors: 12649 Cc and 3701 Cg (89.6137%)
+Extracting partition 34
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=28 ny=24 dx=130732 dy=133734 nentry=6487  max/cell=445 av/cell=9.65327
+ Ary stats nx=2 ny=1 dx=1830246 dy=3209601 nentry=0  max/cell=0 av/cell=0
+ Import design time is 0 seconds.
+----- Initializing models ----- 
+Initialize models time is 0 seconds.
+----- Extracting 340 nets ----- 
+Completed   0%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.703
+Completed   1%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.703
+Completed   2%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.703
+Completed   3%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.703
+Completed   4%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.703
+Completed   5%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.703
+Completed  10%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.703
+Completed  15%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.703
+Completed  20%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.703
+Completed  25%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.703
+Completed  30%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.703
+Completed  34%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.703
+Completed  39%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.703
+Completed  44%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.703
+Completed  49%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.703
+Completed  54%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.703
+Completed  59%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.703
+Completed  64%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.703
+Completed  69%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.703
+Completed  74%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.703
+Completed  79%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.703
+Completed  84%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.703
+Completed  89%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.703
+Completed  94%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.703
+Completed  99%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.703
+Completed 100%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.703
+Extraction time is 1 seconds.
+----- Reducing 340 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0 seconds.Mem=180.703
+Reduction time is 0 seconds.
+Total capacitance environments constructed = 16762
+Unique capacitance environments constructed = 14044 (83.7848%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Extracted 16292 capacitors, 3578 resistors, 0 reluctors, 3909 nodes
+Reduced to 1290 nodes,  (66.9992%)
+Reduced to 923 resistors,  (74.2035%)
+Reduced to 3319 capacitors: 2451 Cc and 868 Cg (79.628%)
+Extracting partition 4
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=27 ny=21 dx=146541 dy=153601 nentry=4994  max/cell=518 av/cell=8.80776
+ Ary stats nx=2 ny=1 dx=1978301 dy=3225601 nentry=0  max/cell=0 av/cell=0
+ Import design time is 0 seconds.
+----- Initializing models ----- 
+Initialize models time is 0 seconds.
+----- Extracting 299 nets ----- 
+Completed   0%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.34
+Completed   1%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.34
+Completed   2%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.34
+Completed   2%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.34
+Completed   3%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.34
+Completed   4%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.34
+Completed   4%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.34
+Completed   5%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.34
+Completed  10%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.34
+Completed  14%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.34
+Completed  19%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.34
+Completed  24%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.34
+Completed  28%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.34
+Completed  33%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.34
+Completed  38%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.34
+Completed  42%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.34
+Completed  47%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.34
+Completed  52%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.34
+Completed  56%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.34
+Completed  61%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.34
+Completed  66%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.34
+Completed  70%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.34
+Completed  75%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.34
+Completed  80%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.34
+Completed  84%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.34
+Completed  89%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.34
+Completed  94%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.34
+Completed  98%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.34
+Completed 100%  Time=00:00:00  RemainingTime=00:00:00  Mem=180.34
+Extraction time is 0 seconds.
+----- Reducing 299 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0 seconds.Mem=180.34
+Reduction time is 0 seconds.
+Total capacitance environments constructed = 16799
+Unique capacitance environments constructed = 14293 (85.0824%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Extracted 17918 capacitors, 3099 resistors, 0 reluctors, 3437 nodes
+Reduced to 1145 nodes,  (66.6861%)
+Reduced to 774 resistors,  (75.0242%)
+Reduced to 2698 capacitors: 1975 Cc and 723 Cg (84.9425%)
+Extracting partition 6
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=39 ny=38 dx=148021 dy=150690 nentry=29277  max/cell=182 av/cell=19.7551
+ Ary stats nx=2 ny=1 dx=2886401 dy=5726201 nentry=0  max/cell=0 av/cell=0
+ Import design time is 0 seconds.
+----- Initializing models ----- 
+Initialize models time is 0 seconds.
+----- Extracting 323 nets ----- 
+Completed   0%  Time=00:00:00  RemainingTime=00:00:00  Mem=184.383
+Completed   1%  Time=00:00:00  RemainingTime=00:00:00  Mem=184.383
+Completed   2%  Time=00:00:00  RemainingTime=00:00:00  Mem=184.383
+Completed   3%  Time=00:00:00  RemainingTime=00:00:00  Mem=184.383
+Completed   4%  Time=00:00:00  RemainingTime=00:00:00  Mem=184.383
+Completed   5%  Time=00:00:00  RemainingTime=00:00:00  Mem=184.383
+Completed  10%  Time=00:00:00  RemainingTime=00:00:00  Mem=184.383
+Completed  15%  Time=00:00:00  RemainingTime=00:00:00  Mem=184.383
+Completed  20%  Time=00:00:00  RemainingTime=00:00:00  Mem=184.383
+Completed  25%  Time=00:00:00  RemainingTime=00:00:00  Mem=184.383
+Completed  30%  Time=00:00:00  RemainingTime=00:00:00  Mem=184.512
+Completed  35%  Time=00:00:00  RemainingTime=00:00:00  Mem=184.887
+Completed  40%  Time=00:00:00  RemainingTime=00:00:00  Mem=185.199
+Completed  45%  Time=00:00:00  RemainingTime=00:00:00  Mem=185.574
+Completed  50%  Time=00:00:00  RemainingTime=00:00:00  Mem=185.949
+Completed  55%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.074
+Completed  60%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.324
+Completed  65%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.574
+Completed  69%  Time=00:00:00  RemainingTime=00:00:00  Mem=188.824
+Completed  74%  Time=00:00:00  RemainingTime=00:00:00  Mem=189.012
+Completed  79%  Time=00:00:00  RemainingTime=00:00:00  Mem=189.137
+Completed  84%  Time=00:00:00  RemainingTime=00:00:00  Mem=189.387
+Completed  89%  Time=00:00:00  RemainingTime=00:00:00  Mem=189.637
+Completed  94%  Time=00:00:00  RemainingTime=00:00:00  Mem=189.887
+Completed  99%  Time=00:00:00  RemainingTime=00:00:00  Mem=190.324
+Completed 100%  Time=00:00:00  RemainingTime=00:00:00  Mem=190.387
+Extraction time is 0 seconds.
+----- Reducing 323 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0 seconds.Mem=190.387
+Reduction time is 0 seconds.
+Total capacitance environments constructed = 125645
+Unique capacitance environments constructed = 107345 (85.4352%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Extracted 143157 capacitors, 16442 resistors, 0 reluctors, 16836 nodes
+Reduced to 5740 nodes,  (65.9064%)
+Reduced to 5307 resistors,  (67.7229%)
+Reduced to 15723 capacitors: 11068 Cc and 4655 Cg (89.017%)
+Extracting partition 26
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=36 ny=35 dx=160356 dy=163423 nentry=26065  max/cell=230 av/cell=20.6865
+ Ary stats nx=2 ny=1 dx=2886401 dy=5719801 nentry=0  max/cell=0 av/cell=0
+ Import design time is 0 seconds.
+----- Initializing models ----- 
+Initialize models time is 0 seconds.
+----- Extracting 338 nets ----- 
+Completed   0%  Time=00:00:00  RemainingTime=00:00:00  Mem=183.637
+Completed   1%  Time=00:00:00  RemainingTime=00:00:00  Mem=183.637
+Completed   2%  Time=00:00:00  RemainingTime=00:00:00  Mem=183.637
+Completed   3%  Time=00:00:00  RemainingTime=00:00:00  Mem=183.637
+Completed   4%  Time=00:00:00  RemainingTime=00:00:00  Mem=183.637
+Completed   5%  Time=00:00:00  RemainingTime=00:00:00  Mem=183.637
+Completed  10%  Time=00:00:00  RemainingTime=00:00:00  Mem=183.637
+Completed  14%  Time=00:00:00  RemainingTime=00:00:00  Mem=183.637
+Completed  19%  Time=00:00:00  RemainingTime=00:00:00  Mem=183.637
+Completed  24%  Time=00:00:00  RemainingTime=00:00:00  Mem=183.637
+Completed  28%  Time=00:00:00  RemainingTime=00:00:00  Mem=183.637
+Completed  33%  Time=00:00:00  RemainingTime=00:00:00  Mem=183.637
+Completed  38%  Time=00:00:00  RemainingTime=00:00:00  Mem=183.637
+Completed  43%  Time=00:00:00  RemainingTime=00:00:00  Mem=183.637
+Completed  47%  Time=00:00:00  RemainingTime=00:00:00  Mem=183.637
+Completed  52%  Time=00:00:00  RemainingTime=00:00:00  Mem=183.637
+Completed  57%  Time=00:00:00  RemainingTime=00:00:00  Mem=183.637
+Completed  62%  Time=00:00:00  RemainingTime=00:00:00  Mem=183.637
+Completed  66%  Time=00:00:00  RemainingTime=00:00:00  Mem=183.762
+Completed  71%  Time=00:00:00  RemainingTime=00:00:00  Mem=184.137
+Completed  76%  Time=00:00:00  RemainingTime=00:00:00  Mem=184.387
+Completed  81%  Time=00:00:00  RemainingTime=00:00:00  Mem=184.699
+Completed  85%  Time=00:00:00  RemainingTime=00:00:00  Mem=184.949
+Completed  90%  Time=00:00:00  RemainingTime=00:00:00  Mem=185.137
+Completed  95%  Time=00:00:00  RemainingTime=00:00:00  Mem=187.262
+Completed 100%  Time=00:00:00  RemainingTime=00:00:00  Mem=187.637
+Extraction time is 1 seconds.
+----- Reducing 338 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0 seconds.Mem=187.637
+Reduction time is 0 seconds.
+Total capacitance environments constructed = 118740
+Unique capacitance environments constructed = 100900 (84.9756%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Extracted 142835 capacitors, 13017 resistors, 0 reluctors, 13395 nodes
+Reduced to 4462 nodes,  (66.6891%)
+Reduced to 4068 resistors,  (68.7486%)
+Reduced to 12789 capacitors: 9243 Cc and 3546 Cg (91.0463%)
+Extracting partition 2
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=31 ny=36 dx=150813 dy=157689 nentry=22160  max/cell=164 av/cell=19.8566
+ Ary stats nx=2 ny=1 dx=2337601 dy=5676801 nentry=0  max/cell=0 av/cell=0
+ Import design time is 0 seconds.
+----- Initializing models ----- 
+Initialize models time is 0 seconds.
+----- Extracting 280 nets ----- 
+Completed   0%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.961
+Completed   1%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.961
+Completed   2%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.961
+Completed   2%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.961
+Completed   3%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.961
+Completed   4%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.961
+Completed   5%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.961
+Completed  10%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.961
+Completed  15%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.961
+Completed  20%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.961
+Completed  25%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.961
+Completed  30%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.961
+Completed  35%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.961
+Completed  39%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.961
+Completed  44%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.961
+Completed  49%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.961
+Completed  54%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.961
+Completed  59%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.961
+Completed  64%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.961
+Completed  69%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.961
+Completed  74%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.961
+Completed  79%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.961
+Completed  84%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.961
+Completed  89%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.961
+Completed  94%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.961
+Completed  99%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.961
+Completed 100%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.961
+Extraction time is 0 seconds.
+----- Reducing 280 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0 seconds.Mem=182.961
+Reduction time is 0 seconds.
+Total capacitance environments constructed = 89403
+Unique capacitance environments constructed = 75421 (84.3607%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Extracted 105710 capacitors, 11511 resistors, 0 reluctors, 11782 nodes
+Reduced to 4120 nodes,  (65.0314%)
+Reduced to 3828 resistors,  (66.7449%)
+Reduced to 11354 capacitors: 7940 Cc and 3414 Cg (89.2593%)
+Extracting partition 32
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=30 ny=36 dx=154881 dy=157689 nentry=20926  max/cell=183 av/cell=19.3759
+ Ary stats nx=2 ny=1 dx=2323201 dy=5676801 nentry=0  max/cell=0 av/cell=0
+ Import design time is 0 seconds.
+----- Initializing models ----- 
+Initialize models time is 0 seconds.
+----- Extracting 301 nets ----- 
+Completed   0%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.969
+Completed   1%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.969
+Completed   2%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.969
+Completed   3%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.969
+Completed   4%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.969
+Completed   5%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.969
+Completed  10%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.969
+Completed  15%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.969
+Completed  20%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.969
+Completed  25%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.969
+Completed  30%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.969
+Completed  35%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.969
+Completed  40%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.969
+Completed  45%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.969
+Completed  50%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.969
+Completed  55%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.969
+Completed  60%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.969
+Completed  65%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.969
+Completed  70%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.969
+Completed  75%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.969
+Completed  80%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.969
+Completed  85%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.969
+Completed  90%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.969
+Completed  95%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.969
+Completed 100%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.969
+Extraction time is 0 seconds.
+----- Reducing 301 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0 seconds.Mem=182.969
+Reduction time is 0 seconds.
+Total capacitance environments constructed = 95453
+Unique capacitance environments constructed = 80768 (84.6155%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Extracted 121639 capacitors, 10104 resistors, 0 reluctors, 10764 nodes
+Reduced to 3915 nodes,  (63.6288%)
+Reduced to 3226 resistors,  (68.0721%)
+Reduced to 12594 capacitors: 9750 Cc and 2844 Cg (89.6464%)
+Extracting partition 1
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=26 ny=31 dx=178708 dy=183788 nentry=14430  max/cell=182 av/cell=17.9032
+ Ary stats nx=2 ny=1 dx=2323201 dy=5697401 nentry=0  max/cell=0 av/cell=0
+ Import design time is 0 seconds.
+----- Initializing models ----- 
+Initialize models time is 0 seconds.
+----- Extracting 198 nets ----- 
+Completed   0%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed   1%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed   1%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed   2%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed   2%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed   3%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed   3%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed   4%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed   4%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed   5%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed   9%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed  14%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed  18%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed  23%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed  27%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed  32%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed  36%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed  41%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed  45%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed  50%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed  55%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed  59%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed  64%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed  68%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed  73%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed  77%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed  82%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed  86%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed  91%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed  95%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Completed 100%  Time=00:00:00  RemainingTime=00:00:00  Mem=182.266
+Extraction time is 1 seconds.
+----- Reducing 198 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0 seconds.Mem=182.266
+Reduction time is 0 seconds.
+Total capacitance environments constructed = 46614
+Unique capacitance environments constructed = 39717 (85.204%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Extracted 52246 capacitors, 8006 resistors, 0 reluctors, 8282 nodes
+Reduced to 2848 nodes,  (65.6122%)
+Reduced to 2563 resistors,  (67.9865%)
+Reduced to 7036 capacitors: 4767 Cc and 2269 Cg (86.5329%)
+Extracting partition 31
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=25 ny=29 dx=185857 dy=197014 nentry=12460  max/cell=190 av/cell=17.1862
+ Ary stats nx=2 ny=1 dx=2323201 dy=5713401 nentry=0  max/cell=0 av/cell=0
+ Import design time is 0 seconds.
+----- Initializing models ----- 
+Initialize models time is 0 seconds.
+----- Extracting 198 nets ----- 
+Completed   0%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed   1%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed   1%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed   2%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed   2%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed   3%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed   3%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed   4%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed   4%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed   5%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed   9%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed  14%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed  18%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed  23%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed  27%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed  32%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed  36%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed  41%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed  45%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed  50%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed  55%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed  59%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed  64%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed  68%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed  73%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed  77%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed  82%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed  86%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed  91%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed  95%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Completed 100%  Time=00:00:00  RemainingTime=00:00:00  Mem=181.121
+Extraction time is 0 seconds.
+----- Reducing 198 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0 seconds.Mem=181.121
+Reduction time is 0 seconds.
+Total capacitance environments constructed = 39752
+Unique capacitance environments constructed = 33727 (84.8435%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Extracted 44474 capacitors, 7083 resistors, 0 reluctors, 7314 nodes
+Reduced to 2635 nodes,  (63.9732%)
+Reduced to 2385 resistors,  (66.3278%)
+Reduced to 6661 capacitors: 4567 Cc and 2094 Cg (85.0227%)
+  
+xTract_partition17 Elp=00:00:19 Cpu=00:00:15 Usr=15.5   Sys=0.3    Mem=1145.8
+xTract_partition18 Elp=00:00:14 Cpu=00:00:13 Usr=13.6   Sys=0.3    Mem=1030.5
+xTract_partition13 Elp=00:00:20 Cpu=00:00:15 Usr=14.9   Sys=0.2    Mem=1049.5
+xTract_partition19 Elp=00:00:17 Cpu=00:00:16 Usr=16.7   Sys=0.3    Mem=1026.1
+xTract_partition23 Elp=00:00:17 Cpu=00:00:13 Usr=13.3   Sys=0.2    Mem=980.0 
+xTract_partition14 Elp=00:00:15 Cpu=00:00:14 Usr=13.8   Sys=0.2    Mem=978.4 
+xTract_partition22 Elp=00:00:09 Cpu=00:00:09 Usr=9.1    Sys=0.2    Mem=826.3 
+xTract_partition16 Elp=00:00:14 Cpu=00:00:09 Usr=9.8    Sys=0.2    Mem=832.3 
+xTract_partition12 Elp=00:00:09 Cpu=00:00:08 Usr=8.1    Sys=0.2    Mem=768.9 
+xTract_partition21 Elp=00:00:06 Cpu=00:00:05 Usr=5.6    Sys=0.1    Mem=626.4 
+xTract_partition24 Elp=00:00:07 Cpu=00:00:06 Usr=6.5    Sys=0.1    Mem=623.3 
+xTract_partition8  Elp=00:00:04 Cpu=00:00:04 Usr=4.5    Sys=0.1    Mem=568.8 
+xTract_partition11 Elp=00:00:03 Cpu=00:00:02 Usr=2.8    Sys=0.1    Mem=493.2 
+xTract_partition28 Elp=00:00:04 Cpu=00:00:03 Usr=3.4    Sys=0.1    Mem=501.1 
+xTract_partition7  Elp=00:00:04 Cpu=00:00:03 Usr=3.7    Sys=0.1    Mem=526.8 
+xTract_partition27 Elp=00:00:03 Cpu=00:00:02 Usr=2.5    Sys=0.1    Mem=447.2 
+xTract_partition9  Elp=00:00:03 Cpu=00:00:01 Usr=1.4    Sys=0.1    Mem=406.4 
+xTract_partition29 Elp=00:00:00 Cpu=00:00:00 Usr=0.6    Sys=0.1    Mem=363.5 
+xTract_partition3  Elp=00:00:01 Cpu=00:00:00 Usr=0.5    Sys=0.0    Mem=196.0 
+xTract_partition33 Elp=00:00:00 Cpu=00:00:00 Usr=0.5    Sys=0.0    Mem=194.9 
+xTract_partition34 Elp=00:00:01 Cpu=00:00:00 Usr=0.1    Sys=0.0    Mem=180.7 
+xTract_partition4  Elp=00:00:00 Cpu=00:00:00 Usr=0.1    Sys=0.0    Mem=180.3 
+xTract_partition6  Elp=00:00:00 Cpu=00:00:00 Usr=0.4    Sys=0.0    Mem=190.6 
+xTract_partition26 Elp=00:00:01 Cpu=00:00:00 Usr=0.4    Sys=0.0    Mem=187.9 
+xTract_partition2  Elp=00:00:00 Cpu=00:00:00 Usr=0.3    Sys=0.0    Mem=183.0 
+xTract_partition32 Elp=00:00:00 Cpu=00:00:00 Usr=0.3    Sys=0.0    Mem=183.0 
+xTract_partition1  Elp=00:00:01 Cpu=00:00:00 Usr=0.2    Sys=0.0    Mem=182.3 
+xTract_partition31 Elp=00:00:00 Cpu=00:00:00 Usr=0.2    Sys=0.0    Mem=181.1 
+xTractor           Elp=00:02:52 Cpu=00:00:00 Usr=0.2    Sys=0.1    Mem=161.5 
+  
+Done          Elp=00:02:52 Cpu=00:02:32 Usr=148.9  Sys=3.1    Mem=1145.8
+

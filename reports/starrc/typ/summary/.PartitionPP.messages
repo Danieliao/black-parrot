@@ -1,0 +1,37 @@
+total number of split nets: 13148 (19.6049%)
+bundleId 1 num polygons: 927289
+bundleId 2 num polygons: 836285
+bundleId 3 num polygons: 806759
+bundleId 4 num polygons: 740012
+bundleId 5 num polygons: 729204
+bundleId 6 num polygons: 709121
+bundleId 7 num polygons: 594020
+bundleId 8 num polygons: 564896
+bundleId 9 num polygons: 530699
+bundleId 10 num polygons: 335605
+bundleId 11 num polygons: 314502
+bundleId 12 num polygons: 275416
+bundleId 13 num polygons: 219471
+bundleId 14 num polygons: 209758
+bundleId 15 num polygons: 206547
+bundleId 16 num polygons: 132496
+bundleId 17 num polygons: 124564
+bundleId 18 num polygons: 78025
+bundleId 19 num polygons: 32209
+bundleId 20 num polygons: 29065
+bundleId 21 num polygons: 28298
+bundleId 22 num polygons: 25339
+bundleId 23 num polygons: 15993
+bundleId 24 num polygons: 14093
+bundleId 25 num polygons: 11756
+bundleId 26 num polygons: 10718
+bundleId 27 num polygons: 8827
+bundleId 28 num polygons: 7425
+  
+text_count_file Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=107.5 
+PartitionPP     Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=107.5 
+  
+Done          Elp=00:00:00 Cpu=00:00:00 Usr=0.1    Sys=0.0    Mem=107.5 
+
+End Time: Tue Mar 10 21:52:47 2020
+
