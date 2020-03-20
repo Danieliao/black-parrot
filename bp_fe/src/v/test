@@ -6,7 +6,6 @@
  * PC_gen also provides the BTB, BHT and RAS indexes for the backend (the queue
  * between the frontend and the backend, i.e. the frontend queue).
 */
-
 module bp_fe_pc_gen
  import bp_common_pkg::*;
  import bp_common_rv64_pkg::*;
@@ -21,7 +20,7 @@ module bp_fe_pc_gen
    )
   (input                                             clk_i
    , input                                           reset_i
- 
+
    , output [mem_cmd_width_lp-1:0]                   mem_cmd_o
    , output                                          mem_cmd_v_o
    , input                                           mem_cmd_yumi_i
@@ -59,9 +58,6 @@ logic                           ovr_taken, ovr_ntaken;
 // btb io
 logic [vaddr_width_p-1:0]       btb_br_tgt_lo;
 logic                           btb_br_tgt_v_lo;
-// ras io
-logic [vaddr_width_p-1:0]	jret_tgt, j_target;
-logic				ras_v, return_call;
 
 bp_fe_queue_s fe_queue_cast_o;
 bp_fe_cmd_s fe_cmd_cast_i;
@@ -79,7 +75,7 @@ wire [vaddr_width_p-1:0] pc_if2 = pc_gen_stage_r[1].pc;
 
 // Flags for valid FE commands
 wire fetch_v          = mem_cmd_yumi_i & (mem_cmd_cast_o.op == e_fe_op_fetch);
-wire state_reset_v    = fe_cmd_v_i & (fe_cmd_cast_i.opcode == e_op_state_reset); 
+wire state_reset_v    = fe_cmd_v_i & (fe_cmd_cast_i.opcode == e_op_state_reset);
 wire pc_redirect_v    = fe_cmd_v_i & (fe_cmd_cast_i.opcode == e_op_pc_redirection);
 wire itlb_fill_v      = fe_cmd_v_i & (fe_cmd_cast_i.opcode == e_op_itlb_fill_response);
 wire icache_fence_v   = fe_cmd_v_i & (fe_cmd_cast_i.opcode == e_op_icache_fence);
@@ -105,7 +101,7 @@ bsg_dff_reset_en
    ,.data_i(shadow_priv_n)
    ,.data_o(shadow_priv_r)
    );
-   
+
 logic shadow_translation_en_n, shadow_translation_en_r;
 wire shadow_translation_en_w = state_reset_v | trap_v | itlb_fence_v;
 assign shadow_translation_en_n = fe_cmd_cast_i.operands.pc_redirect_operands.translation_enabled;
@@ -166,15 +162,15 @@ always_comb
     // Stall until we can start valid fetch
     e_stall: state_n = pc_gen_stage_n[0].v ? e_run : e_stall;
     // Run state -- PCs are actually being fetched
-    // Stay in run if there's an incoming cmd, the next pc will automatically be valid 
+    // Stay in run if there's an incoming cmd, the next pc will automatically be valid
     // Transition to wait if there's a TLB miss while we wait for fill
     // Transition to stall if we don't successfully complete the fetch for whatever reason
-    e_run  : state_n = cmd_nonattaboy_v 
-                       ? e_run 
-                       : fetch_fail 
-                         ? e_stall 
-                         : fe_exception_v 
-                           ? e_wait 
+    e_run  : state_n = cmd_nonattaboy_v
+                       ? e_run
+                       : fetch_fail
+                         ? e_stall
+                         : fe_exception_v
+                           ? e_wait
                            : e_run;
     default: state_n = e_wait;
   endcase
@@ -184,7 +180,7 @@ always_ff @(posedge clk_i)
   if (reset_i)
       state_r <= e_wait;
   else
-    begin 
+    begin
       state_r <= state_n;
     end
 
@@ -201,7 +197,7 @@ always_comb
     // if we need to redirect
     else if (pc_redirect_v | icache_fence_v | itlb_fence_v)
         pc_gen_stage_n[0].pc = fe_cmd_cast_i.vaddr;
-    else if (state_r != e_run) 
+    else if (state_r != e_run)
         pc_gen_stage_n[0].pc = pc_resume_r;
     else if (ovr_taken)
         pc_gen_stage_n[0].pc = br_target;
@@ -209,14 +205,11 @@ always_comb
         pc_gen_stage_n[0].pc = pc_gen_stage_r[1].pc + 4;
     else if (btb_br_tgt_v_lo)
         pc_gen_stage_n[0].pc = btb_br_tgt_lo;
-    else
-      begin
+    /*else if (jal_return)
+        pc_gen_stage_n[0].pc = jret_tgt;
+    */else
         pc_gen_stage_n[0].pc = pc_gen_stage_r[0].pc + 4;
-      end
-
-    pc_gen_stage_n[1]    = pc_gen_stage_r[0];
-    pc_gen_stage_n[1].v &= ~flush & ~(ovr_taken || ovr_ntaken);
-  end
+    end
 
 bsg_dff_reset
  #(.width_p($bits(bp_fe_pc_gen_stage_s)*2))
@@ -235,7 +228,7 @@ wire [btb_tag_width_p-1:0] btb_tag_if2 = pc_if2[2+btb_idx_width_p+:btb_tag_width
 wire [btb_idx_width_p-1:0] btb_idx_if2 = pc_if2[2+:btb_idx_width_p];
 wire [bht_idx_width_p-1:0] bht_idx_if2 = pc_if2[2+:bht_idx_width_p];
 
-assign fe_queue_cast_o_branch_metadata = 
+assign fe_queue_cast_o_branch_metadata =
   '{pred_taken: pred_taken_if2
     ,btb_tag  : btb_tag_if2
     ,btb_idx  : btb_idx_if2
@@ -247,7 +240,7 @@ bsg_dff_reset_en
  #(.width_p(branch_metadata_fwd_width_p))
  branch_metadata_fwd_reg
   (.clk_i(clk_i)
-   ,.reset_i(reset_i) 
+   ,.reset_i(reset_i)
    ,.en_i(fe_queue_v_o)
 
    ,.data_i(fe_queue_cast_o_branch_metadata)
@@ -271,7 +264,7 @@ bp_fe_btb
    ,.br_tgt_o(btb_br_tgt_lo)
    ,.br_tgt_v_o(btb_br_tgt_v_lo)
 
-   ,.w_tag_i(fe_cmd_branch_metadata.btb_tag) 
+   ,.w_tag_i(fe_cmd_branch_metadata.btb_tag)
    ,.w_idx_i(fe_cmd_branch_metadata.btb_idx)
    // Literature says that we should only update btb on taken branches, but I'd like to see
    // benchmarks...
@@ -295,22 +288,43 @@ bp_fe_bht
    ,.correct_i(attaboy_v)
    );
 
+//CODE LOGIC FOR DECODING JAL INSTR:
+//CODE LOGIC FOR DECODING JALR INSTR:
+
+/*LOGIC FOR FINDING OUT THE PUSH
+Push if jal or jalr
+Be able to understand the instruction decoding itself
+if jal, push pc+4
+if jalr, push rd
+*/
+/*LOGIC FOR FINDING OUT THE POP
+Read instr, pop only if JAL links to r0?
+Make sure that 32 vs 64 in instruction.
+Put NO-OP in for instruction if popped
+*/
+/*
+
+*/
+logic [15:0] j_tgt_store, jret_tgt;
+logic ras_pop, ras_push, ras_v;
 bp_fe_ras
- #(.vaddr_width_p(vaddr_width_p))
+ #(.vaddr_width_p(16))
  bp_fe_ras
   (.clk_i(clk_i)
-   ,.reset_i(reset_i)
- 
-   ,.state_i(state_r)
-   ,.pc_i(pc_gen_stage_n[1].pc)
-   ,.instr_i(mem_resp_cast_i.data)
-   ,.j_tgt_o(jret_tgt)
-   ,.j_tgt_v_o(ras_v)
+  ,.reset_i(reset_i)
+
+  ,.pop_v_i(ras_pop)
+  ,.j_tgt_o(jret_tgt)
+  ,.j_tgt_v_o(ras_v)
+
+  ,.push_v_i(ras_push)
+  ,.j_tgt_i(j_tgt_store)
   );
+
 
 `declare_bp_fe_instr_scan_s(vaddr_width_p)
 bp_fe_instr_scan_s scan_instr;
-bp_fe_instr_scan 
+bp_fe_instr_scan
  #(.bp_params_p(bp_params_p))
  instr_scan
   (.instr_i(mem_resp_cast_i.data)
@@ -320,17 +334,16 @@ bp_fe_instr_scan
 
 wire is_br        = mem_resp_v_i & (scan_instr.scan_class == e_rvi_branch);
 wire is_jal       = mem_resp_v_i & (scan_instr.scan_class == e_rvi_jal);
-wire is_jalr      = mem_resp_v_i & (scan_instr.scan_class == e_rvi_jalr);
-assign ovr_taken  = pc_gen_stage_r[1].v & ~pc_gen_stage_r[0].ovr & ~pc_gen_stage_r[0].pred_taken & ((is_br &  bht_pred_lo) | (is_jal) | (is_jalr & ras_v));
+wire is_jalr      = scan_instr.scan_class == e_rvi_jalr;
+assign ovr_taken  = pc_gen_stage_r[1].v & ~pc_gen_stage_r[0].ovr & ~pc_gen_stage_r[0].pred_taken & ((is_br &  bht_pred_lo) | is_jal);
 assign ovr_ntaken = pc_gen_stage_r[1].v & ~pc_gen_stage_r[0].ovr &  pc_gen_stage_r[0].pred_taken &  (is_br & ~bht_pred_lo);
-assign br_target  = return_call ? jret_tgt >> 16: pc_gen_stage_r[1].pc + scan_instr.imm;
-assign return_call = (is_jalr & ras_v);
+assign br_target  = pc_gen_stage_r[1].pc + scan_instr.imm;
 
 // We can't fetch from wait state, only run and coming out of stall.
 // We wait until both the FE queue and I$ are ready, but flushes invalidate the fetch.
 // The next PC is valid during a FE cmd, since it is a non-speculative
 //   command and we must accept it immediately.
-// This may cause us to fetch during an I$ miss or a with a full queue.  
+// This may cause us to fetch during an I$ miss or a with a full queue.
 // FE cmds normally flush the queue, so we don't expect this to affect
 //   power much in practice.
 assign mem_cmd_v_o = cmd_nonattaboy_v || (~is_wait & fe_queue_ready_i & ~flush);
@@ -362,7 +375,7 @@ assign mem_translation_en_o = shadow_translation_en_w ? shadow_translation_en_n 
 
 // Handshaking signals
 assign fe_cmd_yumi_o      = fe_cmd_v_i; // Always accept FE commands
-                                        // All FE cmds are processed in 1 cycle, for now                                      
+                                        // All FE cmds are processed in 1 cycle, for now
 
 // Organize the FE queue message
 assign fe_queue_v_o = fe_queue_ready_i & (fe_instr_v | fe_exception_v);
@@ -383,7 +396,7 @@ always_comb
                                                            ? e_instr_page_fault
                                                            : e_instr_access_fault;
       end
-    else 
+    else
       begin
         fe_queue_cast_o.msg_type                      = e_fe_fetch;
         fe_queue_cast_o.msg.fetch.pc                  = pc_if2;
@@ -393,182 +406,4 @@ always_comb
   end
 
 endmodule
-
-/*
- * bp_fe_ras.v
- *
- *
- * Return Address Stack (RAS) stores the addresses that JAL and JALR instructions
- * are linked back to. When a JAL or JALR instruction is called, it pushes the
- * return address onto the stack (either r or the pc+4). When a JALR instruction with r0 as destination
- * is called, the return address at the top of the stack is pushed as the branch
- * target. This implementations uses the bsg_mem_1rw_sync_synth RAM design.
- */
-module bp_fe_ras
- import bp_common_pkg::*;
- import bp_common_aviary_pkg::*;
- import bp_common_rv64_pkg::*;
- import bp_fe_pkg::*;
- #(parameter vaddr_width_p = "inv"
-   , parameter ras_tag_width_p = "inv"
-   , parameter ras_idx_width_p = "inv"
-
-   // From RISC-V specifications
-   , localparam eaddr_width_lp = rv64_eaddr_width_gp
-   , localparam instr_scan_width = rv64_instr_width_gp
-   , localparam instr_scan_width_lp = `bp_fe_instr_scan_width(vaddr_width_p)
-   )
-   ( input                              clk_i
-   , input                              reset_i
-
-   , input  [1:0]			state_i 
-   , input  [vaddr_width_p-1:0]         pc_i
-   , input  [instr_scan_width-1:0]   instr_i
-   , output [vaddr_width_p-1:0]        j_tgt_o
-   , output                             j_tgt_v_o
-   );
-
-rv64_instr_s       instr_cast_i;
-logic [vaddr_width_p-1:0] retaddr;
-logic [vaddr_width_p-1:0] stack_o;
-logic push, pop, pop_d, push_d, onepush;
-
-assign instr_cast_i = instr_i;
-assign j_tgt_o = stack_o;
-assign j_tgt_v_o = (pop & ~pop_d);
-assign onepush = (push & ~push_d);
-
-logic rd_link, rs_link;
-always_comb begin
-  retaddr = pc_i;
-  push = 1'b0;
-  pop = 1'b0;
-  rd_link = 1'b0;
-  rs_link = 1'b0;
-  if(state_i == 2'b01) begin
-  unique casez (instr_i[6:0])
-    `RV64_JAL_OP   :  begin
-    //e_rvi_jal: begin
-      rd_link = (instr_i[11:7] == 5'b00001 || instr_i[11:7] == 5'b00101);
-      //if(rd_link)
-        push = 1;
-    end
-    `RV64_JALR_OP  :  begin
-    //e_rvi_jalr: begin
-      rd_link = (instr_i[11:7] == 5'b00001 || instr_i[11:7] == 5'b00101);
-      rs_link = (instr_i[19:15] == 5'b00001 || instr_i[19:15] == 5'b00101);
-      unique case ({rd_link,rs_link})
-      2'b01: pop = 1'b1;
-      2'b10: push = 1'b1;
-      2'b11: begin
-        if(instr_i[19:15] == instr_i[11:7])
-          push = 1'b1;
-        else begin
-          push = 1'b1;
-          pop = 1'b1;
-        end
-      end
-      default: begin
-        push = 1'b0;
-        pop = 1'b0;
-      end
-      endcase
-    end
-    default: begin
-      push = 1'b0;
-      pop = 1'b0;
-    end
-    endcase
-end
-end
-
-always_ff @(posedge clk_i)
-  begin
-    pop_d <= pop;
-    push_d <= push;
-  end
-
-fakebsg_stack
-  #(.width_p(vaddr_width_p)
-   ,.els_p(16))
-  ras_interface
-   (
-    .clk_i(clk_i)
-   ,.reset_i(reset_i)
-
-   ,.push_i(onepush)
-   ,.w_data_i(retaddr)
-
-   ,.pop_i((pop & ~pop_d))
-   ,.r_data_o(stack_o)
-   );
-
-// bsg_mem_1rw_sync
-//  #(.width_p(btb_tag_width_p+vaddr_width_p)
-//    ,.els_p(btb_els_lp)
-//    )
- // tag_mem
-//   (.clk_i(clk_i)
-//    ,.reset_i(reset_i)
-//
-//    ,.v_i(pop_v_i | push_v_i)
-//    ,.w_i(push_v_i)
-//
-//    ,.data_i({tag_mem_li, tgt_mem_li})
-//    ,.addr_i(tag_mem_addr_li)
-//
-//    ,.data_o({tag_mem_lo, tgt_mem_lo})
-//    );
-
-endmodule
-
-module fakebsg_stack #(parameter width_p=16
-			    ,parameter els_p=8
-			    ,parameter addr_width_lp=(els_p))
-(
-   input clk_i
-  ,input reset_i
-
-  ,input push_i
-  ,input [width_p-1:0] w_data_i
-
-  ,input pop_i
-  ,output [width_p-1:0] r_data_o
-);
-
-  logic [15:0] mem [els_p-1:0];
-  logic [addr_width_lp-1:0] tos_ptr;
-  logic [width_p-1:0] temp_out;
-
-  always_ff @(posedge clk_i) begin
-    if (reset_i) begin
-			tos_ptr <= 0;
-			mem[0] <= 0;
-    end
-	 else if (push_i && !pop_i) begin
-			tos_ptr <= tos_ptr + 1;
-    end
-	 else if (pop_i && !push_i) begin
-			tos_ptr <= tos_ptr - 1;
-    end
-
-	if (push_i && !pop_i) begin
-			mem[tos_ptr] <= w_data_i;
-	end
-  end
-
-  always_comb begin
-		if(pop_i && push_i) begin
-			temp_out = w_data_i;
-		end
-		else if (pop_i) begin
-			temp_out = mem[tos_ptr - 1];
-		end
-		else
-			temp_out = mem[0];
-  end
-
-  assign r_data_o = temp_out;
-endmodule
-
 

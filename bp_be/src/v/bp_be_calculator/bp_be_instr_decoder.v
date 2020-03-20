@@ -36,6 +36,7 @@ module bp_be_instr_decoder
 // Cast input and output ports 
 rv64_instr_s   instr;
 bp_be_decode_s decode;
+logic rs_link, rd_link;
 
 assign instr           = instr_i;
 assign decode_o        = decode;
@@ -46,11 +47,13 @@ logic illegal_instr;
 always_comb 
   begin
     // Set decoded defaults
+    //rs_link = 1'b0;
+    //rd_link = 1'b0;
     // NOPs are set after bypassing for critical path reasons
     decode               = '0;
     decode.queue_v       = 1'b1;
     decode.instr_v       = 1'b1;
-
+    
     // Destination pipe
     decode.pipe_comp_v   = '0;
     decode.pipe_int_v    = '0;
@@ -158,13 +161,28 @@ always_comb
           decode.baddr_sel  = e_baddr_is_pc;
           decode.result_sel = e_result_from_pc_plus4;
         end
-      `RV64_JALR_OP : 
+      `RV64_JALR_OP :
         begin
-          decode.pipe_int_v = 1'b1;
-          decode.irf_w_v    = 1'b1;
-          decode.jmp_v      = 1'b1;
-          decode.baddr_sel  = e_baddr_is_rs1;
-          decode.result_sel = e_result_from_pc_plus4;
+          //rd_link = (instr[11:7] == 5'b00001 || instr[11:7] == 5'b00101);
+          //rs_link = (instr[19:15] == 5'b00001 || instr[19:15] == 5'b00101);
+          //if (~((~rd_link & rs_link) || (rd_link & rs_link & ~(instr[19:15] == instr[11:7]))))
+            //begin
+              decode.pipe_int_v = 1'b1;
+              decode.irf_w_v    = 1'b1;
+              decode.jmp_v      = 1'b1;
+              decode.baddr_sel  = e_baddr_is_rs1;
+              decode.result_sel = e_result_from_pc_plus4;
+            //end
+	  /*else
+	    begin
+	      decode.pipe_int_v = 1'b1;
+	      decode.irf_w_v    = 1'b1;
+	      decode.opw_v      = (instr.opcode == `RV64_OP_IMM_32_OP);
+	      decode.src1_sel   = e_src1_is_rs1;
+	      decode.src2_sel   = 'b0;
+      	      decode.result_sel = e_result_from_alu;
+	      decode.fu_op = e_int_op_add;
+	    end*/
         end
       `RV64_BRANCH_OP : 
         begin
