@@ -209,8 +209,6 @@ always_comb
         pc_gen_stage_n[0].pc = pc_gen_stage_r[1].pc + 4;
     else if (btb_br_tgt_v_lo)
         pc_gen_stage_n[0].pc = btb_br_tgt_lo;
-    else if (ras_v)
-        pc_gen_stage_n[0].pc = jret_tgt;
     else
       begin
         pc_gen_stage_n[0].pc = pc_gen_stage_r[0].pc + 4;
@@ -323,7 +321,7 @@ bp_fe_instr_scan
 wire is_br        = mem_resp_v_i & (scan_instr.scan_class == e_rvi_branch);
 wire is_jal       = mem_resp_v_i & (scan_instr.scan_class == e_rvi_jal);
 wire is_jalr      = mem_resp_v_i & (scan_instr.scan_class == e_rvi_jalr);
-assign ovr_taken  = pc_gen_stage_r[1].v & ~pc_gen_stage_r[0].ovr & ~pc_gen_stage_r[0].pred_taken & ((is_br &  bht_pred_lo) | (is_jal));
+assign ovr_taken  = pc_gen_stage_r[1].v & ~pc_gen_stage_r[0].ovr & ~pc_gen_stage_r[0].pred_taken & ((is_br &  bht_pred_lo) | (is_jal) | (is_jalr & ras_v));
 assign ovr_ntaken = pc_gen_stage_r[1].v & ~pc_gen_stage_r[0].ovr &  pc_gen_stage_r[0].pred_taken &  (is_br & ~bht_pred_lo);
 assign br_target  = return_call ? jret_tgt >> 16: pc_gen_stage_r[1].pc + scan_instr.imm;
 assign return_call = (is_jalr & ras_v);
