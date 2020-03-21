@@ -107,21 +107,4 @@ fakebsg_stack
    ,.r_data_o(stack_o)
    );
 
-// bsg_mem_1rw_sync
-//  #(.width_p(btb_tag_width_p+vaddr_width_p)
-//    ,.els_p(btb_els_lp)
-//    )
- // tag_mem
-//   (.clk_i(clk_i)
-//    ,.reset_i(reset_i)
-//
-//    ,.v_i(pop_v_i | push_v_i)
-//    ,.w_i(push_v_i)
-//
-//    ,.data_i({tag_mem_li, tgt_mem_li})
-//    ,.addr_i(tag_mem_addr_li)
-//
-//    ,.data_o({tag_mem_lo, tgt_mem_lo})
-//    );
-
 endmodule
