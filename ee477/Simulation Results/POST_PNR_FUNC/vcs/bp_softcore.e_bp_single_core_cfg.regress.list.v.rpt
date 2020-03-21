@@ -1,0 +1,66 @@
+bs
+==========
+[CORE0 FSH] PASS
+All cores finished! Terminating...
+$finish called from file "/home/maximaka/EE477/pinalfroject/black-parrot/bp_top/test/common/bp_nonsynth_host.v", line 138.
+$finish at simulation time             14110000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 14110000 ps
+CPU Time:      2.240 seconds;       Data structure size:  17.2Mb
+Sat Mar 21 13:05:17 2020
+
+fibcall
+==========
+[CORE0 FSH] PASS
+All cores finished! Terminating...
+$finish called from file "/home/maximaka/EE477/pinalfroject/black-parrot/bp_top/test/common/bp_nonsynth_host.v", line 138.
+$finish at simulation time             30790000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 30790000 ps
+CPU Time:      2.490 seconds;       Data structure size:  17.2Mb
+Sat Mar 21 13:05:21 2020
+
+median
+==========
+[CORE0 FSH] PASS
+All cores finished! Terminating...
+$finish called from file "/home/maximaka/EE477/pinalfroject/black-parrot/bp_top/test/common/bp_nonsynth_host.v", line 138.
+$finish at simulation time            269940000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 269940000 ps
+CPU Time:      9.310 seconds;       Data structure size:  17.2Mb
+Sat Mar 21 13:05:32 2020
+
+rv64ui-p-blt
+==========
+[CORE0 FSH] PASS
+All cores finished! Terminating...
+$finish called from file "/home/maximaka/EE477/pinalfroject/black-parrot/bp_top/test/common/bp_nonsynth_host.v", line 138.
+$finish at simulation time             10510000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 10510000 ps
+CPU Time:      2.020 seconds;       Data structure size:  17.2Mb
+Sat Mar 21 13:05:37 2020
+
+towers
+==========
+[CORE0 FSH] PASS
+All cores finished! Terminating...
+$finish called from file "/home/maximaka/EE477/pinalfroject/black-parrot/bp_top/test/common/bp_nonsynth_host.v", line 138.
+$finish at simulation time            189410000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 189410000 ps
+CPU Time:      6.980 seconds;       Data structure size:  17.2Mb
+Sat Mar 21 13:05:46 2020
+
+vvadd
+==========
+[CORE0 FSH] PASS
+All cores finished! Terminating...
+$finish called from file "/home/maximaka/EE477/pinalfroject/black-parrot/bp_top/test/common/bp_nonsynth_host.v", line 138.
+$finish at simulation time            109030000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 109030000 ps
+CPU Time:      4.620 seconds;       Data structure size:  17.2Mb
+Sat Mar 21 13:05:52 2020
+
